@@ -1,0 +1,35 @@
+version: "3"
+services:
+  main-service:
+    image: ultimate-food-manager/main-service:latest
+    depends_on:
+      - database-service
+      - admin
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      ARANGO_ROOT_PASSWORD: "root"
+    command: [ "-c", "/opt/wait-for.sh database-service:8529 && java -jar mainService.jar" ]
+    entrypoint: [ "/bin/sh" ]
+    ports:
+      - "8080:8080"
+
+  database-service:
+    image: ultimate-food-manager/database-service:latest
+    restart:
+      always
+    environment:
+      ARANGO_ROOT_PASSWORD: "root"
+    ports:
+      - "8529:8529"
+
+  admin:
+    image: slydeveloper/spring-boot-admin:latest
+    environment:
+      SPRING_BOOT_ADMIN_USER_PASSWORD: "admin"
+    ports:
+      - "1111:1111"
+    healthcheck:
+      test: "curl -sS http://localhost:1111/health"
+      interval: 1s
+      timeout: 60s
+      retries: 120
