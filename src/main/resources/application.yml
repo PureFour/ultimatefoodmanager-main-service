@@ -5,18 +5,6 @@ spring:
     check-template: false
     check-template-location: false
 
-logging:
-  level:
-    com:
-      netflix:
-        config:
-          sources:
-            URLConfigurationSource: ERROR
----
-spring:
-  profiles:
-    active: dev
-
   boot:
     admin:
       client:
@@ -38,19 +26,29 @@ management:
       exposure:
         include: "*"
 
-database:
+database: #doesnt work on default profile!
   host: localhost
   port: 8529
   protocol: http
   dbName: default-database
   mountPath: database-service
 
+logging:
+  level:
+    com:
+      netflix:
+        config:
+          sources:
+            URLConfigurationSource: ERROR
+
 ---
 spring:
   profiles:
     active: docker
+
   thymeleaf:
     enabled: false
+
   boot:
     admin:
       client:
@@ -77,7 +75,7 @@ logging:
     name: logs/spring-boot-logger.log
 
 database:
-  host: database-service
+  host: localhost
   port: 8529
   protocol: http
   dbName: default-database

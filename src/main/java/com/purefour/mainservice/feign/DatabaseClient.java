@@ -1,7 +1,5 @@
 package com.purefour.mainservice.feign;
 
-import java.util.Optional;
-
 import com.purefour.mainservice.model.RegisterRequest;
 import com.purefour.mainservice.model.User;
 import feign.Feign;
@@ -15,7 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 @FeignClient(
 	name = "database-service",
 	url = "${database.protocol}://${database.host}:${database.port}/_db/${database.dbName}/${database.mountPath}",
-	fallback = DatabaseClient.DatabaseClientFallback.class
+	fallback = DatabaseClient.DatabaseClientFallback.class,
+	configuration = DatabaseClient.DatabaseClientConfiguration.class
 )
 public interface DatabaseClient {
 
@@ -47,8 +46,7 @@ public interface DatabaseClient {
 		}
 	}
 
-	class TranslationFoxxClientConfiguration {
-
+	class DatabaseClientConfiguration {
 		@Bean
 		public Feign.Builder feignBuilder() {
 			return Feign.builder()
