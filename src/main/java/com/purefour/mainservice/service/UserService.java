@@ -2,8 +2,8 @@ package com.purefour.mainservice.service;
 
 import com.purefour.mainservice.feign.DatabaseClient;
 import com.purefour.mainservice.model.RegisterRequest;
+import com.purefour.mainservice.model.RegisterResponse;
 import com.purefour.mainservice.model.User;
-import com.purefour.mainservice.model.exceptions.NotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,11 +13,15 @@ public class UserService {
 
     private final DatabaseClient databaseClient;
 
-	public void addUser(RegisterRequest registerRequest) {
-		databaseClient.addUser(registerRequest);
+	public RegisterResponse addUser(RegisterRequest registerRequest) {
+		final User user = databaseClient.addUser(registerRequest);
+		return RegisterResponse.builder()
+			.token("OK")
+			.user(user)
+			.build();
 	}
 
-    public User getUser(String uuid) throws NotFoundException {
+    public User getUser(String uuid) {
         return databaseClient.getUser(uuid);
     }
 

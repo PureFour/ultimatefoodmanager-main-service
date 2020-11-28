@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 import com.purefour.mainservice.model.exceptions.BadRequestException;
+import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.exceptions.UnhandledException;
 import feign.Response;
@@ -24,6 +25,8 @@ public class DatabaseClientErrorDecoder implements ErrorDecoder {
 				return new BadRequestException(responseBody);
 			case 404:
 				return new NotFoundException(responseBody);
+			case 409:
+				return new ConflictException(responseBody);
 			default:
 				return new UnhandledException(String.format("Unhandled exception [code: %s, msg: %s]", response.status(), responseBody));
 		}

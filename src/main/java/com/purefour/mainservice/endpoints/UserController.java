@@ -3,7 +3,9 @@ package com.purefour.mainservice.endpoints;
 import com.purefour.mainservice.model.AuthenticationResponse;
 import com.purefour.mainservice.model.LoginRequest;
 import com.purefour.mainservice.model.RegisterRequest;
+import com.purefour.mainservice.model.RegisterResponse;
 import com.purefour.mainservice.model.User;
+import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.service.AuthorizationService;
 import com.purefour.mainservice.service.UserService;
@@ -47,12 +49,11 @@ public class UserController {
     @ApiOperation(value = "Add user")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "User added!"),
-            @ApiResponse(code = 409, message = "User exist!")
+            @ApiResponse(code = 409, message = "User exist!", response = ConflictException.class)
     })
     @PostMapping("signUp")
-    public ResponseEntity<AuthenticationResponse> addUser(@RequestBody RegisterRequest registerRequest) {
-        userService.addUser(registerRequest);
-        return ResponseEntity.ok(new AuthenticationResponse("OK"));
+    public ResponseEntity<RegisterResponse> addUser(@RequestBody RegisterRequest registerRequest) {
+        return ResponseEntity.ok(userService.addUser(registerRequest));
     }
 
     @ApiOperation(value = "Get user")
@@ -63,7 +64,7 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "Authorization", value = "Authorization token (starts with 'Bearer')", dataType = "string", paramType = "header", required = false) })
     @GetMapping()
-    public ResponseEntity<User> getUserByUsername(@RequestParam String uuid) throws NotFoundException {
+    public ResponseEntity<User> getUserByUsername(@RequestParam String uuid) {
         return ResponseEntity.ok(userService.getUser(uuid));
     }
 

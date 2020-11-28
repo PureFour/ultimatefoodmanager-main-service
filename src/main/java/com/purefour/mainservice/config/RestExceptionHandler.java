@@ -1,6 +1,8 @@
 package com.purefour.mainservice.config;
 
 import com.purefour.mainservice.model.ErrorMessage;
+import com.purefour.mainservice.model.exceptions.BadRequestException;
+import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -15,6 +17,16 @@ public class RestExceptionHandler {
 	@ExceptionHandler({ NotFoundException.class })
 	protected ResponseEntity<ErrorMessage> notFound(Exception exception) {
 		return errorResponse(HttpStatus.NOT_FOUND, exception);
+	}
+
+	@ExceptionHandler({ ConflictException.class })
+	protected ResponseEntity<ErrorMessage> conflict(Exception exception) {
+		return errorResponse(HttpStatus.CONFLICT, exception);
+	}
+
+	@ExceptionHandler({ BadRequestException.class })
+	protected ResponseEntity<ErrorMessage> badRequest(Exception exception) {
+		return errorResponse(HttpStatus.BAD_REQUEST, exception);
 	}
 
 	private ResponseEntity<ErrorMessage> errorResponse(HttpStatus status, Exception exception) {

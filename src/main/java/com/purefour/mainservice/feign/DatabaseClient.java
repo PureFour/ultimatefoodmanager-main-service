@@ -21,8 +21,8 @@ public interface DatabaseClient {
 	@GetMapping("users/{uuid}")
 	User getUser(@PathVariable("uuid") String uuid);
 
-	@PostMapping("users")
-	void addUser(RegisterRequest registerRequest);
+	@PostMapping("users/signUp")
+	User addUser(RegisterRequest registerRequest);
 
 	@DeleteMapping("users/{uuid}")
 	void deleteUser(@PathVariable("uuid") String uuid);
@@ -36,7 +36,7 @@ public interface DatabaseClient {
 		}
 
 		@Override
-		public void addUser(RegisterRequest registerRequest) {
+		public User addUser(RegisterRequest registerRequest) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 

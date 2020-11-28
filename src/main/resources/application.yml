@@ -75,7 +75,7 @@ logging:
     name: logs/spring-boot-logger.log
 
 database:
-  host: localhost
+  host: database-service
   port: 8529
   protocol: http
   dbName: default-database
