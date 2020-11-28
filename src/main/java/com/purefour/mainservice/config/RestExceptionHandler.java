@@ -1,6 +1,6 @@
 package com.purefour.mainservice.config;
 
-import com.purefour.mainservice.model.ErrorMessage;
+import com.purefour.mainservice.model.exceptions.ErrorMessage;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;

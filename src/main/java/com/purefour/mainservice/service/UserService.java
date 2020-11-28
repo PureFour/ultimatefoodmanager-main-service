@@ -1,9 +1,9 @@
 package com.purefour.mainservice.service;
 
 import com.purefour.mainservice.feign.DatabaseClient;
-import com.purefour.mainservice.model.RegisterRequest;
-import com.purefour.mainservice.model.RegisterResponse;
-import com.purefour.mainservice.model.User;
+import com.purefour.mainservice.model.user.RegisterRequest;
+import com.purefour.mainservice.model.user.RegisterResponse;
+import com.purefour.mainservice.model.user.User;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

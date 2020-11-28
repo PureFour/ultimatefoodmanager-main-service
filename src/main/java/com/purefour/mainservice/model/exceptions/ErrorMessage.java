@@ -1,4 +1,4 @@
-package com.purefour.mainservice.model;
+package com.purefour.mainservice.model.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthenticationResponse {
+public class ErrorMessage {
 
-	private String jwtToken;
+	private String message;
 }

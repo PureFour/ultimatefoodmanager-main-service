@@ -1,6 +1,7 @@
 spring:
   application:
-    name: MainService
+    name: UltimateFoodManager
+    version: 0.0.1
   thymeleaf:
     check-template: false
     check-template-location: false
@@ -33,6 +34,8 @@ database: #doesnt work on default profile!
   dbName: default-database
   mountPath: database-service
 
+openFoodFactsApi: fake
+
 logging:
   level:
     com:
@@ -43,8 +46,7 @@ logging:
 
 ---
 spring:
-  profiles:
-    active: docker
+  profiles: docker
 
   thymeleaf:
     enabled: false
@@ -82,7 +84,12 @@ database:
   mountPath: database-service
 
 ---
-
 spring:
-  profiles:
-    active: test
+  profiles: test
+
+
+---
+spring:
+  profiles: prod
+
+openFoodFactsApi: real

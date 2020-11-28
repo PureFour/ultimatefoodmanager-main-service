@@ -1,10 +1,10 @@
 package com.purefour.mainservice.endpoints;
 
-import com.purefour.mainservice.model.AuthenticationResponse;
-import com.purefour.mainservice.model.LoginRequest;
-import com.purefour.mainservice.model.RegisterRequest;
-import com.purefour.mainservice.model.RegisterResponse;
-import com.purefour.mainservice.model.User;
+import com.purefour.mainservice.model.user.AuthenticationResponse;
+import com.purefour.mainservice.model.user.LoginRequest;
+import com.purefour.mainservice.model.user.RegisterRequest;
+import com.purefour.mainservice.model.user.RegisterResponse;
+import com.purefour.mainservice.model.user.User;
 import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.service.AuthorizationService;

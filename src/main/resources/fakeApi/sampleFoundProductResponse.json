@@ -1,0 +1,730 @@
+{
+  "code": "5449000034519",
+  "product": {
+    "traces_from_user": "(pl) ",
+    "nutrition_grades_tags": [
+      "e"
+    ],
+    "expiration_date": "",
+    "countries": "Polska",
+    "allergens_tags": [],
+    "unknown_ingredients_n": 2,
+    "no_nutrition_data": "",
+    "interface_version_created": "20120622",
+    "informers_tags": [
+      "pyrka"
+    ],
+    "allergens_lc": "pl",
+    "creator": "pyrka",
+    "ingredients_tags": [
+      "en:water",
+      "en:sugar",
+      "pl:dwutlenek-wegla",
+      "en:colour",
+      "en:acid",
+      "en:e150d",
+      "pl:kwas-fosforowy-naturalne-aromaty-w-tym-kofeina"
+    ],
+    "pnns_groups_2_tags": [
+      "sweetened-beverages",
+      "known"
+    ],
+    "created_t": 1563020539,
+    "nutrition_score_beverage": 1,
+    "brands_tags": [
+      "coca-cola"
+    ],
+    "ingredients_hierarchy": [
+      "en:water",
+      "en:sugar",
+      "pl:dwutlenek wegla",
+      "en:colour",
+      "en:acid",
+      "en:e150d",
+      "pl:kwas fosforowy.naturalne aromaty w tym kofeina"
+    ],
+    "countries_tags": [
+      "en:poland"
+    ],
+    "known_ingredients_n": 5,
+    "ingredients_from_palm_oil_n": 0,
+    "manufacturing_places_tags": [],
+    "cities_tags": [],
+    "images": {
+      "1": {
+        "sizes": {
+          "100": {
+            "h": 89,
+            "w": 100
+          },
+          "400": {
+            "w": 400,
+            "h": 355
+          },
+          "full": {
+            "w": 2099,
+            "h": 1865
+          }
+        },
+        "uploader": "pyrka",
+        "uploaded_t": 1563020539
+      },
+      "2": {
+        "uploader": "pyrka",
+        "uploaded_t": 1563020590,
+        "sizes": {
+          "100": {
+            "w": 67,
+            "h": 100
+          },
+          "400": {
+            "w": 266,
+            "h": 400
+          },
+          "full": {
+            "w": 1555,
+            "h": 2335
+          }
+        }
+      },
+      "3": {
+        "uploader": "pyrka",
+        "uploaded_t": 1563020609,
+        "sizes": {
+          "100": {
+            "h": 97,
+            "w": 100
+          },
+          "400": {
+            "w": 400,
+            "h": 386
+          },
+          "full": {
+            "h": 2475,
+            "w": 2564
+          }
+        }
+      },
+      "4": {
+        "uploaded_t": 1563020624,
+        "uploader": "pyrka",
+        "sizes": {
+          "100": {
+            "h": 100,
+            "w": 71
+          },
+          "400": {
+            "w": 283,
+            "h": 400
+          },
+          "full": {
+            "h": 2555,
+            "w": 1807
+          }
+        }
+      },
+      "nutrition_pl": {
+        "y1": "42.30555725097659",
+        "x2": "270.78125",
+        "imgid": "3",
+        "sizes": {
+          "100": {
+            "w": 92,
+            "h": 100
+          },
+          "200": {
+            "w": 184,
+            "h": 200
+          },
+          "400": {
+            "w": 367,
+            "h": 400
+          },
+          "full": {
+            "w": 1446,
+            "h": 1574
+          }
+        },
+        "y2": "287.8611145019531",
+        "normalize": "false",
+        "white_magic": "false",
+        "angle": "0",
+        "x1": "45.225677490234375",
+        "geometry": "1446x1574-289-271",
+        "rev": "14"
+      },
+      "ingredients_pl": {
+        "geometry": "0x0-0-0",
+        "x1": null,
+        "angle": null,
+        "rev": "7",
+        "y1": null,
+        "y2": null,
+        "white_magic": null,
+        "normalize": null,
+        "x2": null,
+        "sizes": {
+          "100": {
+            "h": 100,
+            "w": 67
+          },
+          "200": {
+            "h": 200,
+            "w": 133
+          },
+          "400": {
+            "h": 400,
+            "w": 266
+          },
+          "full": {
+            "h": 2335,
+            "w": 1555
+          }
+        },
+        "imgid": "2"
+      },
+      "front_pl": {
+        "y1": "0",
+        "white_magic": "false",
+        "y2": "0",
+        "normalize": "false",
+        "imgid": "1",
+        "sizes": {
+          "100": {
+            "w": 100,
+            "h": 89
+          },
+          "200": {
+            "w": 200,
+            "h": 178
+          },
+          "400": {
+            "w": 400,
+            "h": 355
+          },
+          "full": {
+            "w": 2099,
+            "h": 1865
+          }
+        },
+        "x2": "0",
+        "angle": "0",
+        "geometry": "0x0-0-0",
+        "x1": "0",
+        "rev": "13"
+      }
+    },
+    "allergens": "",
+    "nova_group_tags": [
+      "not-applicable"
+    ],
+    "image_nutrition_thumb_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.100.jpg",
+    "ingredients_that_may_be_from_palm_oil_tags": [],
+    "generic_name": "Coca Cola",
+    "categories_properties": {},
+    "origins_lc": "pl",
+    "debug_param_sorted_langs": [
+      "pl"
+    ],
+    "ingredients_from_palm_oil_tags": [],
+    "nova_groups_tags": [
+      "en:4-ultra-processed-food-and-drink-products"
+    ],
+    "minerals_tags": [],
+    "nutrition_grade_fr": "e",
+    "languages_codes": {
+      "pl": 6
+    },
+    "origins_hierarchy": [],
+    "nucleotides_tags": [],
+    "image_thumb_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.100.jpg",
+    "ingredients_text_with_allergens": "Woda, cukier, dwutlenek wegla. barwnik E150d, kwas: kwas fosforowy.naturalne aromaty w tym kofeina.",
+    "origins_tags": [],
+    "lang": "pl",
+    "ingredients_original_tags": [
+      "en:water",
+      "en:sugar",
+      "pl:dwutlenek wegla",
+      "en:colour",
+      "en:acid",
+      "en:e150d",
+      "pl:kwas fosforowy.naturalne aromaty w tym kofeina"
+    ],
+    "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients": 1,
+    "languages": {
+      "en:polish": 6
+    },
+    "stores_tags": [],
+    "nutriments": {
+      "fiber_100g": 0,
+      "sodium_unit": "g",
+      "fiber": 0,
+      "salt_unit": "g",
+      "fat_serving": 0,
+      "carbohydrates_value": 10.6,
+      "proteins": 0,
+      "proteins_value": 0,
+      "salt_value": 0,
+      "energy_100g": 176,
+      "carbohydrates_serving": 26.5,
+      "fat_100g": 0,
+      "nutrition-score-fr_serving": 14,
+      "saturated-fat": 0,
+      "energy-kcal_100g": 42,
+      "energy": 176,
+      "sugars": 10.6,
+      "proteins_unit": "g",
+      "proteins_100g": 0,
+      "carbohydrates_100g": 10.6,
+      "saturated-fat_100g": 0,
+      "carbohydrates": 10.6,
+      "salt_100g": 0,
+      "nova-group": 4,
+      "sodium": 0,
+      "salt": 0,
+      "fruits-vegetables-nuts-estimate-from-ingredients_100g": 0,
+      "sodium_100g": 0,
+      "sodium_serving": 0,
+      "energy-kcal": 42,
+      "energy-kcal_value": 42,
+      "saturated-fat_value": 0,
+      "fat_unit": "g",
+      "nutrition-score-fr": 14,
+      "energy_serving": 440,
+      "energy-kcal_unit": "kcal",
+      "nova-group_100g": 4,
+      "sugars_value": 10.6,
+      "fat_value": 0,
+      "fat": 0,
+      "carbohydrates_unit": "g",
+      "proteins_serving": 0,
+      "sugars_100g": 10.6,
+      "salt_serving": 0,
+      "sodium_value": 0,
+      "saturated-fat_unit": "g",
+      "energy_unit": "kcal",
+      "sugars_unit": "g",
+      "fiber_serving": 0,
+      "nutrition-score-fr_100g": 14,
+      "saturated-fat_serving": 0,
+      "sugars_serving": 26.5,
+      "energy-kcal_serving": 105,
+      "energy_value": 42,
+      "fiber_unit": "g",
+      "fiber_value": 0,
+      "nova-group_serving": 4
+    },
+    "nova_groups": "4",
+    "traces_hierarchy": [],
+    "nutrient_levels_tags": [
+      "en:fat-in-low-quantity",
+      "en:saturated-fat-in-low-quantity",
+      "en:sugars-in-high-quantity",
+      "en:salt-in-low-quantity"
+    ],
+    "pnns_groups_1_tags": [
+      "beverages",
+      "known"
+    ],
+    "product_name": "Napój gazowany o smaku cola.",
+    "last_modified_t": 1566314776,
+    "allergens_hierarchy": [],
+    "allergens_from_user": "(pl) ",
+    "image_ingredients_thumb_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.100.jpg",
+    "serving_quantity": 250,
+    "brands": "Coca cola",
+    "interface_version_modified": "20120622",
+    "vitamins_tags": [],
+    "image_small_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.200.jpg",
+    "last_image_dates_tags": [
+      "2019-07-13",
+      "2019-07",
+      "2019"
+    ],
+    "categories_tags": [
+      "en:beverages",
+      "en:carbonated-drinks",
+      "pl:zawiera-kofeinę"
+    ],
+    "additives_old_n": 1,
+    "serving_size": "250ml",
+    "languages_tags": [
+      "en:polish",
+      "en:1"
+    ],
+    "update_key": "origins",
+    "misc_tags": [
+      "en:nutrition-fruits-vegetables-nuts-estimate-from-ingredients",
+      "en:nutrition-all-nutriscore-values-known",
+      "en:nutriscore-computed"
+    ],
+    "nutriscore_score": 14,
+    "unknown_nutrients_tags": [],
+    "_id": "5449000034519",
+    "purchase_places": "Polska",
+    "popularity_key": -80099999995,
+    "labels": "",
+    "origins_old": "",
+    "stores": "",
+    "pnns_groups_2": "Sweetened beverages",
+    "lc": "pl",
+    "states_tags": [
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
+    ],
+    "ingredients_n_tags": [
+      "7",
+      "1-10"
+    ],
+    "ingredients_that_may_be_from_palm_oil_n": 0,
+    "ingredients_text_with_allergens_pl": "Woda, cukier, dwutlenek wegla. barwnik E150d, kwas: kwas fosforowy.naturalne aromaty w tym kofeina.",
+    "complete": 1,
+    "correctors_tags": [
+      "openfoodfacts-contributors",
+      "pyrka"
+    ],
+    "purchase_places_tags": [
+      "polska"
+    ],
+    "selected_images": {
+      "ingredients": {
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.400.jpg"
+        },
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.200.jpg"
+        },
+        "thumb": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.100.jpg"
+        }
+      },
+      "nutrition": {
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.200.jpg"
+        },
+        "thumb": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.100.jpg"
+        },
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.400.jpg"
+        }
+      },
+      "front": {
+        "thumb": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.100.jpg"
+        },
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.200.jpg"
+        },
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.400.jpg"
+        }
+      }
+    },
+    "ingredients_text": "Woda, cukier, dwutlenek wegla. barwnik E150d, kwas: kwas fosforowy.naturalne aromaty w tym kofeina.",
+    "data_quality_bugs_tags": [],
+    "nutrient_levels": {
+      "sugars": "high",
+      "salt": "low",
+      "fat": "low",
+      "saturated-fat": "low"
+    },
+    "nutrition_data_prepared": "",
+    "additives_n": 1,
+    "image_nutrition_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.400.jpg",
+    "entry_dates_tags": [
+      "2019-07-13",
+      "2019-07",
+      "2019"
+    ],
+    "image_front_thumb_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.100.jpg",
+    "additives_tags": [
+      "en:e150d"
+    ],
+    "image_ingredients_small_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.200.jpg",
+    "image_nutrition_small_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.200.jpg",
+    "last_editor": "pyrka",
+    "last_image_t": 1563020625,
+    "labels_tags": [],
+    "image_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.400.jpg",
+    "additives_original_tags": [
+      "en:e150d"
+    ],
+    "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
+    "scans_n": 7,
+    "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
+    "data_quality_info_tags": [
+      "en:ingredients-percent-analysis-ok"
+    ],
+    "traces": "",
+    "categories_hierarchy": [
+      "en:beverages",
+      "en:carbonated-drinks",
+      "pl:Zawiera kofeinę"
+    ],
+    "max_imgid": "4",
+    "traces_from_ingredients": "",
+    "labels_lc": "pl",
+    "data_quality_tags": [
+      "en:ingredients-percent-analysis-ok"
+    ],
+    "nutrition_grades": "e",
+    "labels_hierarchy": [],
+    "product_quantity": 850,
+    "ingredients": [
+      {
+        "id": "en:water",
+        "text": "Woda",
+        "vegetarian": "yes",
+        "percent_min": 20,
+        "percent_max": 100,
+        "vegan": "yes",
+        "rank": 1
+      },
+      {
+        "id": "en:sugar",
+        "text": "cukier",
+        "vegetarian": "yes",
+        "percent_min": 0,
+        "percent_max": 50,
+        "vegan": "yes",
+        "rank": 2
+      },
+      {
+        "percent_max": 33.3333333333333,
+        "percent_min": 0,
+        "rank": 3,
+        "id": "pl:dwutlenek wegla",
+        "text": "dwutlenek wegla"
+      },
+      {
+        "percent_max": 25,
+        "percent_min": 0,
+        "rank": 4,
+        "id": "en:colour",
+        "has_sub_ingredients": "yes",
+        "text": "barwnik"
+      },
+      {
+        "id": "en:acid",
+        "has_sub_ingredients": "yes",
+        "text": "kwas",
+        "percent_max": 20,
+        "percent_min": 0,
+        "rank": 5
+      },
+      {
+        "vegan": "yes",
+        "percent_max": 25,
+        "percent_min": 0,
+        "vegetarian": "yes",
+        "text": "e150d",
+        "id": "en:e150d"
+      },
+      {
+        "text": "kwas fosforowy.naturalne aromaty w tym kofeina",
+        "id": "pl:kwas fosforowy.naturalne aromaty w tym kofeina",
+        "percent_max": 20,
+        "percent_min": 0
+      }
+    ],
+    "nutrition_data_prepared_per": "100g",
+    "category_properties": {},
+    "product_name_pl": "Napój gazowany o smaku cola.",
+    "packaging": "PET",
+    "nova_group": 4,
+    "nutrition_data": "on",
+    "image_front_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.400.jpg",
+    "photographers_tags": [
+      "pyrka"
+    ],
+    "amino_acids_tags": [],
+    "quantity": "850 ml",
+    "other_nutritional_substances_tags": [],
+    "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value": 0,
+    "categories_properties_tags": [
+      "all-products",
+      "categories-known",
+      "agribalyse-food-code-unknown",
+      "agribalyse-proxy-food-code-unknown",
+      "ciqual-food-code-unknown",
+      "agribalyse-unknown"
+    ],
+    "categories": "Napoje, Napoje gazowane, Zawiera kofeinę",
+    "completeness": 0.8,
+    "popularity_tags": [
+      "top-100000-scans-2020",
+      "top-90-percent-scans-2020",
+      "top-95-percent-scans-2020",
+      "top-500-pl-scans-2020",
+      "top-1000-pl-scans-2020",
+      "top-5000-pl-scans-2020",
+      "top-10000-pl-scans-2020",
+      "top-50000-pl-scans-2020",
+      "top-100000-pl-scans-2020",
+      "top-country-pl-scans-2020",
+      "top-90-percent-scans-2019",
+      "top-95-percent-scans-2019",
+      "top-1000-pl-scans-2019",
+      "top-5000-pl-scans-2019",
+      "top-10000-pl-scans-2019",
+      "top-50000-pl-scans-2019",
+      "top-100000-pl-scans-2019",
+      "top-country-pl-scans-2019",
+      "top-500-fi-scans-2019",
+      "top-1000-fi-scans-2019",
+      "top-5000-fi-scans-2019",
+      "top-10000-fi-scans-2019",
+      "top-50000-fi-scans-2019",
+      "top-100000-fi-scans-2019"
+    ],
+    "link": "",
+    "code": "5449000034519",
+    "generic_name_pl": "Coca Cola",
+    "sortkey": -98433685224,
+    "countries_hierarchy": [
+      "en:poland"
+    ],
+    "editors_tags": [
+      "openfoodfacts-contributors",
+      "pyrka"
+    ],
+    "nutriscore_grade": "e",
+    "image_front_small_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.200.jpg",
+    "nova_group_debug": " -- ingredients/en:sugar : 3 -- additives/en:e150d : 4",
+    "nutriscore_data": {
+      "saturated_fat_value": 0,
+      "positive_points": 0,
+      "is_fat": 0,
+      "fiber": 0,
+      "score": 14,
+      "grade": "e",
+      "is_beverage": 1,
+      "saturated_fat_ratio": 0,
+      "proteins_value": 0,
+      "proteins": 0,
+      "proteins_points": 0,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils_points": 0,
+      "energy_points": 6,
+      "is_water": 0,
+      "saturated_fat_ratio_value": 0,
+      "saturated_fat_ratio_points": 0,
+      "energy": 176,
+      "sugars": 10.6,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils_value": 0,
+      "is_cheese": 0,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils": 0,
+      "sodium": 0,
+      "sugars_points": 8,
+      "sugars_value": 10.6,
+      "saturated_fat_points": 0,
+      "sodium_value": 0,
+      "sodium_points": 0,
+      "negative_points": 14,
+      "energy_value": 176,
+      "saturated_fat": 0,
+      "fiber_value": 0,
+      "fiber_points": 0
+    },
+    "completed_t": 1566314776,
+    "unique_scans_n": 4,
+    "additives_old_tags": [
+      "en:e150d"
+    ],
+    "packaging_tags": [
+      "pet"
+    ],
+    "image_ingredients_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.400.jpg",
+    "_keywords": [
+      "napój",
+      "zawiera",
+      "kofeinę",
+      "smaku",
+      "gazowany",
+      "gazowane",
+      "coca",
+      "napoje",
+      "cola"
+    ],
+    "ingredients_analysis_tags": [
+      "en:palm-oil-content-unknown",
+      "en:vegan-status-unknown",
+      "en:vegetarian-status-unknown"
+    ],
+    "categories_lc": "pl",
+    "origins": "",
+    "checkers_tags": [],
+    "nutrition_data_per": "100g",
+    "traces_lc": "pl",
+    "ingredients_percent_analysis": 1,
+    "countries_lc": "pl",
+    "last_modified_by": "pyrka",
+    "data_quality_errors_tags": [],
+    "pnns_groups_1": "Beverages",
+    "emb_codes": "",
+    "compared_to_category": "pl:zawiera-kofeinę",
+    "codes_tags": [
+      "code-13",
+      "5449000034xxx",
+      "544900003xxxx",
+      "54490000xxxxx",
+      "5449000xxxxxx",
+      "544900xxxxxxx",
+      "54490xxxxxxxx",
+      "5449xxxxxxxxx",
+      "544xxxxxxxxxx",
+      "54xxxxxxxxxxx",
+      "5xxxxxxxxxxxx"
+    ],
+    "ciqual_food_name_tags": [
+      "unknown"
+    ],
+    "ingredients_n": 7,
+    "languages_hierarchy": [
+      "en:polish"
+    ],
+    "ingredients_text_pl": "Woda, cukier, dwutlenek wegla. barwnik E150d, kwas: kwas fosforowy.naturalne aromaty w tym kofeina.",
+    "states_hierarchy": [
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
+    ],
+    "rev": 15,
+    "emb_codes_tags": [],
+    "id": "5449000034519",
+    "manufacturing_places": "",
+    "data_quality_warnings_tags": [],
+    "last_edit_dates_tags": [
+      "2019-08-20",
+      "2019-08",
+      "2019"
+    ],
+    "traces_tags": [],
+    "allergens_from_ingredients": ""
+  },
+  "status_verbose": "product found",
+  "status": 1
+}

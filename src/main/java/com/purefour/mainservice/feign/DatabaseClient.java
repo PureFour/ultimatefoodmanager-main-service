@@ -1,7 +1,7 @@
 package com.purefour.mainservice.feign;
 
-import com.purefour.mainservice.model.RegisterRequest;
-import com.purefour.mainservice.model.User;
+import com.purefour.mainservice.model.user.RegisterRequest;
+import com.purefour.mainservice.model.user.User;
 import feign.Feign;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;

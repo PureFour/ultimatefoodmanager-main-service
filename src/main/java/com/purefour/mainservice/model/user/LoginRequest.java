@@ -1,4 +1,4 @@
-package com.purefour.mainservice.model;
+package com.purefour.mainservice.model.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterRequest {
+public class LoginRequest {
 
 	private String email;
-	private String login;
 	private String password;
 }

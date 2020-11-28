@@ -1,4 +1,4 @@
-package com.purefour.mainservice.model;
+package com.purefour.mainservice.model.user;
 
 import java.util.UUID;
 

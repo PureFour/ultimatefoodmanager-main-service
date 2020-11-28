@@ -1,4 +1,4 @@
-package com.purefour.mainservice.model;
+package com.purefour.mainservice.model.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ErrorMessage {
+public class AuthenticationResponse {
 
-	private String message;
+	private String token;
 }
