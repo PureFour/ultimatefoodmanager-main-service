@@ -17,18 +17,16 @@ public class CategoryField extends FieldTarget<Category> {
 	@Override
 	public Category getMappedValue(String nodeKey, JsonNode jsonNode) {
 		final Object categoriesObject = super.getMappedValue(nodeKey, jsonNode);
-		final String categoryName = extractFirstCategoryTag(categoriesObject);
-		return Category.forName(categoryName);
+		return extractFirstCategoryTag(categoriesObject);
 	}
 
-	private String extractFirstCategoryTag(Object categoryObject) {
-		String categoryTag = ((ArrayNode) categoryObject).get(0).asText();
-
-		if (categoryTag.isEmpty()) {
-			return " ";
+	private Category extractFirstCategoryTag(Object categoryObject) {
+		try {
+			final String categoryTag = ((ArrayNode) categoryObject).get(0).asText();
+			final String categoryName = categoryTag.split("(\\w+[:])")[1];
+			return Category.forName(categoryName);
+		} catch (Exception e) {
+			return Category.NOT_FOUND;
 		}
-
-		final String[] categoryName = categoryTag.split("(\\w+[:])");
-		return categoryName[1];
 	}
 }

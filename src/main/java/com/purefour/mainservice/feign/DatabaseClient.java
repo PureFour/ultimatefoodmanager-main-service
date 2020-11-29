@@ -1,5 +1,6 @@
 package com.purefour.mainservice.feign;
 
+import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.model.user.RegisterRequest;
 import com.purefour.mainservice.model.user.User;
 import feign.Feign;
@@ -11,46 +12,54 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @FeignClient(
-	name = "database-service",
-	url = "${database.protocol}://${database.host}:${database.port}/_db/${database.dbName}/${database.mountPath}",
-	fallback = DatabaseClient.DatabaseClientFallback.class,
-	configuration = DatabaseClient.DatabaseClientConfiguration.class
+        name = "database-service",
+        url = "${database.protocol}://${database.host}:${database.port}/_db/${database.dbName}/${database.mountPath}",
+        fallback = DatabaseClient.DatabaseClientFallback.class,
+        configuration = DatabaseClient.DatabaseClientConfiguration.class
 )
 public interface DatabaseClient {
 
-	@GetMapping("users/{uuid}")
-	User getUser(@PathVariable("uuid") String uuid);
+    @GetMapping("users/{uuid}")
+    User getUser(@PathVariable("uuid") String uuid);
 
-	@PostMapping("users/signUp")
-	User addUser(RegisterRequest registerRequest);
+    @PostMapping("users/signUp")
+    User addUser(RegisterRequest registerRequest);
 
-	@DeleteMapping("users/{uuid}")
-	void deleteUser(@PathVariable("uuid") String uuid);
+    @DeleteMapping("users/{uuid}")
+    void deleteUser(@PathVariable("uuid") String uuid);
 
-	class DatabaseClientFallback implements DatabaseClient {
-		private static final String SERVICE_UNAVAILABLE_MSG = "Database unavailable.";
+    @PostMapping("products")
+    Product add(Product product);
 
-		@Override
-		public User getUser(String uuid) {
-			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
-		}
+    class DatabaseClientFallback implements DatabaseClient {
+        private static final String SERVICE_UNAVAILABLE_MSG = "Database unavailable.";
 
-		@Override
-		public User addUser(RegisterRequest registerRequest) {
-			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
-		}
+        @Override
+        public User getUser(String uuid) {
+            throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+        }
 
-		@Override
-		public void deleteUser(String uuid) {
-			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
-		}
-	}
+        @Override
+        public User addUser(RegisterRequest registerRequest) {
+            throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+        }
 
-	class DatabaseClientConfiguration {
-		@Bean
-		public Feign.Builder feignBuilder() {
-			return Feign.builder()
-				.errorDecoder(new DatabaseClientErrorDecoder());
-		}
-	}
+        @Override
+        public void deleteUser(String uuid) {
+            throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+        }
+
+        @Override
+        public Product add(Product product) {
+            throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+        }
+    }
+
+    class DatabaseClientConfiguration {
+        @Bean
+        public Feign.Builder feignBuilder() {
+            return Feign.builder()
+                    .errorDecoder(new DatabaseClientErrorDecoder());
+        }
+    }
 }

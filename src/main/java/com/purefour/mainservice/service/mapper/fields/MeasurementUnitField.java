@@ -18,12 +18,18 @@ public class MeasurementUnitField extends FieldTarget<MeasurementUnit> {
 	@Override
 	public MeasurementUnit getMappedValue(String nodeKey, JsonNode jsonNode) {
 		final Object quantityField = super.getMappedValue(MEASUREMENT_UNIT_KEY, jsonNode);
-		final String measurementUnit = extractMeasurementUnit(quantityField);
-		return MeasurementUnit.valueOf(measurementUnit.toUpperCase());
+		return extractMeasurementUnit(quantityField);
 	}
 
-	private String extractMeasurementUnit(Object quantityField) {
-		final String[] measurementUnitField = ((String) quantityField).split(" ");
-		return measurementUnitField[1];
+	private MeasurementUnit extractMeasurementUnit(Object quantityField) {
+		String measurementUnitName = "";
+		try {
+			final String[] measurementUnitField = ((String) quantityField).split(" ");
+			measurementUnitName = measurementUnitField[1];
+			return MeasurementUnit.valueOf(measurementUnitName.toUpperCase());
+		} catch (Exception e) {
+			log.error("Didn't find matching measurementUnit for: {}", measurementUnitName);
+			return MeasurementUnit.NOT_FOUND;
+		}
 	}
 }

@@ -4,5 +4,6 @@ public enum MeasurementUnit {
 	ML,
 	L,
 	G,
-	KG
+	KG,
+	NOT_FOUND
 }

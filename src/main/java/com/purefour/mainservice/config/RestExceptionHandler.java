@@ -1,8 +1,10 @@
 package com.purefour.mainservice.config;
 
-import com.purefour.mainservice.model.exceptions.ErrorMessage;
+import java.util.Objects;
+
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;
+import com.purefour.mainservice.model.exceptions.ErrorMessage;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -30,6 +32,7 @@ public class RestExceptionHandler {
 	}
 
 	private ResponseEntity<ErrorMessage> errorResponse(HttpStatus status, Exception exception) {
-		return ResponseEntity.status(status).body(new ErrorMessage(exception.getCause().getMessage()));
+		final String exceptionMessage = Objects.isNull(exception.getCause()) ? exception.getMessage() : exception.getCause().getMessage();
+		return ResponseEntity.status(status).body(new ErrorMessage(exceptionMessage));
 	}
 }

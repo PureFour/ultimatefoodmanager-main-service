@@ -1,15 +1,10 @@
 package com.purefour.mainservice.service.mapper;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.AllArgsConstructor;
 import org.springframework.core.GenericTypeResolver;
 
@@ -37,34 +32,7 @@ public abstract class Mapper<M> {
 		return mapToObject(map);
 	}
 
-	private ObjectNode mapToTargetUtil(Map<String, Target> map, JsonNode jsonNode) {
-		ObjectNode objectNode = JsonNodeFactory.instance.objectNode();
-		map.forEach((targetKey, fieldTarget) -> {
-			Object variableValue = fieldTarget.getMappedValue(targetKey, jsonNode);
-			ObjectNode leaf = (ObjectNode) this.getLeafWithValue(objectNode, targetKey);
-			JsonNode objectValue = objectMapper.convertValue(variableValue, JsonNode.class);
-			leaf.set(fieldTarget.getName(), objectValue);
-		});
-		return objectNode;
-	}
-
-	public JsonNode getLeafWithValue(ObjectNode json, String key) {
-		JsonNode leaf = json;
-		for (String pathElement : pathAsArray(key)) {
-			final JsonNode child = leaf.get(pathElement);
-			if (child != null && child.isNull()) {
-				leaf = JsonNodeFactory.instance.objectNode();
-			} else {
-				leaf = leaf.with(pathElement);
-			}
-		}
-		return leaf;
-	}
-
-	private List<String> pathAsArray(String path) {
-		if (path != null) {
-			return Arrays.asList(path.split("\\."));
-		}
-		return new ArrayList<>();
+	public <T> T findNodeVariable(JsonNode jsonNode, String variablePath) {
+		return (T) jsonNode.findValue(variablePath);
 	}
 }

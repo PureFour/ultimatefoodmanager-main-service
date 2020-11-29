@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 public enum Category {
 	NOT_FOUND(" "),
 	PLANT_BASED_FOODS("plant-based-foods-and-beverages"),
+	DAIRIES("dairies"),
 	BEVERAGES("beverages");
 
 	@Getter

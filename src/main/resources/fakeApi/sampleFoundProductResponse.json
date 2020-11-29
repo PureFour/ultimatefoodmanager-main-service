@@ -1,996 +1,355 @@
 {
-  "code": "5902180070109",
   "status_verbose": "product found",
   "product": {
-    "traces": "",
-    "traces_from_ingredients": "",
-    "max_imgid": "7",
-    "categories_hierarchy": [
-      "en:plant-based-foods-and-beverages",
-      "en:plant-based-foods",
-      "en:cereals-and-potatoes",
-      "en:cereals-and-their-products",
-      "en:groats"
-    ],
-    "image_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.400.jpg",
-    "ingredients_text_en": "thick country style  barley  groats,",
-    "categories_old": "Żywność i napoje na bazie roślin,Żywność na bazie roślin,Zboża i ziemniaki,Zboża i produkty zbożowe,Kasza",
-    "labels_tags": [],
-    "image_nutrition_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.200.jpg",
-    "last_editor": "karbonado",
-    "image_ingredients_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.200.jpg",
-    "last_image_t": 1588711060,
-    "data_quality_info_tags": [
-      "en:ingredients-percent-analysis-ok"
-    ],
-    "image_packaging_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.400.jpg",
-    "generic_name_en": "",
-    "minerals_prev_tags": [],
-    "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
-    "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:packaging-photo-selected, en:nutrition-photo-selected, en:ingredients-photo-selected, en:front-photo-selected, en:photos-uploaded",
-    "scans_n": 5,
-    "additives_original_tags": [],
-    "nutrition_data": "on",
-    "ingredients_text_with_allergens_en": "thick country style  barley  groats,",
-    "amino_acids_prev_tags": [],
-    "packaging": "PAP",
-    "product_name_pl": "Kasza jęczmienna wiejska",
-    "generic_name_fr": "",
-    "other_nutritional_substances_tags": [],
-    "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value": 0,
-    "amino_acids_tags": [],
-    "photographers_tags": [
-      "kiliweb",
-      "date-limite-app",
-      "pyrka"
-    ],
-    "quantity": "400 g (4 x 100 g)",
-    "image_front_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.400.jpg",
-    "nutrition_grades": "a",
-    "data_quality_tags": [
-      "en:ingredients-percent-analysis-ok",
-      "en:ingredients-unknown-score-above-0",
-      "en:ingredients-100-percent-unknown",
-      "en:ingredients-en-ending-comma",
-      "en:nutrition-value-under-0-01-g-salt",
-      "en:nutrition-value-very-high-for-category-sugars"
-    ],
-    "labels_lc": "pl",
-    "category_properties": {},
-    "nutrition_data_prepared_per": "100g",
-    "product_quantity": "400",
-    "ingredients": [
-      {
-        "rank": 1,
-        "percent_max": 100,
-        "percent_estimate": 100,
-        "percent_min": 100,
-        "text": "Kasza _jęczmienna_ wiejska gruba",
-        "id": "pl:Kasza _jęczmienna_ wiejska gruba"
-      }
-    ],
-    "labels_hierarchy": [],
-    "image_ingredients_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.400.jpg",
-    "_keywords": [
-      "produkty",
-      "żywność",
-      "zboża",
-      "napoje",
-      "jęczmienna",
-      "zbożowe",
-      "sonko",
-      "bazie",
-      "ziemniaki",
-      "kasza",
-      "wiejska",
-      "polska",
-      "roślin",
-      "na"
-    ],
-    "product_name_en": "",
-    "ingredients_analysis_tags": [
-      "en:palm-oil-content-unknown",
-      "en:vegan-status-unknown",
-      "en:vegetarian-status-unknown"
-    ],
-    "packaging_tags": [
-      "pap"
-    ],
-    "unique_scans_n": 1,
-    "additives_old_tags": [],
-    "completed_t": 1604666809,
-    "nutriscore_data": {
-      "fiber_value": 9.1,
-      "fiber_points": 5,
-      "saturated_fat": 0.44,
-      "energy_value": 1451,
-      "negative_points": 6,
-      "sodium_points": 0,
-      "sodium_value": 1,
-      "saturated_fat_points": 0,
-      "sugars_value": 11.2,
-      "sugars_points": 2,
-      "sodium": 1,
-      "fruits_vegetables_nuts_colza_walnut_olive_oils": 0,
-      "is_cheese": 0,
-      "fruits_vegetables_nuts_colza_walnut_olive_oils_value": 0,
-      "sugars": 11.2,
-      "energy": 1451,
-      "saturated_fat_ratio_points": 2,
-      "energy_points": 4,
-      "is_water": 0,
-      "saturated_fat_ratio_value": 21,
-      "fruits_vegetables_nuts_colza_walnut_olive_oils_points": 0,
-      "proteins_points": 5,
-      "proteins": 10.6,
-      "proteins_value": 10.6,
-      "saturated_fat_ratio": 20.952380952381,
-      "is_beverage": 0,
-      "grade": "a",
-      "score": -4,
-      "is_fat": 0,
-      "positive_points": 10,
-      "fiber": 9.1,
-      "saturated_fat_value": 0.4
-    },
-    "image_packaging_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.200.jpg",
-    "categories_lc": "pl",
-    "ingredients_debug": [
-      "Kasza jęczmienna wiejska gruba."
-    ],
-    "code": "5902180070109",
-    "completeness": 0.8,
-    "popularity_tags": [
-      "top-90-percent-scans-2019",
-      "top-95-percent-scans-2019",
-      "top-5000-pl-scans-2019",
-      "top-10000-pl-scans-2019",
-      "top-50000-pl-scans-2019",
-      "top-100000-pl-scans-2019",
-      "top-country-pl-scans-2019"
-    ],
-    "link": "",
-    "categories": "Żywność i napoje na bazie roślin, Żywność na bazie roślin, Zboża i ziemniaki, Zboża i produkty zbożowe, Kasza",
-    "data_sources_tags": [
-      "app-yuka",
-      "apps"
-    ],
-    "categories_properties_tags": [
-      "all-products",
-      "categories-known",
-      "agribalyse-food-code-unknown",
-      "agribalyse-proxy-food-code-unknown",
-      "ciqual-food-code-unknown",
-      "agribalyse-unknown"
-    ],
-    "nova_group_debug": "no nova group if too many ingredients are unknown: 1 out of 1",
-    "image_front_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.200.jpg",
-    "countries_hierarchy": [
-      "en:france",
-      "en:germany",
-      "en:poland"
-    ],
-    "nutriscore_grade": "a",
-    "editors_tags": [
-      "inf",
-      "kiliweb",
-      "vaporous",
-      "karbonado",
-      "anianazakupach",
-      "autorotate-bot",
-      "date-limite-app",
-      "pyrka",
-      "yuka.ZUlveEVLTVRqTjB1bk5vZjRTN09xdXBvKzZLZ1gyU1dkK1JOSUE9PQ",
-      "openfoodfacts-contributors"
-    ],
-    "generic_name_pl": "",
-    "sortkey": 101604666821,
-    "ingredients_text_pl": "Kasza _jęczmienna_ wiejska gruba.",
-    "languages_hierarchy": [
-      "en:french",
-      "en:english",
-      "en:polish"
-    ],
-    "states_hierarchy": [
-      "en:to-be-checked",
-      "en:complete",
-      "en:nutrition-facts-completed",
-      "en:ingredients-completed",
-      "en:expiration-date-to-be-completed",
-      "en:packaging-code-to-be-completed",
-      "en:characteristics-completed",
-      "en:categories-completed",
-      "en:brands-completed",
-      "en:packaging-completed",
-      "en:quantity-completed",
-      "en:product-name-completed",
-      "en:photos-validated",
-      "en:packaging-photo-selected",
-      "en:nutrition-photo-selected",
-      "en:ingredients-photo-selected",
-      "en:front-photo-selected",
-      "en:photos-uploaded"
-    ],
-    "ingredients_n": 1,
-    "obsolete_since_date": "",
-    "ciqual_food_name_tags": [
-      "unknown"
-    ],
-    "traces_tags": [],
-    "packaging_text_fr": "",
-    "allergens_from_ingredients": "jęczmienna",
-    "id": "5902180070109",
-    "product_name_fr": "Risana Pearl Barley Groats",
-    "last_edit_dates_tags": [
-      "2020-11-06",
-      "2020-11",
-      "2020"
-    ],
-    "data_quality_warnings_tags": [
-      "en:ingredients-unknown-score-above-0",
-      "en:ingredients-100-percent-unknown",
-      "en:ingredients-en-ending-comma",
-      "en:nutrition-value-under-0-01-g-salt",
-      "en:nutrition-value-very-high-for-category-sugars"
-    ],
-    "manufacturing_places": "PL 55-040,Kobierzyce,Polska",
-    "rev": 40,
-    "emb_codes_tags": [],
-    "ingredients_text_with_allergens_fr": "",
-    "data_quality_errors_tags": [],
-    "pnns_groups_1": "Cereals and potatoes",
-    "last_modified_by": "karbonado",
-    "emb_codes": "",
-    "traces_lc": "pl",
-    "countries_lc": "pl",
-    "nutrition_data_per": "100g",
-    "checkers_tags": [],
-    "origins": "Polska",
-    "codes_tags": [
-      "code-13",
-      "5902180070xxx",
-      "590218007xxxx",
-      "59021800xxxxx",
-      "5902180xxxxxx",
-      "590218xxxxxxx",
-      "59021xxxxxxxx",
-      "5902xxxxxxxxx",
-      "590xxxxxxxxxx",
-      "59xxxxxxxxxxx",
-      "5xxxxxxxxxxxx"
-    ],
-    "ingredients_ids_debug": [
-      "kasza-jęczmienna-wiejska-gruba"
-    ],
-    "compared_to_category": "en:groats",
-    "vitamins_prev_tags": [],
-    "ingredients_hierarchy": [
-      "pl:Kasza _jęczmienna_ wiejska gruba"
-    ],
-    "known_ingredients_n": 0,
-    "countries_tags": [
-      "en:france",
-      "en:germany",
-      "en:poland"
-    ],
-    "ingredients_from_palm_oil_n": 0,
-    "nutrition_score_beverage": 0,
-    "created_t": 1525439680,
-    "brands_tags": [
-      "sonko"
-    ],
-    "ingredients_tags": [
-      "pl:kasza-jęczmienna-wiejska-gruba"
-    ],
-    "pnns_groups_2_tags": [
-      "cereals",
-      "known"
-    ],
-    "creator": "kiliweb",
-    "image_nutrition_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.100.jpg",
-    "generic_name": "",
-    "ingredients_that_may_be_from_palm_oil_tags": [],
-    "categories_properties": {},
-    "origins_lc": "pl",
-    "cities_tags": [],
-    "manufacturing_places_tags": [
-      "pl-55-040",
-      "kobierzyce",
-      "polska"
-    ],
-    "allergens": "en:gluten,pl:Jęczmienna",
-    "images": {
-      "nutrition_en": {
-        "sizes": {
-          "200": {
-            "w": 200,
-            "h": 199
-          },
-          "400": {
-            "w": 400,
-            "h": 398
-          },
-          "100": {
-            "h": 100,
-            "w": 100
-          },
-          "full": {
-            "h": 1934,
-            "w": 1942
-          }
-        },
-        "imgid": "5",
-        "x2": "0",
-        "y2": "0",
-        "white_magic": "false",
-        "normalize": "false",
-        "y1": "0",
-        "rev": "21",
-        "geometry": "0x0-0-0",
-        "angle": "0",
-        "x1": "0"
-      },
-      "2": {
-        "sizes": {
-          "400": {
-            "w": 300,
-            "h": 400
-          },
-          "100": {
-            "h": 100,
-            "w": 75
-          },
-          "full": {
-            "h": 1333,
-            "w": 1000
-          }
-        },
-        "uploader": "date-limite-app",
-        "uploaded_t": 1541850854
-      },
-      "ingredients_fr": {
-        "orientation": "0",
-        "angle": -270,
-        "x1": "-1",
-        "geometry": "0x0--4--4",
-        "rev": "19",
-        "y1": "-1",
-        "white_magic": null,
-        "normalize": null,
-        "y2": "-1",
-        "x2": "-1",
-        "ocr": 1,
-        "sizes": {
-          "full": {
-            "w": 1200,
-            "h": 1600
-          },
-          "100": {
-            "w": 75,
-            "h": 100
-          },
-          "400": {
-            "h": 400,
-            "w": 300
-          },
-          "200": {
-            "h": 200,
-            "w": 150
-          }
-        },
-        "imgid": "1"
-      },
-      "1": {
-        "uploaded_t": "1525439683",
-        "uploader": "kiliweb",
-        "sizes": {
-          "400": {
-            "h": 300,
-            "w": 400
-          },
-          "full": {
-            "w": 1600,
-            "h": 1200
-          },
-          "100": {
-            "w": 100,
-            "h": 75
-          }
-        }
-      },
-      "4": {
-        "sizes": {
-          "full": {
-            "w": 1642,
-            "h": 364
-          },
-          "100": {
-            "h": 22,
-            "w": 100
-          },
-          "400": {
-            "h": 89,
-            "w": 400
-          }
-        },
-        "uploaded_t": 1556913099,
-        "uploader": "pyrka"
-      },
-      "ingredients_en": {
-        "y1": "274.81250000000006",
-        "imgid": "1",
-        "x2": "201.00000000000003",
-        "sizes": {
-          "200": {
-            "w": 200,
-            "h": 31
-          },
-          "400": {
-            "w": 400,
-            "h": 62
-          },
-          "100": {
-            "h": 16,
-            "w": 100
-          },
-          "full": {
-            "h": 112,
-            "w": 720
-          }
-        },
-        "y2": "302.81250000000006",
-        "white_magic": "false",
-        "normalize": "false",
-        "x1": "21.000000000000004",
-        "geometry": "720x112-84-1099",
-        "angle": "90",
-        "rev": "20"
-      },
-      "front_en": {
-        "geometry": "0x0-0-0",
-        "x1": "0",
-        "angle": "0",
-        "rev": "19",
-        "y1": "0",
-        "sizes": {
-          "400": {
-            "h": 400,
-            "w": 313
-          },
-          "200": {
-            "h": 200,
-            "w": 156
-          },
-          "full": {
-            "w": 3003,
-            "h": 3842
-          },
-          "100": {
-            "h": 100,
-            "w": 78
-          }
-        },
-        "imgid": "3",
-        "x2": "0",
-        "y2": "0",
-        "white_magic": "false",
-        "normalize": "false"
-      },
-      "front_fr": {
-        "x1": "-1",
-        "angle": 0,
-        "geometry": "0x0--3--3",
-        "rev": "7",
-        "y1": "-1",
-        "white_magic": null,
-        "normalize": null,
-        "y2": "-1",
-        "sizes": {
-          "full": {
-            "h": 1333,
-            "w": 1000
-          },
-          "100": {
-            "w": 75,
-            "h": 100
-          },
-          "400": {
-            "h": 400,
-            "w": 300
-          },
-          "200": {
-            "w": 150,
-            "h": 200
-          }
-        },
-        "imgid": "2",
-        "x2": "-1"
-      },
-      "nutrition_pl": {
-        "y1": null,
-        "ocr": 1,
-        "imgid": "5",
-        "sizes": {
-          "200": {
-            "w": 200,
-            "h": 199
-          },
-          "400": {
-            "h": 398,
-            "w": 400
-          },
-          "100": {
-            "w": 100,
-            "h": 100
-          },
-          "full": {
-            "h": 1934,
-            "w": 1942
-          }
-        },
-        "x2": null,
-        "y2": null,
-        "normalize": null,
-        "white_magic": null,
-        "angle": null,
-        "geometry": "0x0-0-0",
-        "x1": null,
-        "orientation": "0",
-        "rev": "17"
-      },
-      "6": {
-        "uploaded_t": 1588711038,
-        "uploader": "pyrka",
-        "sizes": {
-          "full": {
-            "h": 880,
-            "w": 3887
-          },
-          "100": {
-            "h": 23,
-            "w": 100
-          },
-          "400": {
-            "w": 400,
-            "h": 91
-          }
-        }
-      },
-      "7": {
-        "uploaded_t": 1588711060,
-        "uploader": "pyrka",
-        "sizes": {
-          "400": {
-            "w": 380,
-            "h": 400
-          },
-          "full": {
-            "h": 1636,
-            "w": 1554
-          },
-          "100": {
-            "w": 95,
-            "h": 100
-          }
-        }
-      },
-      "ingredients_pl": {
-        "x2": "204.75",
-        "imgid": "1",
-        "sizes": {
-          "full": {
-            "h": 68,
-            "w": 740
-          },
-          "100": {
-            "h": 9,
-            "w": 100
-          },
-          "400": {
-            "w": 400,
-            "h": 37
-          },
-          "200": {
-            "w": 200,
-            "h": 18
-          }
-        },
-        "white_magic": "false",
-        "normalize": "true",
-        "y2": "97.43333435058594",
-        "y1": "80.43333435058594",
-        "rev": "32",
-        "angle": "90",
-        "geometry": "740x68-79-321",
-        "x1": "19.75"
-      },
-      "front_pl": {
-        "y1": "0",
-        "y2": "0",
-        "white_magic": "false",
-        "normalize": "false",
-        "imgid": "3",
-        "x2": "0",
-        "sizes": {
-          "100": {
-            "w": 78,
-            "h": 100
-          },
-          "full": {
-            "w": 3003,
-            "h": 3842
-          },
-          "200": {
-            "w": 156,
-            "h": 200
-          },
-          "400": {
-            "h": 400,
-            "w": 313
-          }
-        },
-        "geometry": "0x0-0-0",
-        "angle": "0",
-        "x1": "0",
-        "rev": "37"
-      },
-      "3": {
-        "uploader": "pyrka",
-        "uploaded_t": 1556913073,
-        "sizes": {
-          "400": {
-            "w": 313,
-            "h": 400
-          },
-          "full": {
-            "w": 3003,
-            "h": 3842
-          },
-          "100": {
-            "w": 78,
-            "h": 100
-          }
-        }
-      },
-      "packaging_pl": {
-        "y2": "798.483893034826",
-        "white_magic": "false",
-        "normalize": "false",
-        "x2": "950.7800217661693",
-        "imgid": "6",
-        "sizes": {
-          "400": {
-            "h": 141,
-            "w": 400
-          },
-          "200": {
-            "h": 70,
-            "w": 200
-          },
-          "full": {
-            "w": 878,
-            "h": 309
-          },
-          "100": {
-            "w": 100,
-            "h": 35
-          }
-        },
-        "y1": "489.0709577114429",
-        "rev": "39",
-        "geometry": "878x309-72-489",
-        "angle": "0",
-        "x1": "72.82081778606965"
-      },
-      "5": {
-        "sizes": {
-          "400": {
-            "w": 400,
-            "h": 398
-          },
-          "100": {
-            "h": 100,
-            "w": 100
-          },
-          "full": {
-            "w": 1942,
-            "h": 1934
-          }
-        },
-        "uploaded_t": 1556913147,
-        "uploader": "pyrka"
-      }
-    },
-    "nova_group_tags": [
-      "not-applicable"
-    ],
-    "ingredients_text_fr": "",
     "informers_tags": [
-      "yuka.ZUlveEVLTVRqTjB1bk5vZjRTN09xdXBvKzZLZ1gyU1dkK1JOSUE9PQ",
-      "kiliweb",
-      "date-limite-app",
       "pyrka",
-      "autorotate-bot",
-      "karbonado"
+      "roboto-app"
     ],
-    "interface_version_created": "20150316.jqm2",
+    "interface_version_created": "20120622",
     "no_nutrition_data": "",
-    "packaging_text_pl": "PAP",
-    "countries": "Francja,Niemcy,Polska",
-    "packaging_text_en": "",
-    "unknown_ingredients_n": "1",
-    "allergens_tags": [
-      "en:gluten",
-      "pl:jęczmienna",
-      "pl:jęczmienna"
-    ],
+    "allergens_tags": [],
+    "unknown_ingredients_n": "3",
+    "countries": "Polska",
+    "expiration_date": "",
     "nutrition_grades_tags": [
-      "a"
+      "b"
     ],
     "additives_debug_tags": [],
     "traces_from_user": "(pl) ",
-    "expiration_date": "",
+    "ingredients_text_debug": "Mleko bez laktozy UHT. Zawartość tłuszczu 3,2%. Źródło wapnia.",
     "allergens_lc": "pl",
-    "ingredients_text_debug": "Kasza jęczmienna wiejska gruba.",
-    "nucleotides_prev_tags": [],
-    "nutriments": {
-      "fiber_unit": "g",
-      "energy_value": 1451,
-      "energy-kcal_serving": 172,
-      "fiber_value": 9.1,
-      "fiber_serving": 4.55,
-      "sugars_unit": "g",
-      "saturated-fat_unit": "g",
-      "energy_unit": "kJ",
-      "saturated-fat_serving": 0.22,
-      "sugars_serving": 5.6,
-      "nutrition-score-fr_100g": -4,
-      "sugars_100g": 11.2,
-      "salt_serving": 0.00125,
-      "sodium_value": 0.001,
-      "fat_value": 2.1,
-      "sugars_value": 11.2,
-      "carbohydrates_unit": "g",
-      "proteins_serving": 5.3,
-      "fat": 2.1,
-      "nutrition-score-fr": -4,
-      "energy-kcal_unit": "kcal",
-      "energy_serving": 726,
-      "energy-kcal": 343,
-      "saturated-fat_value": 0.44,
-      "energy-kcal_value": 343,
-      "energy-kj_unit": "kJ",
-      "fat_unit": "g",
-      "sodium_100g": 0.001,
-      "fruits-vegetables-nuts-estimate-from-ingredients_100g": 0,
-      "sodium_serving": 0.0005,
-      "energy-kj_100g": 1451,
-      "salt": 0.0025,
-      "sodium": 0.001,
-      "carbohydrates": 66,
-      "salt_100g": 0.0025,
-      "proteins_unit": "g",
-      "carbohydrates_100g": 66,
-      "saturated-fat_100g": 0.44,
-      "energy-kj_value": 1451,
-      "proteins_100g": 10.6,
-      "energy": 1451,
-      "sugars": 11.2,
-      "fat_100g": 2.1,
-      "energy-kj": 1451,
-      "energy-kcal_100g": 343,
-      "saturated-fat": 0.44,
-      "proteins_value": 10.6,
-      "salt_value": 0.0025,
-      "proteins": 10.6,
-      "carbohydrates_value": 66,
-      "carbohydrates_serving": 33,
-      "energy_100g": 1451,
-      "energy-kj_serving": 726,
-      "fat_serving": 1.05,
-      "salt_unit": "g",
-      "fiber_100g": 9.1,
-      "fiber": 9.1,
-      "sodium_unit": "g"
-    },
-    "stores_tags": [
-      "auchan"
+    "ingredients_from_palm_oil_n": 0,
+    "known_ingredients_n": 0,
+    "ingredients_hierarchy": [
+      "pl:Mleko bez laktozy UHT",
+      "pl:Zawartość tłuszczu",
+      "pl:Źródło wapnia"
     ],
-    "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients": 1,
-    "languages": {
-      "en:polish": 6,
-      "en:french": 3,
-      "en:english": 4
-    },
-    "product_name": "Kasza jęczmienna wiejska",
-    "image_packaging_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.100.jpg",
-    "last_modified_t": 1604666821,
-    "nutrient_levels_tags": [
-      "en:fat-in-low-quantity",
-      "en:saturated-fat-in-low-quantity",
-      "en:sugars-in-moderate-quantity",
-      "en:salt-in-low-quantity"
+    "countries_tags": [
+      "en:poland"
     ],
-    "pnns_groups_1_tags": [
-      "cereals-and-potatoes",
+    "nutrition_score_beverage": 0,
+    "created_t": 1554128000,
+    "brands_tags": [
+      "mlekovita"
+    ],
+    "pnns_groups_2_tags": [
+      "milk-and-yogurt",
       "known"
     ],
-    "traces_hierarchy": [],
+    "ingredients_tags": [
+      "pl:mleko-bez-laktozy-uht",
+      "pl:zawartość-tłuszczu",
+      "pl:źródło-wapnia"
+    ],
+    "creator": "pyrka",
+    "origins_lc": "pl",
+    "categories_properties": {},
+    "image_nutrition_thumb_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/nutrition_pl.16.100.jpg",
+    "generic_name": "",
+    "ingredients_that_may_be_from_palm_oil_tags": [],
+    "nova_group_tags": [
+      "not-applicable"
+    ],
+    "cities_tags": [],
+    "images": {
+      "1": {
+        "uploaded_t": 1554128000,
+        "uploader": "pyrka",
+        "sizes": {
+          "400": {
+            "h": 199,
+            "w": 400
+          },
+          "full": {
+            "w": 3791,
+            "h": 1884
+          },
+          "100": {
+            "h": 50,
+            "w": 100
+          }
+        }
+      },
+      "3": {
+        "uploaded_t": 1554128161,
+        "uploader": "pyrka",
+        "sizes": {
+          "100": {
+            "w": 93,
+            "h": 100
+          },
+          "full": {
+            "w": 1688,
+            "h": 1810
+          },
+          "400": {
+            "w": 373,
+            "h": 400
+          }
+        }
+      },
+      "front_pl": {
+        "sizes": {
+          "full": {
+            "h": 3791,
+            "w": 1884
+          },
+          "100": {
+            "h": 100,
+            "w": 50
+          },
+          "400": {
+            "w": 199,
+            "h": 400
+          },
+          "200": {
+            "h": 200,
+            "w": 99
+          }
+        },
+        "imgid": "1",
+        "x2": "0",
+        "white_magic": "false",
+        "normalize": "false",
+        "y2": "0",
+        "y1": "0",
+        "rev": "14",
+        "angle": "270",
+        "geometry": "0x0-0-0",
+        "x1": "0"
+      },
+      "ingredients_pl": {
+        "rev": "7",
+        "x1": null,
+        "angle": null,
+        "geometry": "0x0-0-0",
+        "imgid": "2",
+        "x2": null,
+        "sizes": {
+          "full": {
+            "w": 1565,
+            "h": 701
+          },
+          "100": {
+            "w": 100,
+            "h": 45
+          },
+          "400": {
+            "h": 179,
+            "w": 400
+          },
+          "200": {
+            "w": 200,
+            "h": 90
+          }
+        },
+        "normalize": null,
+        "y2": null,
+        "white_magic": null,
+        "y1": null
+      },
+      "2": {
+        "uploaded_t": 1554128095,
+        "uploader": "pyrka",
+        "sizes": {
+          "100": {
+            "h": 45,
+            "w": 100
+          },
+          "full": {
+            "w": 1565,
+            "h": 701
+          },
+          "400": {
+            "h": 179,
+            "w": 400
+          }
+        }
+      },
+      "nutrition_pl": {
+        "y1": "0",
+        "imgid": "3",
+        "x2": "0",
+        "sizes": {
+          "400": {
+            "h": 373,
+            "w": 400
+          },
+          "200": {
+            "w": 200,
+            "h": 187
+          },
+          "full": {
+            "h": 1688,
+            "w": 1810
+          },
+          "100": {
+            "w": 100,
+            "h": 93
+          }
+        },
+        "y2": "0",
+        "normalize": "false",
+        "white_magic": "false",
+        "angle": "270",
+        "x1": "0",
+        "geometry": "0x0-0-0",
+        "rev": "16"
+      }
+    },
+    "allergens": "",
+    "manufacturing_places_tags": [],
+    "nucleotides_tags": [],
+    "image_thumb_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.100.jpg",
     "origins_hierarchy": [
       "en:poland"
     ],
-    "nucleotides_tags": [],
-    "image_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.100.jpg",
     "languages_codes": {
-      "pl": 6,
-      "en": 4,
-      "fr": 3
+      "pl": 5
     },
     "minerals_tags": [],
-    "nutrition_grade_fr": "a",
-    "data_sources": "App - yuka, Apps",
-    "debug_param_sorted_langs": [
-      "pl",
-      "en",
-      "fr"
-    ],
+    "nutrition_grade_fr": "b",
     "ingredients_from_palm_oil_tags": [],
-    "ingredients_original_tags": [
-      "pl:Kasza _jęczmienna_ wiejska gruba"
+    "debug_param_sorted_langs": [
+      "pl"
     ],
+    "ingredients_original_tags": [
+      "pl:Mleko bez laktozy UHT",
+      "pl:Zawartość tłuszczu",
+      "pl:Źródło wapnia"
+    ],
+    "nutrition_score_warning_no_fiber": 1,
     "lang": "pl",
-    "ingredients_text_with_allergens": "Kasza <span class=\"allergen\">jęczmienna</span> wiejska gruba.",
-    "obsolete": "",
     "origins_tags": [
       "en:poland"
     ],
-    "languages_tags": [
-      "en:french",
-      "en:english",
-      "en:polish",
-      "en:3",
-      "en:multilingual"
+    "ingredients_text_with_allergens": "Mleko bez laktozy UHT. Zawartość tłuszczu 3,2%. Źródło wapnia.",
+    "nutriments": {
+      "saturated-fat": 2,
+      "energy-kcal_100g": 60,
+      "fat_100g": 3.2,
+      "nutrition-score-fr_serving": 1,
+      "calcium": 0.105,
+      "sugars": 4.7,
+      "energy": 251,
+      "proteins_100g": 3,
+      "carbohydrates_100g": 4.7,
+      "saturated-fat_100g": 2,
+      "proteins_unit": "g",
+      "lactose_unit": "g",
+      "salt_100g": 0.1,
+      "carbohydrates": 4.7,
+      "sodium_unit": "g",
+      "calcium_100g": 0.105,
+      "lactose_modifier": "<",
+      "salt_unit": "g",
+      "lactose": 0.01,
+      "calcium_unit": "mg",
+      "fat_serving": 8,
+      "lactose_100g": 0.01,
+      "energy_100g": 251,
+      "carbohydrates_serving": 11.8,
+      "carbohydrates_value": 4.7,
+      "proteins": 3,
+      "proteins_value": 3,
+      "salt_value": 0.1,
+      "fat": 3.2,
+      "carbohydrates_unit": "g",
+      "proteins_serving": 7.5,
+      "sugars_value": 4.7,
+      "fat_value": 3.2,
+      "sodium_value": 0.04,
+      "sugars_100g": 4.7,
+      "salt_serving": 0.25,
+      "sugars_serving": 11.8,
+      "nutrition-score-fr_100g": 1,
+      "saturated-fat_serving": 5,
+      "lactose_serving": 0.025,
+      "saturated-fat_unit": "g",
+      "energy_unit": "kcal",
+      "sugars_unit": "g",
+      "energy-kcal_serving": 150,
+      "energy_value": 60,
+      "lactose_value": 0.01,
+      "salt": 0.1,
+      "sodium": 0.04,
+      "calcium_serving": 0.263,
+      "sodium_serving": 0.1,
+      "fruits-vegetables-nuts-estimate-from-ingredients_100g": 0,
+      "sodium_100g": 0.04,
+      "fat_unit": "g",
+      "energy-kcal_value": 60,
+      "saturated-fat_value": 2,
+      "energy-kcal": 60,
+      "energy-kcal_unit": "kcal",
+      "energy_serving": 628,
+      "calcium_value": 105,
+      "nutrition-score-fr": 1
+    },
+    "nucleotides_prev_tags": [],
+    "stores_tags": [
+      "auchan"
     ],
-    "additives_old_n": 0,
-    "serving_size": "50 g",
-    "categories_tags": [
-      "en:plant-based-foods-and-beverages",
-      "en:plant-based-foods",
-      "en:cereals-and-potatoes",
-      "en:cereals-and-their-products",
-      "en:groats"
+    "languages": {
+      "en:polish": 5
+    },
+    "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients": 1,
+    "product_name": "Mleko wydojone 3,2% bez laktozy",
+    "last_modified_t": 1557682486,
+    "pnns_groups_1_tags": [
+      "milk-and-dairy-products",
+      "known"
     ],
-    "last_image_dates_tags": [
-      "2020-05-05",
-      "2020-05",
-      "2020"
+    "nutrient_levels_tags": [
+      "en:fat-in-moderate-quantity",
+      "en:saturated-fat-in-moderate-quantity",
+      "en:sugars-in-low-quantity",
+      "en:salt-in-low-quantity"
     ],
-    "purchase_places": "Polska",
-    "_id": "5902180070109",
-    "unknown_nutrients_tags": [],
-    "nutriscore_score": -4,
-    "update_key": "agribalyse1109",
-    "misc_tags": [
-      "en:nutrition-fruits-vegetables-nuts-estimate-from-ingredients",
-      "en:nutrition-all-nutriscore-values-known",
-      "en:nutriscore-computed"
-    ],
-    "brands": "Sonko",
-    "allergens_from_user": "(pl) Gluten,Jęczmienna",
-    "image_ingredients_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.100.jpg",
-    "serving_quantity": "50",
-    "packaging_text": "PAP",
-    "allergens_hierarchy": [
-      "en:gluten",
-      "pl:Jęczmienna",
-      "pl:jęczmienna"
-    ],
-    "image_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.200.jpg",
+    "traces_hierarchy": [],
+    "brands": "Mlekovita",
+    "serving_quantity": 250,
+    "allergens_from_user": "(pl) ",
+    "image_ingredients_thumb_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/ingredients_pl.7.100.jpg",
+    "allergens_hierarchy": [],
+    "image_small_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.200.jpg",
     "vitamins_tags": [],
     "additives_prev_original_tags": [],
-    "interface_version_modified": "20190830",
-    "purchase_places_tags": [
-      "polska"
+    "interface_version_modified": "20120622",
+    "languages_tags": [
+      "en:polish",
+      "en:1"
     ],
-    "correctors_tags": [
-      "openfoodfacts-contributors",
-      "date-limite-app",
-      "pyrka",
-      "autorotate-bot",
-      "anianazakupach",
-      "inf",
-      "vaporous",
-      "karbonado"
+    "categories_tags": [
+      "en:dairies",
+      "en:milks"
     ],
-    "ingredients_text_with_allergens_pl": "Kasza <span class=\"allergen\">jęczmienna</span> wiejska gruba.",
-    "complete": 1,
-    "ingredients_that_may_be_from_palm_oil_n": 0,
-    "additives_n": 0,
-    "image_front_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.100.jpg",
-    "image_nutrition_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.400.jpg",
-    "entry_dates_tags": [
-      "2018-05-04",
-      "2018-05",
-      "2018"
+    "additives_old_n": 0,
+    "serving_size": "250g",
+    "last_image_dates_tags": [
+      "2019-04-01",
+      "2019-04",
+      "2019"
     ],
-    "additives_tags": [],
-    "nutrition_data_prepared": "",
-    "selected_images": {
-      "ingredients": {
-        "thumb": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_pl.32.100.jpg",
-          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_fr.19.100.jpg",
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.100.jpg"
-        },
-        "small": {
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.200.jpg",
-          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_fr.19.200.jpg",
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_pl.32.200.jpg"
-        },
-        "display": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_pl.32.400.jpg",
-          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_fr.19.400.jpg",
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.400.jpg"
-        }
-      },
-      "packaging": {
-        "display": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.400.jpg"
-        },
-        "small": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.200.jpg"
-        },
-        "thumb": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.100.jpg"
-        }
-      },
-      "nutrition": {
-        "display": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_pl.17.400.jpg",
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.400.jpg"
-        },
-        "small": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_pl.17.200.jpg",
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.200.jpg"
-        },
-        "thumb": {
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.100.jpg",
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_pl.17.100.jpg"
-        }
-      },
-      "front": {
-        "thumb": {
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.100.jpg",
-          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_fr.7.100.jpg",
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_pl.37.100.jpg"
-        },
-        "small": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_pl.37.200.jpg",
-          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_fr.7.200.jpg",
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.200.jpg"
-        },
-        "display": {
-          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_pl.37.400.jpg",
-          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_fr.7.400.jpg",
-          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.400.jpg"
-        }
-      }
-    },
-    "ingredients_text": "Kasza _jęczmienna_ wiejska gruba.",
-    "data_quality_bugs_tags": [],
-    "nutrient_levels": {
-      "salt": "low",
-      "saturated-fat": "low",
-      "fat": "low",
-      "sugars": "moderate"
-    },
-    "pnns_groups_2": "Cereals",
-    "popularity_key": 100000000007,
-    "labels": "",
+    "purchase_places": "Polska",
+    "_id": "5900512981178",
+    "unknown_nutrients_tags": [],
+    "nutriscore_score": 1,
+    "misc_tags": [
+      "en:nutrition-no-fiber",
+      "en:nutrition-fruits-vegetables-nuts-estimate-from-ingredients",
+      "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
+      "en:nutriscore-computed"
+    ],
+    "update_key": "origins",
+    "pnns_groups_2": "Milk and yogurt",
     "origins_old": "Polska",
+    "labels": "Bez laktozy",
     "stores": "Auchan",
+    "popularity_key": -99999999999,
     "ingredients_n_tags": [
-      "1",
+      "3",
       "1-10"
     ],
     "states_tags": [
@@ -1007,13 +366,323 @@
       "en:quantity-completed",
       "en:product-name-completed",
       "en:photos-validated",
-      "en:packaging-photo-selected",
-      "en:nutrition-photo-selected",
-      "en:ingredients-photo-selected",
-      "en:front-photo-selected",
       "en:photos-uploaded"
     ],
-    "lc": "pl"
+    "lc": "pl",
+    "correctors_tags": [
+      "openfoodfacts-contributors",
+      "pyrka"
+    ],
+    "purchase_places_tags": [
+      "polska"
+    ],
+    "complete": 1,
+    "ingredients_text_with_allergens_pl": "Mleko bez laktozy UHT. Zawartość tłuszczu 3,2%. Źródło wapnia.",
+    "ingredients_that_may_be_from_palm_oil_n": 0,
+    "image_nutrition_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/nutrition_pl.16.400.jpg",
+    "additives_tags": [],
+    "image_front_thumb_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.100.jpg",
+    "entry_dates_tags": [
+      "2019-04-01",
+      "2019-04",
+      "2019"
+    ],
+    "additives_n": 0,
+    "nutrition_data_prepared": "",
+    "ingredients_text": "Mleko bez laktozy UHT. Zawartość tłuszczu 3,2%. Źródło wapnia.",
+    "data_quality_bugs_tags": [],
+    "nutrient_levels": {
+      "saturated-fat": "moderate",
+      "fat": "moderate",
+      "salt": "low",
+      "sugars": "low"
+    },
+    "selected_images": {
+      "nutrition": {
+        "thumb": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/nutrition_pl.16.100.jpg"
+        },
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/nutrition_pl.16.200.jpg"
+        },
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/nutrition_pl.16.400.jpg"
+        }
+      },
+      "ingredients": {
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/ingredients_pl.7.400.jpg"
+        },
+        "thumb": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/ingredients_pl.7.100.jpg"
+        },
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/ingredients_pl.7.200.jpg"
+        }
+      },
+      "front": {
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.200.jpg"
+        },
+        "thumb": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.100.jpg"
+        },
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.400.jpg"
+        }
+      }
+    },
+    "image_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.400.jpg",
+    "labels_tags": [
+      "en:no-lactose"
+    ],
+    "last_image_t": 1554128161,
+    "image_ingredients_small_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/ingredients_pl.7.200.jpg",
+    "image_nutrition_small_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/nutrition_pl.16.200.jpg",
+    "last_editor": "pyrka",
+    "emb_codes_orig": "",
+    "data_quality_info_tags": [
+      "en:ingredients-percent-analysis-ok"
+    ],
+    "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
+    "scans_n": 2,
+    "minerals_prev_tags": [],
+    "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
+    "additives_original_tags": [],
+    "traces": "",
+    "max_imgid": "3",
+    "traces_from_ingredients": "",
+    "categories_hierarchy": [
+      "en:dairies",
+      "en:milks"
+    ],
+    "nutrition_grades": "b",
+    "data_quality_tags": [
+      "en:ingredients-percent-analysis-ok",
+      "en:ingredients-unknown-score-above-0",
+      "en:ingredients-100-percent-unknown"
+    ],
+    "labels_lc": "pl",
+    "category_properties": {},
+    "nutrition_data_prepared_per": "100g",
+    "ingredients": [
+      {
+        "rank": 1,
+        "percent_max": 96.8,
+        "percent_min": 93.6,
+        "text": "Mleko bez laktozy UHT",
+        "id": "pl:Mleko bez laktozy UHT"
+      },
+      {
+        "text": "Zawartość tłuszczu",
+        "id": "pl:Zawartość tłuszczu",
+        "rank": 2,
+        "percent_min": "3.2",
+        "percent": "3.2",
+        "percent_max": "3.2"
+      },
+      {
+        "id": "pl:Źródło wapnia",
+        "text": "Źródło wapnia",
+        "percent_max": "3.2",
+        "percent_min": 0,
+        "rank": 3
+      }
+    ],
+    "product_quantity": 1000,
+    "labels_hierarchy": [
+      "en:no-lactose"
+    ],
+    "nutrition_data": "on",
+    "amino_acids_prev_tags": [],
+    "packaging": "Tetra Pak",
+    "product_name_pl": "Mleko wydojone 3,2% bez laktozy",
+    "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value": 0,
+    "other_nutritional_substances_tags": [],
+    "amino_acids_tags": [],
+    "photographers_tags": [
+      "pyrka"
+    ],
+    "quantity": "1 l",
+    "image_front_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.400.jpg",
+    "code": "5900512981178",
+    "ingredients_debug": [
+      "Mleko bez laktozy UHT",
+      ". ",
+      null,
+      null,
+      null,
+      "Zawartość tłuszczu 3",
+      ",",
+      null,
+      null,
+      null,
+      "2%",
+      ". ",
+      null,
+      null,
+      null,
+      "Źródło wapnia."
+    ],
+    "popularity_tags": [
+      "top-90-percent-scans-2019",
+      "top-95-percent-scans-2019",
+      "top-5000-pl-scans-2019",
+      "top-10000-pl-scans-2019",
+      "top-50000-pl-scans-2019",
+      "top-100000-pl-scans-2019",
+      "top-country-pl-scans-2019"
+    ],
+    "link": "",
+    "completeness": 0.8,
+    "categories": "Nabiał, Mleko",
+    "categories_properties_tags": [
+      "all-products",
+      "categories-known",
+      "agribalyse-food-code-unknown",
+      "agribalyse-proxy-food-code-unknown",
+      "ciqual-food-code-unknown",
+      "agribalyse-unknown"
+    ],
+    "image_front_small_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/front_pl.14.200.jpg",
+    "nova_group_debug": "no nova group if too many ingredients are unknown: 3 out of 3",
+    "editors_tags": [
+      "openfoodfacts-contributors",
+      "roboto-app",
+      "pyrka"
+    ],
+    "nutriscore_grade": "b",
+    "countries_hierarchy": [
+      "en:poland"
+    ],
+    "sortkey": -98442317514,
+    "generic_name_pl": "",
+    "image_ingredients_url": "https://static.openfoodfacts.org/images/products/590/051/298/1178/ingredients_pl.7.400.jpg",
+    "ingredients_analysis_tags": [
+      "en:palm-oil-content-unknown",
+      "en:vegan-status-unknown",
+      "en:vegetarian-status-unknown"
+    ],
+    "_keywords": [
+      "polska",
+      "wydojone",
+      "laktozy",
+      "mlekovita",
+      "mleko",
+      "bez"
+    ],
+    "packaging_tags": [
+      "tetra-pak"
+    ],
+    "unique_scans_n": 1,
+    "additives_old_tags": [],
+    "completed_t": 1557682486,
+    "nutriscore_data": {
+      "saturated_fat": 2,
+      "energy_value": 251,
+      "fiber_value": 0,
+      "fiber_points": 0,
+      "sodium_points": 0,
+      "negative_points": 2,
+      "sodium_value": 40,
+      "saturated_fat_points": 1,
+      "sugars_value": 4.7,
+      "sugars_points": 1,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils": 0,
+      "sodium": 40,
+      "is_cheese": 0,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils_value": 0,
+      "energy": 251,
+      "sugars": 4.7,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils_points": 0,
+      "saturated_fat_ratio_points": 9,
+      "energy_points": 0,
+      "is_water": 0,
+      "saturated_fat_ratio_value": 62.5,
+      "proteins": 3,
+      "proteins_value": 3,
+      "proteins_points": 1,
+      "is_beverage": 0,
+      "saturated_fat_ratio": 62.5,
+      "score": 1,
+      "grade": "b",
+      "saturated_fat_value": 2,
+      "positive_points": 1,
+      "fiber": 0,
+      "is_fat": 0
+    },
+    "categories_lc": "pl",
+    "emb_codes": "",
+    "pnns_groups_1": "Milk and dairy products",
+    "data_quality_errors_tags": [],
+    "last_modified_by": "pyrka",
+    "ingredients_percent_analysis": 1,
+    "countries_lc": "pl",
+    "traces_lc": "pl",
+    "nutrition_data_per": "100g",
+    "origins": "Polska",
+    "checkers_tags": [],
+    "codes_tags": [
+      "code-13",
+      "5900512981xxx",
+      "590051298xxxx",
+      "59005129xxxxx",
+      "5900512xxxxxx",
+      "590051xxxxxxx",
+      "59005xxxxxxxx",
+      "5900xxxxxxxxx",
+      "590xxxxxxxxxx",
+      "59xxxxxxxxxxx",
+      "5xxxxxxxxxxxx"
+    ],
+    "compared_to_category": "en:milks",
+    "ingredients_ids_debug": [
+      "mleko-bez-laktozy-uht",
+      "zawartość-tłuszczu-3",
+      "2",
+      "źrodło-wapnia"
+    ],
+    "vitamins_prev_tags": [],
+    "states_hierarchy": [
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
+    ],
+    "ingredients_text_pl": "Mleko bez laktozy UHT. Zawartość tłuszczu 3,2%. Źródło wapnia.",
+    "languages_hierarchy": [
+      "en:polish"
+    ],
+    "ingredients_n": 3,
+    "ciqual_food_name_tags": [
+      "unknown"
+    ],
+    "allergens_from_ingredients": "",
+    "traces_tags": [],
+    "data_quality_warnings_tags": [
+      "en:ingredients-unknown-score-above-0",
+      "en:ingredients-100-percent-unknown"
+    ],
+    "manufacturing_places": "",
+    "last_edit_dates_tags": [
+      "2019-05-12",
+      "2019-05",
+      "2019"
+    ],
+    "id": "5900512981178",
+    "emb_codes_tags": [],
+    "rev": 18
   },
-  "status": 1
+  "status": 1,
+  "code": "5900512981178"
 }

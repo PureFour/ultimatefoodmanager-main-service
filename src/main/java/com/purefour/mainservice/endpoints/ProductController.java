@@ -1,6 +1,7 @@
 package com.purefour.mainservice.endpoints;
 
 import com.purefour.mainservice.model.exceptions.BadRequestException;
+import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.service.ProductService;
@@ -12,6 +13,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,17 +25,26 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class ProductController {
 
-	private final ProductService productService;
+    private final ProductService productService;
 
-	@ApiOperation(value = "Search product by its barcode")
-	@ApiResponses(value = {
-		@ApiResponse(code = 200, message = "Operation successful!"),
-		@ApiResponse(code = 400, message = "Bad request!"),
-		@ApiResponse(code = 404, message = "Product not found!", response = NotFoundException.class),
-	})
-	@GetMapping("search")
-	public ResponseEntity<Product> searchProduct(@RequestParam String barcode) throws NotFoundException, BadRequestException {
-		return ResponseEntity.ok(productService.searchProduct(barcode));
-	}
+    @ApiOperation(value = "Search product by its barcode")
+    @ApiResponses(value = {
+        @ApiResponse(code = 200, message = "Operation successful!"),
+        @ApiResponse(code = 404, message = "Product not found!", response = NotFoundException.class)
+    })
+    @GetMapping("search")
+    public ResponseEntity<Product> searchProduct(@RequestParam String barcode) throws NotFoundException {
+        return ResponseEntity.ok(productService.searchProduct(barcode));
+    }
 
+    @ApiOperation(value = "Add product")
+    @ApiResponses(value = {
+        @ApiResponse(code = 201, message = "Operation successful!"),
+        @ApiResponse(code = 400, message = "Bad request!"),
+        @ApiResponse(code = 409, message = "Product already exist!", response = ConflictException.class),
+    })
+    @PostMapping
+    public ResponseEntity<Product> addProduct(@RequestBody Product product) throws NotFoundException, BadRequestException {
+        return ResponseEntity.ok(productService.addProduct(product));
+    }
 }

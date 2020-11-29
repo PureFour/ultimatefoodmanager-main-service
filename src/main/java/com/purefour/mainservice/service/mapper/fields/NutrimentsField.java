@@ -11,15 +11,15 @@ import lombok.AllArgsConstructor;
 
 public class NutrimentsField extends ObjectTarget<Nutriments> {
 
-	private static final String ENERGY_TARGET_PATH = "energy-kcal";
-	private static final String FAT_TARGET_PATH = "fat";
-	private static final String SATURATED_FAT_TARGET_PATH = "saturated-fat";
-	private static final String INSATIABLE_FAT_TARGET_PATH = "insatiable-fat";
-	private static final String CARBOHYDRATES_TARGET_PATH = "carbohydrates";
-	private static final String SUGARS_TARGET_PATH = "sugars";
-	private static final String FIBER_TARGET_PATH = "fiber";
-	private static final String SALT_TARGET_PATH = "salt";
-	private static final String SODIUM_TARGET_PATH = "sodium";
+	private static final String ENERGY_TARGET_PATH = "energy-kcal_value";
+	private static final String FAT_TARGET_PATH = "fat_value";
+	private static final String SATURATED_FAT_TARGET_PATH = "saturated-fat_value";
+	private static final String INSATIABLE_FAT_TARGET_PATH = "insatiable-fat_value";
+	private static final String CARBOHYDRATES_TARGET_PATH = "carbohydrates_value";
+	private static final String SUGARS_TARGET_PATH = "sugars_value";
+	private static final String FIBER_TARGET_PATH = "fiber_value";
+	private static final String SALT_TARGET_PATH = "salt_value";
+	private static final String SODIUM_TARGET_PATH = "sodium_value";
 
 	private static final Map<String, Target> MAPPING = new HashMap<>();
 
