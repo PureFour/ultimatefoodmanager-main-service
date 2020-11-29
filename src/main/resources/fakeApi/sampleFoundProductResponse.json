@@ -1,559 +1,160 @@
 {
-  "code": "5449000034519",
+  "code": "5902180070109",
+  "status_verbose": "product found",
   "product": {
-    "traces_from_user": "(pl) ",
-    "nutrition_grades_tags": [
-      "e"
+    "traces": "",
+    "traces_from_ingredients": "",
+    "max_imgid": "7",
+    "categories_hierarchy": [
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:cereals-and-potatoes",
+      "en:cereals-and-their-products",
+      "en:groats"
     ],
-    "expiration_date": "",
-    "countries": "Polska",
-    "allergens_tags": [],
-    "unknown_ingredients_n": 2,
-    "no_nutrition_data": "",
-    "interface_version_created": "20120622",
-    "informers_tags": [
-      "pyrka"
-    ],
-    "allergens_lc": "pl",
-    "creator": "pyrka",
-    "ingredients_tags": [
-      "en:water",
-      "en:sugar",
-      "pl:dwutlenek-wegla",
-      "en:colour",
-      "en:acid",
-      "en:e150d",
-      "pl:kwas-fosforowy-naturalne-aromaty-w-tym-kofeina"
-    ],
-    "pnns_groups_2_tags": [
-      "sweetened-beverages",
-      "known"
-    ],
-    "created_t": 1563020539,
-    "nutrition_score_beverage": 1,
-    "brands_tags": [
-      "coca-cola"
-    ],
-    "ingredients_hierarchy": [
-      "en:water",
-      "en:sugar",
-      "pl:dwutlenek wegla",
-      "en:colour",
-      "en:acid",
-      "en:e150d",
-      "pl:kwas fosforowy.naturalne aromaty w tym kofeina"
-    ],
-    "countries_tags": [
-      "en:poland"
-    ],
-    "known_ingredients_n": 5,
-    "ingredients_from_palm_oil_n": 0,
-    "manufacturing_places_tags": [],
-    "cities_tags": [],
-    "images": {
-      "1": {
-        "sizes": {
-          "100": {
-            "h": 89,
-            "w": 100
-          },
-          "400": {
-            "w": 400,
-            "h": 355
-          },
-          "full": {
-            "w": 2099,
-            "h": 1865
-          }
-        },
-        "uploader": "pyrka",
-        "uploaded_t": 1563020539
-      },
-      "2": {
-        "uploader": "pyrka",
-        "uploaded_t": 1563020590,
-        "sizes": {
-          "100": {
-            "w": 67,
-            "h": 100
-          },
-          "400": {
-            "w": 266,
-            "h": 400
-          },
-          "full": {
-            "w": 1555,
-            "h": 2335
-          }
-        }
-      },
-      "3": {
-        "uploader": "pyrka",
-        "uploaded_t": 1563020609,
-        "sizes": {
-          "100": {
-            "h": 97,
-            "w": 100
-          },
-          "400": {
-            "w": 400,
-            "h": 386
-          },
-          "full": {
-            "h": 2475,
-            "w": 2564
-          }
-        }
-      },
-      "4": {
-        "uploaded_t": 1563020624,
-        "uploader": "pyrka",
-        "sizes": {
-          "100": {
-            "h": 100,
-            "w": 71
-          },
-          "400": {
-            "w": 283,
-            "h": 400
-          },
-          "full": {
-            "h": 2555,
-            "w": 1807
-          }
-        }
-      },
-      "nutrition_pl": {
-        "y1": "42.30555725097659",
-        "x2": "270.78125",
-        "imgid": "3",
-        "sizes": {
-          "100": {
-            "w": 92,
-            "h": 100
-          },
-          "200": {
-            "w": 184,
-            "h": 200
-          },
-          "400": {
-            "w": 367,
-            "h": 400
-          },
-          "full": {
-            "w": 1446,
-            "h": 1574
-          }
-        },
-        "y2": "287.8611145019531",
-        "normalize": "false",
-        "white_magic": "false",
-        "angle": "0",
-        "x1": "45.225677490234375",
-        "geometry": "1446x1574-289-271",
-        "rev": "14"
-      },
-      "ingredients_pl": {
-        "geometry": "0x0-0-0",
-        "x1": null,
-        "angle": null,
-        "rev": "7",
-        "y1": null,
-        "y2": null,
-        "white_magic": null,
-        "normalize": null,
-        "x2": null,
-        "sizes": {
-          "100": {
-            "h": 100,
-            "w": 67
-          },
-          "200": {
-            "h": 200,
-            "w": 133
-          },
-          "400": {
-            "h": 400,
-            "w": 266
-          },
-          "full": {
-            "h": 2335,
-            "w": 1555
-          }
-        },
-        "imgid": "2"
-      },
-      "front_pl": {
-        "y1": "0",
-        "white_magic": "false",
-        "y2": "0",
-        "normalize": "false",
-        "imgid": "1",
-        "sizes": {
-          "100": {
-            "w": 100,
-            "h": 89
-          },
-          "200": {
-            "w": 200,
-            "h": 178
-          },
-          "400": {
-            "w": 400,
-            "h": 355
-          },
-          "full": {
-            "w": 2099,
-            "h": 1865
-          }
-        },
-        "x2": "0",
-        "angle": "0",
-        "geometry": "0x0-0-0",
-        "x1": "0",
-        "rev": "13"
-      }
-    },
-    "allergens": "",
-    "nova_group_tags": [
-      "not-applicable"
-    ],
-    "image_nutrition_thumb_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.100.jpg",
-    "ingredients_that_may_be_from_palm_oil_tags": [],
-    "generic_name": "Coca Cola",
-    "categories_properties": {},
-    "origins_lc": "pl",
-    "debug_param_sorted_langs": [
-      "pl"
-    ],
-    "ingredients_from_palm_oil_tags": [],
-    "nova_groups_tags": [
-      "en:4-ultra-processed-food-and-drink-products"
-    ],
-    "minerals_tags": [],
-    "nutrition_grade_fr": "e",
-    "languages_codes": {
-      "pl": 6
-    },
-    "origins_hierarchy": [],
-    "nucleotides_tags": [],
-    "image_thumb_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.100.jpg",
-    "ingredients_text_with_allergens": "Woda, cukier, dwutlenek wegla. barwnik E150d, kwas: kwas fosforowy.naturalne aromaty w tym kofeina.",
-    "origins_tags": [],
-    "lang": "pl",
-    "ingredients_original_tags": [
-      "en:water",
-      "en:sugar",
-      "pl:dwutlenek wegla",
-      "en:colour",
-      "en:acid",
-      "en:e150d",
-      "pl:kwas fosforowy.naturalne aromaty w tym kofeina"
-    ],
-    "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients": 1,
-    "languages": {
-      "en:polish": 6
-    },
-    "stores_tags": [],
-    "nutriments": {
-      "fiber_100g": 0,
-      "sodium_unit": "g",
-      "fiber": 0,
-      "salt_unit": "g",
-      "fat_serving": 0,
-      "carbohydrates_value": 10.6,
-      "proteins": 0,
-      "proteins_value": 0,
-      "salt_value": 0,
-      "energy_100g": 176,
-      "carbohydrates_serving": 26.5,
-      "fat_100g": 0,
-      "nutrition-score-fr_serving": 14,
-      "saturated-fat": 0,
-      "energy-kcal_100g": 42,
-      "energy": 176,
-      "sugars": 10.6,
-      "proteins_unit": "g",
-      "proteins_100g": 0,
-      "carbohydrates_100g": 10.6,
-      "saturated-fat_100g": 0,
-      "carbohydrates": 10.6,
-      "salt_100g": 0,
-      "nova-group": 4,
-      "sodium": 0,
-      "salt": 0,
-      "fruits-vegetables-nuts-estimate-from-ingredients_100g": 0,
-      "sodium_100g": 0,
-      "sodium_serving": 0,
-      "energy-kcal": 42,
-      "energy-kcal_value": 42,
-      "saturated-fat_value": 0,
-      "fat_unit": "g",
-      "nutrition-score-fr": 14,
-      "energy_serving": 440,
-      "energy-kcal_unit": "kcal",
-      "nova-group_100g": 4,
-      "sugars_value": 10.6,
-      "fat_value": 0,
-      "fat": 0,
-      "carbohydrates_unit": "g",
-      "proteins_serving": 0,
-      "sugars_100g": 10.6,
-      "salt_serving": 0,
-      "sodium_value": 0,
-      "saturated-fat_unit": "g",
-      "energy_unit": "kcal",
-      "sugars_unit": "g",
-      "fiber_serving": 0,
-      "nutrition-score-fr_100g": 14,
-      "saturated-fat_serving": 0,
-      "sugars_serving": 26.5,
-      "energy-kcal_serving": 105,
-      "energy_value": 42,
-      "fiber_unit": "g",
-      "fiber_value": 0,
-      "nova-group_serving": 4
-    },
-    "nova_groups": "4",
-    "traces_hierarchy": [],
-    "nutrient_levels_tags": [
-      "en:fat-in-low-quantity",
-      "en:saturated-fat-in-low-quantity",
-      "en:sugars-in-high-quantity",
-      "en:salt-in-low-quantity"
-    ],
-    "pnns_groups_1_tags": [
-      "beverages",
-      "known"
-    ],
-    "product_name": "Napój gazowany o smaku cola.",
-    "last_modified_t": 1566314776,
-    "allergens_hierarchy": [],
-    "allergens_from_user": "(pl) ",
-    "image_ingredients_thumb_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.100.jpg",
-    "serving_quantity": 250,
-    "brands": "Coca cola",
-    "interface_version_modified": "20120622",
-    "vitamins_tags": [],
-    "image_small_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.200.jpg",
-    "last_image_dates_tags": [
-      "2019-07-13",
-      "2019-07",
-      "2019"
-    ],
-    "categories_tags": [
-      "en:beverages",
-      "en:carbonated-drinks",
-      "pl:zawiera-kofeinę"
-    ],
-    "additives_old_n": 1,
-    "serving_size": "250ml",
-    "languages_tags": [
-      "en:polish",
-      "en:1"
-    ],
-    "update_key": "origins",
-    "misc_tags": [
-      "en:nutrition-fruits-vegetables-nuts-estimate-from-ingredients",
-      "en:nutrition-all-nutriscore-values-known",
-      "en:nutriscore-computed"
-    ],
-    "nutriscore_score": 14,
-    "unknown_nutrients_tags": [],
-    "_id": "5449000034519",
-    "purchase_places": "Polska",
-    "popularity_key": -80099999995,
-    "labels": "",
-    "origins_old": "",
-    "stores": "",
-    "pnns_groups_2": "Sweetened beverages",
-    "lc": "pl",
-    "states_tags": [
-      "en:to-be-checked",
-      "en:complete",
-      "en:nutrition-facts-completed",
-      "en:ingredients-completed",
-      "en:expiration-date-to-be-completed",
-      "en:packaging-code-to-be-completed",
-      "en:characteristics-completed",
-      "en:categories-completed",
-      "en:brands-completed",
-      "en:packaging-completed",
-      "en:quantity-completed",
-      "en:product-name-completed",
-      "en:photos-validated",
-      "en:photos-uploaded"
-    ],
-    "ingredients_n_tags": [
-      "7",
-      "1-10"
-    ],
-    "ingredients_that_may_be_from_palm_oil_n": 0,
-    "ingredients_text_with_allergens_pl": "Woda, cukier, dwutlenek wegla. barwnik E150d, kwas: kwas fosforowy.naturalne aromaty w tym kofeina.",
-    "complete": 1,
-    "correctors_tags": [
-      "openfoodfacts-contributors",
-      "pyrka"
-    ],
-    "purchase_places_tags": [
-      "polska"
-    ],
-    "selected_images": {
-      "ingredients": {
-        "display": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.400.jpg"
-        },
-        "small": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.200.jpg"
-        },
-        "thumb": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.100.jpg"
-        }
-      },
-      "nutrition": {
-        "small": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.200.jpg"
-        },
-        "thumb": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.100.jpg"
-        },
-        "display": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.400.jpg"
-        }
-      },
-      "front": {
-        "thumb": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.100.jpg"
-        },
-        "small": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.200.jpg"
-        },
-        "display": {
-          "pl": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.400.jpg"
-        }
-      }
-    },
-    "ingredients_text": "Woda, cukier, dwutlenek wegla. barwnik E150d, kwas: kwas fosforowy.naturalne aromaty w tym kofeina.",
-    "data_quality_bugs_tags": [],
-    "nutrient_levels": {
-      "sugars": "high",
-      "salt": "low",
-      "fat": "low",
-      "saturated-fat": "low"
-    },
-    "nutrition_data_prepared": "",
-    "additives_n": 1,
-    "image_nutrition_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.400.jpg",
-    "entry_dates_tags": [
-      "2019-07-13",
-      "2019-07",
-      "2019"
-    ],
-    "image_front_thumb_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.100.jpg",
-    "additives_tags": [
-      "en:e150d"
-    ],
-    "image_ingredients_small_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.200.jpg",
-    "image_nutrition_small_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/nutrition_pl.14.200.jpg",
-    "last_editor": "pyrka",
-    "last_image_t": 1563020625,
+    "image_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.400.jpg",
+    "ingredients_text_en": "thick country style  barley  groats,",
+    "categories_old": "Żywność i napoje na bazie roślin,Żywność na bazie roślin,Zboża i ziemniaki,Zboża i produkty zbożowe,Kasza",
     "labels_tags": [],
-    "image_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.400.jpg",
-    "additives_original_tags": [
-      "en:e150d"
-    ],
-    "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
-    "scans_n": 7,
-    "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
+    "image_nutrition_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.200.jpg",
+    "last_editor": "karbonado",
+    "image_ingredients_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.200.jpg",
+    "last_image_t": 1588711060,
     "data_quality_info_tags": [
       "en:ingredients-percent-analysis-ok"
     ],
-    "traces": "",
-    "categories_hierarchy": [
-      "en:beverages",
-      "en:carbonated-drinks",
-      "pl:Zawiera kofeinę"
-    ],
-    "max_imgid": "4",
-    "traces_from_ingredients": "",
-    "labels_lc": "pl",
-    "data_quality_tags": [
-      "en:ingredients-percent-analysis-ok"
-    ],
-    "nutrition_grades": "e",
-    "labels_hierarchy": [],
-    "product_quantity": 850,
-    "ingredients": [
-      {
-        "id": "en:water",
-        "text": "Woda",
-        "vegetarian": "yes",
-        "percent_min": 20,
-        "percent_max": 100,
-        "vegan": "yes",
-        "rank": 1
-      },
-      {
-        "id": "en:sugar",
-        "text": "cukier",
-        "vegetarian": "yes",
-        "percent_min": 0,
-        "percent_max": 50,
-        "vegan": "yes",
-        "rank": 2
-      },
-      {
-        "percent_max": 33.3333333333333,
-        "percent_min": 0,
-        "rank": 3,
-        "id": "pl:dwutlenek wegla",
-        "text": "dwutlenek wegla"
-      },
-      {
-        "percent_max": 25,
-        "percent_min": 0,
-        "rank": 4,
-        "id": "en:colour",
-        "has_sub_ingredients": "yes",
-        "text": "barwnik"
-      },
-      {
-        "id": "en:acid",
-        "has_sub_ingredients": "yes",
-        "text": "kwas",
-        "percent_max": 20,
-        "percent_min": 0,
-        "rank": 5
-      },
-      {
-        "vegan": "yes",
-        "percent_max": 25,
-        "percent_min": 0,
-        "vegetarian": "yes",
-        "text": "e150d",
-        "id": "en:e150d"
-      },
-      {
-        "text": "kwas fosforowy.naturalne aromaty w tym kofeina",
-        "id": "pl:kwas fosforowy.naturalne aromaty w tym kofeina",
-        "percent_max": 20,
-        "percent_min": 0
-      }
-    ],
-    "nutrition_data_prepared_per": "100g",
-    "category_properties": {},
-    "product_name_pl": "Napój gazowany o smaku cola.",
-    "packaging": "PET",
-    "nova_group": 4,
+    "image_packaging_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.400.jpg",
+    "generic_name_en": "",
+    "minerals_prev_tags": [],
+    "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
+    "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:packaging-photo-selected, en:nutrition-photo-selected, en:ingredients-photo-selected, en:front-photo-selected, en:photos-uploaded",
+    "scans_n": 5,
+    "additives_original_tags": [],
     "nutrition_data": "on",
-    "image_front_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.400.jpg",
-    "photographers_tags": [
-      "pyrka"
-    ],
-    "amino_acids_tags": [],
-    "quantity": "850 ml",
+    "ingredients_text_with_allergens_en": "thick country style  barley  groats,",
+    "amino_acids_prev_tags": [],
+    "packaging": "PAP",
+    "product_name_pl": "Kasza jęczmienna wiejska",
+    "generic_name_fr": "",
     "other_nutritional_substances_tags": [],
     "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value": 0,
+    "amino_acids_tags": [],
+    "photographers_tags": [
+      "kiliweb",
+      "date-limite-app",
+      "pyrka"
+    ],
+    "quantity": "400 g (4 x 100 g)",
+    "image_front_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.400.jpg",
+    "nutrition_grades": "a",
+    "data_quality_tags": [
+      "en:ingredients-percent-analysis-ok",
+      "en:ingredients-unknown-score-above-0",
+      "en:ingredients-100-percent-unknown",
+      "en:ingredients-en-ending-comma",
+      "en:nutrition-value-under-0-01-g-salt",
+      "en:nutrition-value-very-high-for-category-sugars"
+    ],
+    "labels_lc": "pl",
+    "category_properties": {},
+    "nutrition_data_prepared_per": "100g",
+    "product_quantity": "400",
+    "ingredients": [
+      {
+        "rank": 1,
+        "percent_max": 100,
+        "percent_estimate": 100,
+        "percent_min": 100,
+        "text": "Kasza _jęczmienna_ wiejska gruba",
+        "id": "pl:Kasza _jęczmienna_ wiejska gruba"
+      }
+    ],
+    "labels_hierarchy": [],
+    "image_ingredients_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.400.jpg",
+    "_keywords": [
+      "produkty",
+      "żywność",
+      "zboża",
+      "napoje",
+      "jęczmienna",
+      "zbożowe",
+      "sonko",
+      "bazie",
+      "ziemniaki",
+      "kasza",
+      "wiejska",
+      "polska",
+      "roślin",
+      "na"
+    ],
+    "product_name_en": "",
+    "ingredients_analysis_tags": [
+      "en:palm-oil-content-unknown",
+      "en:vegan-status-unknown",
+      "en:vegetarian-status-unknown"
+    ],
+    "packaging_tags": [
+      "pap"
+    ],
+    "unique_scans_n": 1,
+    "additives_old_tags": [],
+    "completed_t": 1604666809,
+    "nutriscore_data": {
+      "fiber_value": 9.1,
+      "fiber_points": 5,
+      "saturated_fat": 0.44,
+      "energy_value": 1451,
+      "negative_points": 6,
+      "sodium_points": 0,
+      "sodium_value": 1,
+      "saturated_fat_points": 0,
+      "sugars_value": 11.2,
+      "sugars_points": 2,
+      "sodium": 1,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils": 0,
+      "is_cheese": 0,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils_value": 0,
+      "sugars": 11.2,
+      "energy": 1451,
+      "saturated_fat_ratio_points": 2,
+      "energy_points": 4,
+      "is_water": 0,
+      "saturated_fat_ratio_value": 21,
+      "fruits_vegetables_nuts_colza_walnut_olive_oils_points": 0,
+      "proteins_points": 5,
+      "proteins": 10.6,
+      "proteins_value": 10.6,
+      "saturated_fat_ratio": 20.952380952381,
+      "is_beverage": 0,
+      "grade": "a",
+      "score": -4,
+      "is_fat": 0,
+      "positive_points": 10,
+      "fiber": 9.1,
+      "saturated_fat_value": 0.4
+    },
+    "image_packaging_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.200.jpg",
+    "categories_lc": "pl",
+    "ingredients_debug": [
+      "Kasza jęczmienna wiejska gruba."
+    ],
+    "code": "5902180070109",
+    "completeness": 0.8,
+    "popularity_tags": [
+      "top-90-percent-scans-2019",
+      "top-95-percent-scans-2019",
+      "top-5000-pl-scans-2019",
+      "top-10000-pl-scans-2019",
+      "top-50000-pl-scans-2019",
+      "top-100000-pl-scans-2019",
+      "top-country-pl-scans-2019"
+    ],
+    "link": "",
+    "categories": "Żywność i napoje na bazie roślin, Żywność na bazie roślin, Zboża i ziemniaki, Zboża i produkty zbożowe, Kasza",
+    "data_sources_tags": [
+      "app-yuka",
+      "apps"
+    ],
     "categories_properties_tags": [
       "all-products",
       "categories-known",
@@ -562,140 +163,34 @@
       "ciqual-food-code-unknown",
       "agribalyse-unknown"
     ],
-    "categories": "Napoje, Napoje gazowane, Zawiera kofeinę",
-    "completeness": 0.8,
-    "popularity_tags": [
-      "top-100000-scans-2020",
-      "top-90-percent-scans-2020",
-      "top-95-percent-scans-2020",
-      "top-500-pl-scans-2020",
-      "top-1000-pl-scans-2020",
-      "top-5000-pl-scans-2020",
-      "top-10000-pl-scans-2020",
-      "top-50000-pl-scans-2020",
-      "top-100000-pl-scans-2020",
-      "top-country-pl-scans-2020",
-      "top-90-percent-scans-2019",
-      "top-95-percent-scans-2019",
-      "top-1000-pl-scans-2019",
-      "top-5000-pl-scans-2019",
-      "top-10000-pl-scans-2019",
-      "top-50000-pl-scans-2019",
-      "top-100000-pl-scans-2019",
-      "top-country-pl-scans-2019",
-      "top-500-fi-scans-2019",
-      "top-1000-fi-scans-2019",
-      "top-5000-fi-scans-2019",
-      "top-10000-fi-scans-2019",
-      "top-50000-fi-scans-2019",
-      "top-100000-fi-scans-2019"
-    ],
-    "link": "",
-    "code": "5449000034519",
-    "generic_name_pl": "Coca Cola",
-    "sortkey": -98433685224,
+    "nova_group_debug": "no nova group if too many ingredients are unknown: 1 out of 1",
+    "image_front_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.200.jpg",
     "countries_hierarchy": [
+      "en:france",
+      "en:germany",
       "en:poland"
     ],
+    "nutriscore_grade": "a",
     "editors_tags": [
-      "openfoodfacts-contributors",
-      "pyrka"
+      "inf",
+      "kiliweb",
+      "vaporous",
+      "karbonado",
+      "anianazakupach",
+      "autorotate-bot",
+      "date-limite-app",
+      "pyrka",
+      "yuka.ZUlveEVLTVRqTjB1bk5vZjRTN09xdXBvKzZLZ1gyU1dkK1JOSUE9PQ",
+      "openfoodfacts-contributors"
     ],
-    "nutriscore_grade": "e",
-    "image_front_small_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/front_pl.13.200.jpg",
-    "nova_group_debug": " -- ingredients/en:sugar : 3 -- additives/en:e150d : 4",
-    "nutriscore_data": {
-      "saturated_fat_value": 0,
-      "positive_points": 0,
-      "is_fat": 0,
-      "fiber": 0,
-      "score": 14,
-      "grade": "e",
-      "is_beverage": 1,
-      "saturated_fat_ratio": 0,
-      "proteins_value": 0,
-      "proteins": 0,
-      "proteins_points": 0,
-      "fruits_vegetables_nuts_colza_walnut_olive_oils_points": 0,
-      "energy_points": 6,
-      "is_water": 0,
-      "saturated_fat_ratio_value": 0,
-      "saturated_fat_ratio_points": 0,
-      "energy": 176,
-      "sugars": 10.6,
-      "fruits_vegetables_nuts_colza_walnut_olive_oils_value": 0,
-      "is_cheese": 0,
-      "fruits_vegetables_nuts_colza_walnut_olive_oils": 0,
-      "sodium": 0,
-      "sugars_points": 8,
-      "sugars_value": 10.6,
-      "saturated_fat_points": 0,
-      "sodium_value": 0,
-      "sodium_points": 0,
-      "negative_points": 14,
-      "energy_value": 176,
-      "saturated_fat": 0,
-      "fiber_value": 0,
-      "fiber_points": 0
-    },
-    "completed_t": 1566314776,
-    "unique_scans_n": 4,
-    "additives_old_tags": [
-      "en:e150d"
-    ],
-    "packaging_tags": [
-      "pet"
-    ],
-    "image_ingredients_url": "https://static.openfoodfacts.org/images/products/544/900/003/4519/ingredients_pl.7.400.jpg",
-    "_keywords": [
-      "napój",
-      "zawiera",
-      "kofeinę",
-      "smaku",
-      "gazowany",
-      "gazowane",
-      "coca",
-      "napoje",
-      "cola"
-    ],
-    "ingredients_analysis_tags": [
-      "en:palm-oil-content-unknown",
-      "en:vegan-status-unknown",
-      "en:vegetarian-status-unknown"
-    ],
-    "categories_lc": "pl",
-    "origins": "",
-    "checkers_tags": [],
-    "nutrition_data_per": "100g",
-    "traces_lc": "pl",
-    "ingredients_percent_analysis": 1,
-    "countries_lc": "pl",
-    "last_modified_by": "pyrka",
-    "data_quality_errors_tags": [],
-    "pnns_groups_1": "Beverages",
-    "emb_codes": "",
-    "compared_to_category": "pl:zawiera-kofeinę",
-    "codes_tags": [
-      "code-13",
-      "5449000034xxx",
-      "544900003xxxx",
-      "54490000xxxxx",
-      "5449000xxxxxx",
-      "544900xxxxxxx",
-      "54490xxxxxxxx",
-      "5449xxxxxxxxx",
-      "544xxxxxxxxxx",
-      "54xxxxxxxxxxx",
-      "5xxxxxxxxxxxx"
-    ],
-    "ciqual_food_name_tags": [
-      "unknown"
-    ],
-    "ingredients_n": 7,
+    "generic_name_pl": "",
+    "sortkey": 101604666821,
+    "ingredients_text_pl": "Kasza _jęczmienna_ wiejska gruba.",
     "languages_hierarchy": [
+      "en:french",
+      "en:english",
       "en:polish"
     ],
-    "ingredients_text_pl": "Woda, cukier, dwutlenek wegla. barwnik E150d, kwas: kwas fosforowy.naturalne aromaty w tym kofeina.",
     "states_hierarchy": [
       "en:to-be-checked",
       "en:complete",
@@ -710,21 +205,815 @@
       "en:quantity-completed",
       "en:product-name-completed",
       "en:photos-validated",
+      "en:packaging-photo-selected",
+      "en:nutrition-photo-selected",
+      "en:ingredients-photo-selected",
+      "en:front-photo-selected",
       "en:photos-uploaded"
     ],
-    "rev": 15,
-    "emb_codes_tags": [],
-    "id": "5449000034519",
-    "manufacturing_places": "",
-    "data_quality_warnings_tags": [],
-    "last_edit_dates_tags": [
-      "2019-08-20",
-      "2019-08",
-      "2019"
+    "ingredients_n": 1,
+    "obsolete_since_date": "",
+    "ciqual_food_name_tags": [
+      "unknown"
     ],
     "traces_tags": [],
-    "allergens_from_ingredients": ""
+    "packaging_text_fr": "",
+    "allergens_from_ingredients": "jęczmienna",
+    "id": "5902180070109",
+    "product_name_fr": "Risana Pearl Barley Groats",
+    "last_edit_dates_tags": [
+      "2020-11-06",
+      "2020-11",
+      "2020"
+    ],
+    "data_quality_warnings_tags": [
+      "en:ingredients-unknown-score-above-0",
+      "en:ingredients-100-percent-unknown",
+      "en:ingredients-en-ending-comma",
+      "en:nutrition-value-under-0-01-g-salt",
+      "en:nutrition-value-very-high-for-category-sugars"
+    ],
+    "manufacturing_places": "PL 55-040,Kobierzyce,Polska",
+    "rev": 40,
+    "emb_codes_tags": [],
+    "ingredients_text_with_allergens_fr": "",
+    "data_quality_errors_tags": [],
+    "pnns_groups_1": "Cereals and potatoes",
+    "last_modified_by": "karbonado",
+    "emb_codes": "",
+    "traces_lc": "pl",
+    "countries_lc": "pl",
+    "nutrition_data_per": "100g",
+    "checkers_tags": [],
+    "origins": "Polska",
+    "codes_tags": [
+      "code-13",
+      "5902180070xxx",
+      "590218007xxxx",
+      "59021800xxxxx",
+      "5902180xxxxxx",
+      "590218xxxxxxx",
+      "59021xxxxxxxx",
+      "5902xxxxxxxxx",
+      "590xxxxxxxxxx",
+      "59xxxxxxxxxxx",
+      "5xxxxxxxxxxxx"
+    ],
+    "ingredients_ids_debug": [
+      "kasza-jęczmienna-wiejska-gruba"
+    ],
+    "compared_to_category": "en:groats",
+    "vitamins_prev_tags": [],
+    "ingredients_hierarchy": [
+      "pl:Kasza _jęczmienna_ wiejska gruba"
+    ],
+    "known_ingredients_n": 0,
+    "countries_tags": [
+      "en:france",
+      "en:germany",
+      "en:poland"
+    ],
+    "ingredients_from_palm_oil_n": 0,
+    "nutrition_score_beverage": 0,
+    "created_t": 1525439680,
+    "brands_tags": [
+      "sonko"
+    ],
+    "ingredients_tags": [
+      "pl:kasza-jęczmienna-wiejska-gruba"
+    ],
+    "pnns_groups_2_tags": [
+      "cereals",
+      "known"
+    ],
+    "creator": "kiliweb",
+    "image_nutrition_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.100.jpg",
+    "generic_name": "",
+    "ingredients_that_may_be_from_palm_oil_tags": [],
+    "categories_properties": {},
+    "origins_lc": "pl",
+    "cities_tags": [],
+    "manufacturing_places_tags": [
+      "pl-55-040",
+      "kobierzyce",
+      "polska"
+    ],
+    "allergens": "en:gluten,pl:Jęczmienna",
+    "images": {
+      "nutrition_en": {
+        "sizes": {
+          "200": {
+            "w": 200,
+            "h": 199
+          },
+          "400": {
+            "w": 400,
+            "h": 398
+          },
+          "100": {
+            "h": 100,
+            "w": 100
+          },
+          "full": {
+            "h": 1934,
+            "w": 1942
+          }
+        },
+        "imgid": "5",
+        "x2": "0",
+        "y2": "0",
+        "white_magic": "false",
+        "normalize": "false",
+        "y1": "0",
+        "rev": "21",
+        "geometry": "0x0-0-0",
+        "angle": "0",
+        "x1": "0"
+      },
+      "2": {
+        "sizes": {
+          "400": {
+            "w": 300,
+            "h": 400
+          },
+          "100": {
+            "h": 100,
+            "w": 75
+          },
+          "full": {
+            "h": 1333,
+            "w": 1000
+          }
+        },
+        "uploader": "date-limite-app",
+        "uploaded_t": 1541850854
+      },
+      "ingredients_fr": {
+        "orientation": "0",
+        "angle": -270,
+        "x1": "-1",
+        "geometry": "0x0--4--4",
+        "rev": "19",
+        "y1": "-1",
+        "white_magic": null,
+        "normalize": null,
+        "y2": "-1",
+        "x2": "-1",
+        "ocr": 1,
+        "sizes": {
+          "full": {
+            "w": 1200,
+            "h": 1600
+          },
+          "100": {
+            "w": 75,
+            "h": 100
+          },
+          "400": {
+            "h": 400,
+            "w": 300
+          },
+          "200": {
+            "h": 200,
+            "w": 150
+          }
+        },
+        "imgid": "1"
+      },
+      "1": {
+        "uploaded_t": "1525439683",
+        "uploader": "kiliweb",
+        "sizes": {
+          "400": {
+            "h": 300,
+            "w": 400
+          },
+          "full": {
+            "w": 1600,
+            "h": 1200
+          },
+          "100": {
+            "w": 100,
+            "h": 75
+          }
+        }
+      },
+      "4": {
+        "sizes": {
+          "full": {
+            "w": 1642,
+            "h": 364
+          },
+          "100": {
+            "h": 22,
+            "w": 100
+          },
+          "400": {
+            "h": 89,
+            "w": 400
+          }
+        },
+        "uploaded_t": 1556913099,
+        "uploader": "pyrka"
+      },
+      "ingredients_en": {
+        "y1": "274.81250000000006",
+        "imgid": "1",
+        "x2": "201.00000000000003",
+        "sizes": {
+          "200": {
+            "w": 200,
+            "h": 31
+          },
+          "400": {
+            "w": 400,
+            "h": 62
+          },
+          "100": {
+            "h": 16,
+            "w": 100
+          },
+          "full": {
+            "h": 112,
+            "w": 720
+          }
+        },
+        "y2": "302.81250000000006",
+        "white_magic": "false",
+        "normalize": "false",
+        "x1": "21.000000000000004",
+        "geometry": "720x112-84-1099",
+        "angle": "90",
+        "rev": "20"
+      },
+      "front_en": {
+        "geometry": "0x0-0-0",
+        "x1": "0",
+        "angle": "0",
+        "rev": "19",
+        "y1": "0",
+        "sizes": {
+          "400": {
+            "h": 400,
+            "w": 313
+          },
+          "200": {
+            "h": 200,
+            "w": 156
+          },
+          "full": {
+            "w": 3003,
+            "h": 3842
+          },
+          "100": {
+            "h": 100,
+            "w": 78
+          }
+        },
+        "imgid": "3",
+        "x2": "0",
+        "y2": "0",
+        "white_magic": "false",
+        "normalize": "false"
+      },
+      "front_fr": {
+        "x1": "-1",
+        "angle": 0,
+        "geometry": "0x0--3--3",
+        "rev": "7",
+        "y1": "-1",
+        "white_magic": null,
+        "normalize": null,
+        "y2": "-1",
+        "sizes": {
+          "full": {
+            "h": 1333,
+            "w": 1000
+          },
+          "100": {
+            "w": 75,
+            "h": 100
+          },
+          "400": {
+            "h": 400,
+            "w": 300
+          },
+          "200": {
+            "w": 150,
+            "h": 200
+          }
+        },
+        "imgid": "2",
+        "x2": "-1"
+      },
+      "nutrition_pl": {
+        "y1": null,
+        "ocr": 1,
+        "imgid": "5",
+        "sizes": {
+          "200": {
+            "w": 200,
+            "h": 199
+          },
+          "400": {
+            "h": 398,
+            "w": 400
+          },
+          "100": {
+            "w": 100,
+            "h": 100
+          },
+          "full": {
+            "h": 1934,
+            "w": 1942
+          }
+        },
+        "x2": null,
+        "y2": null,
+        "normalize": null,
+        "white_magic": null,
+        "angle": null,
+        "geometry": "0x0-0-0",
+        "x1": null,
+        "orientation": "0",
+        "rev": "17"
+      },
+      "6": {
+        "uploaded_t": 1588711038,
+        "uploader": "pyrka",
+        "sizes": {
+          "full": {
+            "h": 880,
+            "w": 3887
+          },
+          "100": {
+            "h": 23,
+            "w": 100
+          },
+          "400": {
+            "w": 400,
+            "h": 91
+          }
+        }
+      },
+      "7": {
+        "uploaded_t": 1588711060,
+        "uploader": "pyrka",
+        "sizes": {
+          "400": {
+            "w": 380,
+            "h": 400
+          },
+          "full": {
+            "h": 1636,
+            "w": 1554
+          },
+          "100": {
+            "w": 95,
+            "h": 100
+          }
+        }
+      },
+      "ingredients_pl": {
+        "x2": "204.75",
+        "imgid": "1",
+        "sizes": {
+          "full": {
+            "h": 68,
+            "w": 740
+          },
+          "100": {
+            "h": 9,
+            "w": 100
+          },
+          "400": {
+            "w": 400,
+            "h": 37
+          },
+          "200": {
+            "w": 200,
+            "h": 18
+          }
+        },
+        "white_magic": "false",
+        "normalize": "true",
+        "y2": "97.43333435058594",
+        "y1": "80.43333435058594",
+        "rev": "32",
+        "angle": "90",
+        "geometry": "740x68-79-321",
+        "x1": "19.75"
+      },
+      "front_pl": {
+        "y1": "0",
+        "y2": "0",
+        "white_magic": "false",
+        "normalize": "false",
+        "imgid": "3",
+        "x2": "0",
+        "sizes": {
+          "100": {
+            "w": 78,
+            "h": 100
+          },
+          "full": {
+            "w": 3003,
+            "h": 3842
+          },
+          "200": {
+            "w": 156,
+            "h": 200
+          },
+          "400": {
+            "h": 400,
+            "w": 313
+          }
+        },
+        "geometry": "0x0-0-0",
+        "angle": "0",
+        "x1": "0",
+        "rev": "37"
+      },
+      "3": {
+        "uploader": "pyrka",
+        "uploaded_t": 1556913073,
+        "sizes": {
+          "400": {
+            "w": 313,
+            "h": 400
+          },
+          "full": {
+            "w": 3003,
+            "h": 3842
+          },
+          "100": {
+            "w": 78,
+            "h": 100
+          }
+        }
+      },
+      "packaging_pl": {
+        "y2": "798.483893034826",
+        "white_magic": "false",
+        "normalize": "false",
+        "x2": "950.7800217661693",
+        "imgid": "6",
+        "sizes": {
+          "400": {
+            "h": 141,
+            "w": 400
+          },
+          "200": {
+            "h": 70,
+            "w": 200
+          },
+          "full": {
+            "w": 878,
+            "h": 309
+          },
+          "100": {
+            "w": 100,
+            "h": 35
+          }
+        },
+        "y1": "489.0709577114429",
+        "rev": "39",
+        "geometry": "878x309-72-489",
+        "angle": "0",
+        "x1": "72.82081778606965"
+      },
+      "5": {
+        "sizes": {
+          "400": {
+            "w": 400,
+            "h": 398
+          },
+          "100": {
+            "h": 100,
+            "w": 100
+          },
+          "full": {
+            "w": 1942,
+            "h": 1934
+          }
+        },
+        "uploaded_t": 1556913147,
+        "uploader": "pyrka"
+      }
+    },
+    "nova_group_tags": [
+      "not-applicable"
+    ],
+    "ingredients_text_fr": "",
+    "informers_tags": [
+      "yuka.ZUlveEVLTVRqTjB1bk5vZjRTN09xdXBvKzZLZ1gyU1dkK1JOSUE9PQ",
+      "kiliweb",
+      "date-limite-app",
+      "pyrka",
+      "autorotate-bot",
+      "karbonado"
+    ],
+    "interface_version_created": "20150316.jqm2",
+    "no_nutrition_data": "",
+    "packaging_text_pl": "PAP",
+    "countries": "Francja,Niemcy,Polska",
+    "packaging_text_en": "",
+    "unknown_ingredients_n": "1",
+    "allergens_tags": [
+      "en:gluten",
+      "pl:jęczmienna",
+      "pl:jęczmienna"
+    ],
+    "nutrition_grades_tags": [
+      "a"
+    ],
+    "additives_debug_tags": [],
+    "traces_from_user": "(pl) ",
+    "expiration_date": "",
+    "allergens_lc": "pl",
+    "ingredients_text_debug": "Kasza jęczmienna wiejska gruba.",
+    "nucleotides_prev_tags": [],
+    "nutriments": {
+      "fiber_unit": "g",
+      "energy_value": 1451,
+      "energy-kcal_serving": 172,
+      "fiber_value": 9.1,
+      "fiber_serving": 4.55,
+      "sugars_unit": "g",
+      "saturated-fat_unit": "g",
+      "energy_unit": "kJ",
+      "saturated-fat_serving": 0.22,
+      "sugars_serving": 5.6,
+      "nutrition-score-fr_100g": -4,
+      "sugars_100g": 11.2,
+      "salt_serving": 0.00125,
+      "sodium_value": 0.001,
+      "fat_value": 2.1,
+      "sugars_value": 11.2,
+      "carbohydrates_unit": "g",
+      "proteins_serving": 5.3,
+      "fat": 2.1,
+      "nutrition-score-fr": -4,
+      "energy-kcal_unit": "kcal",
+      "energy_serving": 726,
+      "energy-kcal": 343,
+      "saturated-fat_value": 0.44,
+      "energy-kcal_value": 343,
+      "energy-kj_unit": "kJ",
+      "fat_unit": "g",
+      "sodium_100g": 0.001,
+      "fruits-vegetables-nuts-estimate-from-ingredients_100g": 0,
+      "sodium_serving": 0.0005,
+      "energy-kj_100g": 1451,
+      "salt": 0.0025,
+      "sodium": 0.001,
+      "carbohydrates": 66,
+      "salt_100g": 0.0025,
+      "proteins_unit": "g",
+      "carbohydrates_100g": 66,
+      "saturated-fat_100g": 0.44,
+      "energy-kj_value": 1451,
+      "proteins_100g": 10.6,
+      "energy": 1451,
+      "sugars": 11.2,
+      "fat_100g": 2.1,
+      "energy-kj": 1451,
+      "energy-kcal_100g": 343,
+      "saturated-fat": 0.44,
+      "proteins_value": 10.6,
+      "salt_value": 0.0025,
+      "proteins": 10.6,
+      "carbohydrates_value": 66,
+      "carbohydrates_serving": 33,
+      "energy_100g": 1451,
+      "energy-kj_serving": 726,
+      "fat_serving": 1.05,
+      "salt_unit": "g",
+      "fiber_100g": 9.1,
+      "fiber": 9.1,
+      "sodium_unit": "g"
+    },
+    "stores_tags": [
+      "auchan"
+    ],
+    "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients": 1,
+    "languages": {
+      "en:polish": 6,
+      "en:french": 3,
+      "en:english": 4
+    },
+    "product_name": "Kasza jęczmienna wiejska",
+    "image_packaging_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.100.jpg",
+    "last_modified_t": 1604666821,
+    "nutrient_levels_tags": [
+      "en:fat-in-low-quantity",
+      "en:saturated-fat-in-low-quantity",
+      "en:sugars-in-moderate-quantity",
+      "en:salt-in-low-quantity"
+    ],
+    "pnns_groups_1_tags": [
+      "cereals-and-potatoes",
+      "known"
+    ],
+    "traces_hierarchy": [],
+    "origins_hierarchy": [
+      "en:poland"
+    ],
+    "nucleotides_tags": [],
+    "image_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.100.jpg",
+    "languages_codes": {
+      "pl": 6,
+      "en": 4,
+      "fr": 3
+    },
+    "minerals_tags": [],
+    "nutrition_grade_fr": "a",
+    "data_sources": "App - yuka, Apps",
+    "debug_param_sorted_langs": [
+      "pl",
+      "en",
+      "fr"
+    ],
+    "ingredients_from_palm_oil_tags": [],
+    "ingredients_original_tags": [
+      "pl:Kasza _jęczmienna_ wiejska gruba"
+    ],
+    "lang": "pl",
+    "ingredients_text_with_allergens": "Kasza <span class=\"allergen\">jęczmienna</span> wiejska gruba.",
+    "obsolete": "",
+    "origins_tags": [
+      "en:poland"
+    ],
+    "languages_tags": [
+      "en:french",
+      "en:english",
+      "en:polish",
+      "en:3",
+      "en:multilingual"
+    ],
+    "additives_old_n": 0,
+    "serving_size": "50 g",
+    "categories_tags": [
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:cereals-and-potatoes",
+      "en:cereals-and-their-products",
+      "en:groats"
+    ],
+    "last_image_dates_tags": [
+      "2020-05-05",
+      "2020-05",
+      "2020"
+    ],
+    "purchase_places": "Polska",
+    "_id": "5902180070109",
+    "unknown_nutrients_tags": [],
+    "nutriscore_score": -4,
+    "update_key": "agribalyse1109",
+    "misc_tags": [
+      "en:nutrition-fruits-vegetables-nuts-estimate-from-ingredients",
+      "en:nutrition-all-nutriscore-values-known",
+      "en:nutriscore-computed"
+    ],
+    "brands": "Sonko",
+    "allergens_from_user": "(pl) Gluten,Jęczmienna",
+    "image_ingredients_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.100.jpg",
+    "serving_quantity": "50",
+    "packaging_text": "PAP",
+    "allergens_hierarchy": [
+      "en:gluten",
+      "pl:Jęczmienna",
+      "pl:jęczmienna"
+    ],
+    "image_small_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.200.jpg",
+    "vitamins_tags": [],
+    "additives_prev_original_tags": [],
+    "interface_version_modified": "20190830",
+    "purchase_places_tags": [
+      "polska"
+    ],
+    "correctors_tags": [
+      "openfoodfacts-contributors",
+      "date-limite-app",
+      "pyrka",
+      "autorotate-bot",
+      "anianazakupach",
+      "inf",
+      "vaporous",
+      "karbonado"
+    ],
+    "ingredients_text_with_allergens_pl": "Kasza <span class=\"allergen\">jęczmienna</span> wiejska gruba.",
+    "complete": 1,
+    "ingredients_that_may_be_from_palm_oil_n": 0,
+    "additives_n": 0,
+    "image_front_thumb_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.100.jpg",
+    "image_nutrition_url": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.400.jpg",
+    "entry_dates_tags": [
+      "2018-05-04",
+      "2018-05",
+      "2018"
+    ],
+    "additives_tags": [],
+    "nutrition_data_prepared": "",
+    "selected_images": {
+      "ingredients": {
+        "thumb": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_pl.32.100.jpg",
+          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_fr.19.100.jpg",
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.100.jpg"
+        },
+        "small": {
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.200.jpg",
+          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_fr.19.200.jpg",
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_pl.32.200.jpg"
+        },
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_pl.32.400.jpg",
+          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_fr.19.400.jpg",
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/ingredients_en.20.400.jpg"
+        }
+      },
+      "packaging": {
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.400.jpg"
+        },
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.200.jpg"
+        },
+        "thumb": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/packaging_pl.39.100.jpg"
+        }
+      },
+      "nutrition": {
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_pl.17.400.jpg",
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.400.jpg"
+        },
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_pl.17.200.jpg",
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.200.jpg"
+        },
+        "thumb": {
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_en.21.100.jpg",
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/nutrition_pl.17.100.jpg"
+        }
+      },
+      "front": {
+        "thumb": {
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.100.jpg",
+          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_fr.7.100.jpg",
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_pl.37.100.jpg"
+        },
+        "small": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_pl.37.200.jpg",
+          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_fr.7.200.jpg",
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.200.jpg"
+        },
+        "display": {
+          "pl": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_pl.37.400.jpg",
+          "fr": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_fr.7.400.jpg",
+          "en": "https://static.openfoodfacts.org/images/products/590/218/007/0109/front_en.19.400.jpg"
+        }
+      }
+    },
+    "ingredients_text": "Kasza _jęczmienna_ wiejska gruba.",
+    "data_quality_bugs_tags": [],
+    "nutrient_levels": {
+      "salt": "low",
+      "saturated-fat": "low",
+      "fat": "low",
+      "sugars": "moderate"
+    },
+    "pnns_groups_2": "Cereals",
+    "popularity_key": 100000000007,
+    "labels": "",
+    "origins_old": "Polska",
+    "stores": "Auchan",
+    "ingredients_n_tags": [
+      "1",
+      "1-10"
+    ],
+    "states_tags": [
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:packaging-photo-selected",
+      "en:nutrition-photo-selected",
+      "en:ingredients-photo-selected",
+      "en:front-photo-selected",
+      "en:photos-uploaded"
+    ],
+    "lc": "pl"
   },
-  "status_verbose": "product found",
   "status": 1
 }

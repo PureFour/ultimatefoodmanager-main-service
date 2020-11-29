@@ -2,10 +2,10 @@ package com.purefour.mainservice.service.mapper.fields;
 
 import com.purefour.mainservice.service.mapper.FieldTarget;
 
-public class ProductNameField extends FieldTarget<String> {
+public class BarcodeField extends FieldTarget<String> {
 
 	@Override
 	public String getName() {
-		return "name";
+		return "barcode";
 	}
 }

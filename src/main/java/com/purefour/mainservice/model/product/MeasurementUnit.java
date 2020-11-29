@@ -1,4 +1,8 @@
 package com.purefour.mainservice.model.product;
 
-public interface MeasurementUnit {
+public enum MeasurementUnit {
+	ML,
+	L,
+	G,
+	KG
 }
