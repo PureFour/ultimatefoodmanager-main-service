@@ -20,16 +20,12 @@ public class DatabaseClientErrorDecoder implements ErrorDecoder {
 
 		String responseBody = String.format("%s: %s", methodKey, getResponseBodyAsString(response.body()));
 
-		switch (response.status()) {
-			case 400:
-				return new BadRequestException(responseBody);
-			case 404:
-				return new NotFoundException(responseBody);
-			case 409:
-				return new ConflictException(responseBody);
-			default:
-				return new UnhandledException(String.format("Unhandled exception [code: %s, msg: %s]", response.status(), responseBody));
-		}
+		return switch (response.status()) {
+			case 400 -> new BadRequestException(responseBody);
+			case 404 -> new NotFoundException(responseBody);
+			case 409 -> new ConflictException(responseBody);
+			default -> new UnhandledException(String.format("Unhandled exception [code: %s, msg: %s]", response.status(), responseBody));
+		};
 	}
 
 	private String getResponseBodyAsString(final Response.Body body) {
