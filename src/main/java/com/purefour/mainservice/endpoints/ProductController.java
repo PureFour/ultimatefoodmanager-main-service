@@ -1,5 +1,7 @@
 package com.purefour.mainservice.endpoints;
 
+import java.util.List;
+
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
@@ -12,6 +14,7 @@ import io.swagger.annotations.ApiResponses;
 import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -46,5 +49,36 @@ public class ProductController {
     @PostMapping
     public ResponseEntity<Product> addProduct(@RequestBody Product product) throws NotFoundException, BadRequestException {
         return ResponseEntity.ok(productService.addProduct(product));
+    }
+
+    @ApiOperation(value = "Get product")
+    @ApiResponses(value = {
+        @ApiResponse(code = 200, message = "Operation successful!"),
+        @ApiResponse(code = 404, message = "Product not found!")
+    })
+    @GetMapping
+    public ResponseEntity<Product> getProduct(@RequestParam String uuid) throws NotFoundException {
+        return ResponseEntity.ok(productService.getProduct(uuid));
+    }
+
+    @ApiOperation(value = "Get all products")
+    @ApiResponses(value = {
+        @ApiResponse(code = 200, message = "Operation successful!"),
+        @ApiResponse(code = 404, message = "Product not found!")
+    })
+    @GetMapping("all")
+    public ResponseEntity<List<Product>> addProduct() throws NotFoundException {
+        return ResponseEntity.ok(productService.getAllProducts());
+    }
+
+    @ApiOperation(value = "Delete product")
+    @ApiResponses(value = {
+        @ApiResponse(code = 200, message = "Operation successful!"),
+        @ApiResponse(code = 404, message = "Product not found!")
+    })
+    @DeleteMapping
+    public ResponseEntity<String> deleteProduct(@RequestParam String uuid) throws NotFoundException {
+       productService.deleteProduct(uuid);
+       return ResponseEntity.ok(uuid);
     }
 }

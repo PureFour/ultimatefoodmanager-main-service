@@ -1,11 +1,14 @@
 package com.purefour.mainservice.service;
 
+import java.util.List;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.purefour.mainservice.config.ServiceInfo;
 import com.purefour.mainservice.feign.DatabaseClient;
 import com.purefour.mainservice.feign.OpenFoodFactsClient;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
+import com.purefour.mainservice.model.product.Price;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.service.mapper.FieldUtils;
 import com.purefour.mainservice.service.mapper.ProductMapperService;
@@ -27,11 +30,20 @@ public class ProductService {
 		checkApiResponseStatus(fullJsonProduct);
 
 		final Product productFromFoodApi = productMapperService.mapToTarget(fullJsonProduct);
-		return productFromFoodApi; //TODO zrobic enrichment np. z ceną itd...
+
+		return enrichProduct(productFromFoodApi);
 	}
 
 	public Product addProduct(Product product) throws NotFoundException, BadRequestException {
 		return databaseClient.add(product);
+	}
+
+	private Product enrichProduct(Product product) { //TODO zrobic enrichment np. z ceną itd...
+		product.setQuantity(product.getTotalQuantity());
+		product.setPrice(Price.builder()
+			.value(0.0f)
+			.currency("PLN").build());
+		return product;
 	}
 
 	private void checkApiResponseStatus(JsonNode jsonNode) throws NotFoundException {
@@ -45,5 +57,17 @@ public class ProductService {
 		}
 
 		throw new NotFoundException("Searched product has not been found!");
+	}
+
+	public Product getProduct(String productUuid) {
+		return databaseClient.getProduct(productUuid);
+	}
+
+	public List<Product> getAllProducts() {
+		return databaseClient.getAllProducts();
+	}
+
+	public void deleteProduct(String productUuid) {
+		databaseClient.deleteProduct(productUuid);
 	}
 }

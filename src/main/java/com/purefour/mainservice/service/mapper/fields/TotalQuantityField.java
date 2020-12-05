@@ -4,11 +4,11 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.purefour.mainservice.service.mapper.FieldTarget;
 import com.purefour.mainservice.service.mapper.FieldUtils;
 
-public class QuantityField extends FieldTarget<Integer> {
+public class TotalQuantityField extends FieldTarget<Integer> {
 
 	@Override
 	public String getName() {
-		return "quantity";
+		return "totalQuantity";
 	}
 
 	@Override

@@ -18,14 +18,16 @@ public class Product {
 
 	private String name;
 	private String brand;
+	private String photoUrl;
 	private String barcode;
 	private Category category;
 
-	private float price;
-	private String currency;
+	private Price price;
 
-	private MeasurementUnit measurementUnit; // g, ml, kg...
-	private int quantity; // np. ilosc ml w puszcze coli
+	private int totalQuantity;
+	private int quantity;
+	private MeasurementUnit measurementUnit;
+
 	private Nutriments nutriments;
 	private LocalDate expiryDate;
 }
