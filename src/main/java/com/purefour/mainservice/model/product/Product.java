@@ -1,6 +1,5 @@
 package com.purefour.mainservice.model.product;
 
-import java.time.LocalDate;
 import java.util.UUID;
 
 import lombok.AllArgsConstructor;
@@ -29,5 +28,5 @@ public class Product {
 	private MeasurementUnit measurementUnit;
 
 	private Nutriments nutriments;
-	private LocalDate expiryDate;
+	private Metadata metadata;
 }
