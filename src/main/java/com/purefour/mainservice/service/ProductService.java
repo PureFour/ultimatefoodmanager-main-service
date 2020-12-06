@@ -13,9 +13,12 @@ import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.service.mapper.FieldUtils;
 import com.purefour.mainservice.service.mapper.ProductMapperService;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
+@Slf4j
 @AllArgsConstructor
 public class ProductService {
 
@@ -24,13 +27,13 @@ public class ProductService {
 	private final OpenFoodFactsClient foodFactsClient;
 	private final DatabaseClient databaseClient;
 
+	@Cacheable(value = "scanProducts", key = "#barcode")
 	public Product searchProduct(String barcode) throws NotFoundException {
 		final JsonNode fullJsonProduct = foodFactsClient.getProduct(barcode, serviceInfo.getApiInfo());
 
 		checkApiResponseStatus(fullJsonProduct);
 
 		final Product productFromFoodApi = productMapperService.mapToTarget(fullJsonProduct);
-
 		return enrichProduct(productFromFoodApi);
 	}
 
