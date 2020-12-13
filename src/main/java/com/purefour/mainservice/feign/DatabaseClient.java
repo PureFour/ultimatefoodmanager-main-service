@@ -3,6 +3,7 @@ package com.purefour.mainservice.feign;
 import java.util.List;
 
 import com.purefour.mainservice.model.product.Product;
+import com.purefour.mainservice.model.user.FindUserQuery;
 import com.purefour.mainservice.model.user.RegisterRequest;
 import com.purefour.mainservice.model.user.User;
 import feign.Feign;
@@ -26,6 +27,9 @@ public interface DatabaseClient {
 	@GetMapping("users/{uuid}")
 	User getUser(@PathVariable("uuid") String uuid);
 
+	@PostMapping("users")
+	User findUser(FindUserQuery findUserQuery);
+
 	@PostMapping("users/signUp")
 	User addUser(RegisterRequest registerRequest);
 
@@ -34,14 +38,14 @@ public interface DatabaseClient {
 
 	//PRODUCTS
 
-	@PostMapping("products")
-	Product add(Product product);
+	@PostMapping("products/{userUuid}")
+	Product add(@PathVariable("userUuid") String userUuid, Product product);
 
 	@GetMapping("products/{uuid}")
 	Product getProduct(@PathVariable String uuid);
 
-	@GetMapping("products/all")
-	List<Product> getAllProducts();
+	@GetMapping("products/{userUuid}/all")
+	List<Product> getAllProducts(@PathVariable("userUuid") String userUuid);
 
 	@DeleteMapping("products/{uuid}")
 	void deleteProduct(@PathVariable String uuid);
@@ -51,6 +55,11 @@ public interface DatabaseClient {
 
 		@Override
 		public User getUser(String uuid) {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public User findUser(FindUserQuery findUserQuery) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 
@@ -65,7 +74,7 @@ public interface DatabaseClient {
 		}
 
 		@Override
-		public Product add(Product product) {
+		public Product add(String userUuid, Product product) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 
@@ -75,7 +84,7 @@ public interface DatabaseClient {
 		}
 
 		@Override
-		public List<Product> getAllProducts() {
+		public List<Product> getAllProducts(String userUuid) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 

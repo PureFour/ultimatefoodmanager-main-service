@@ -6,11 +6,18 @@ import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.ErrorMessage;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
+import com.purefour.mainservice.model.exceptions.UnauthorizedException;
+import com.purefour.mainservice.model.exceptions.UnhandledException;
+import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.MalformedJwtException;
+import io.jsonwebtoken.SignatureException;
+import io.jsonwebtoken.UnsupportedJwtException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.client.HttpServerErrorException;
 
 @Slf4j
 @ControllerAdvice
@@ -29,6 +36,21 @@ public class RestExceptionHandler {
 	@ExceptionHandler({ BadRequestException.class })
 	protected ResponseEntity<ErrorMessage> badRequest(Exception exception) {
 		return errorResponse(HttpStatus.BAD_REQUEST, exception);
+	}
+
+	@ExceptionHandler({ UnauthorizedException.class })
+	protected ResponseEntity<ErrorMessage> unauthorized(Exception exception) {
+		return errorResponse(HttpStatus.UNAUTHORIZED, exception);
+	}
+
+	@ExceptionHandler({ UnhandledException.class })
+	protected ResponseEntity<ErrorMessage> unhandledException(Exception exception) {
+		return errorResponse(HttpStatus.valueOf(420), exception);
+	}
+
+	@ExceptionHandler({ Exception.class })
+	protected ResponseEntity<ErrorMessage> anyException(Exception exception) {
+		return errorResponse(HttpStatus.valueOf(420), exception);
 	}
 
 	private ResponseEntity<ErrorMessage> errorResponse(HttpStatus status, Exception exception) {

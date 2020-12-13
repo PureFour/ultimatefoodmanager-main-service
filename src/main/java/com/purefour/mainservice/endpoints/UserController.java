@@ -1,5 +1,6 @@
 package com.purefour.mainservice.endpoints;
 
+import com.purefour.mainservice.model.exceptions.UnauthorizedException;
 import com.purefour.mainservice.model.user.AuthenticationResponse;
 import com.purefour.mainservice.model.user.LoginRequest;
 import com.purefour.mainservice.model.user.RegisterRequest;
@@ -10,8 +11,6 @@ import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.service.AuthorizationService;
 import com.purefour.mainservice.service.UserService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -42,7 +41,7 @@ public class UserController {
 		@ApiResponse(code = 404, message = "User not found!", response = NotFoundException.class),
 	})
 	@PostMapping("signIn")
-	public ResponseEntity<AuthenticationResponse> authenticateUser(@RequestBody LoginRequest loginRequest) {
+	public ResponseEntity<AuthenticationResponse> authenticateUser(@RequestBody LoginRequest loginRequest) throws UnauthorizedException {
 		return ResponseEntity.ok(authorizationService.authenticateUser(loginRequest));
 	}
 
@@ -61,8 +60,6 @@ public class UserController {
             @ApiResponse(code = 200, message = "Got user!"),
             @ApiResponse(code = 404, message = "User not found!", response = NotFoundException.class)
     })
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "Authorization", value = "Authorization token (starts with 'Bearer')", dataType = "string", paramType = "header", required = false) })
     @GetMapping()
     public ResponseEntity<User> getUserByUsername(@RequestParam String uuid) {
         return ResponseEntity.ok(userService.getUser(uuid));
@@ -73,8 +70,6 @@ public class UserController {
             @ApiResponse(code = 200, message = "Operation successful!"),
             @ApiResponse(code = 404, message = "User not found!", response = NotFoundException.class)
     })
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "Authorization", value = "Authorization token (starts with 'Bearer')", dataType = "string", paramType = "header", required = false) })
     @DeleteMapping()
     public ResponseEntity<String> deleteUser(@RequestParam String uuid) {
         userService.deleteUser(uuid);

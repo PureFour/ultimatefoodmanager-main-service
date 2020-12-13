@@ -27,7 +27,7 @@ management:
       exposure:
         include: "*"
 
-database: #doesnt work on default profile!
+database:
   host: localhost
   port: 8529
   protocol: http

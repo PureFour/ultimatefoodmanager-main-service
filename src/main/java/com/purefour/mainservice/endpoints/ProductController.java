@@ -7,20 +7,24 @@ import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.service.ProductService;
+import com.purefour.mainservice.security.util.JwtUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.annotations.ApiIgnore;
 
 @RestController
 @Api(tags = "Product Controller")
@@ -47,8 +51,11 @@ public class ProductController {
         @ApiResponse(code = 409, message = "Product already exist!", response = ConflictException.class),
     })
     @PostMapping
-    public ResponseEntity<Product> addProduct(@RequestBody Product product) throws NotFoundException, BadRequestException {
-        return ResponseEntity.ok(productService.addProduct(product));
+    public ResponseEntity<Product> addProduct(
+            @RequestBody Product product,
+            @ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException, BadRequestException {
+        final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+        return ResponseEntity.ok(productService.addProduct(userUuid, product));
     }
 
     @ApiOperation(value = "Get product")
@@ -67,8 +74,10 @@ public class ProductController {
         @ApiResponse(code = 404, message = "Product not found!")
     })
     @GetMapping("all")
-    public ResponseEntity<List<Product>> addProduct() throws NotFoundException {
-        return ResponseEntity.ok(productService.getAllProducts());
+    public ResponseEntity<List<Product>> getAllProducts(
+            @ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException {
+        final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+        return ResponseEntity.ok(productService.getAllProducts(userUuid));
     }
 
     @ApiOperation(value = "Delete product")

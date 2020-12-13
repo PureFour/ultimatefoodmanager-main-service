@@ -37,8 +37,8 @@ public class ProductService {
 		return enrichProduct(productFromFoodApi);
 	}
 
-	public Product addProduct(Product product) throws NotFoundException, BadRequestException {
-		return databaseClient.add(product);
+	public Product addProduct(String userUuid, Product product) throws NotFoundException, BadRequestException {
+		return databaseClient.add(userUuid, product);
 	}
 
 	private Product enrichProduct(Product product) { //TODO zrobic enrichment np. z ceną itd...
@@ -66,8 +66,8 @@ public class ProductService {
 		return databaseClient.getProduct(productUuid);
 	}
 
-	public List<Product> getAllProducts() {
-		return databaseClient.getAllProducts();
+	public List<Product> getAllProducts(String userUuid) {
+		return databaseClient.getAllProducts(userUuid);
 	}
 
 	public void deleteProduct(String productUuid) {
