@@ -36,6 +36,9 @@ database:
 
 openFoodFactsApi: fake
 
+allegroApi:
+  encodedClientKey: Y2RiMmY3M2ZjYjk4NDRhYTljZjUyZTM5NmFlOGI5YTA6THN5SXJwVVIyTmdTT2t6Y1FUb0lSVkpMbDJreEMzbGF2WFFNd3N5OGZiblNLWlU4UTNyaGNuMnZIMTV0RjByQQ==
+
 logging:
   level:
     com:

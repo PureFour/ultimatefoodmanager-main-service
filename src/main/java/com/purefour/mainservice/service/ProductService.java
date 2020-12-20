@@ -6,7 +6,6 @@ import com.purefour.mainservice.feign.DatabaseClient;
 import com.purefour.mainservice.feign.OpenFoodFactsClient;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
-import com.purefour.mainservice.model.product.Price;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.service.mapper.FieldUtils;
 import com.purefour.mainservice.service.mapper.ProductMapperService;
@@ -26,6 +25,7 @@ public class ProductService {
 	private final ProductMapperService productMapperService;
 	private final OpenFoodFactsClient foodFactsClient;
 	private final DatabaseClient databaseClient;
+	private final AllegroService allegroService;
 
 	@Cacheable(value = "scanProducts", key = "#barcode")
 	public Product searchProduct(String barcode) throws NotFoundException {
@@ -41,11 +41,9 @@ public class ProductService {
 		return databaseClient.add(userUuid, product);
 	}
 
-	private Product enrichProduct(Product product) { //TODO zrobic enrichment np. z ceną itd...
+	private Product enrichProduct(Product product) {
 		product.setQuantity(product.getTotalQuantity());
-		product.setPrice(Price.builder()
-			.value(0.0f)
-			.currency("PLN").build());
+		product.setPrice(allegroService.getProductPriceByBarcode(product.getBarcode()));
 		return product;
 	}
 

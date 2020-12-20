@@ -31,7 +31,9 @@ public class CommonErrorDecoder implements ErrorDecoder {
 
 	private String getResponseBodyAsString(final Response.Body body) {
 		try {
-			return IOUtils.toString(body.asReader(StandardCharsets.UTF_8));
+			if (body != null) {
+				return IOUtils.toString(body.asReader(StandardCharsets.UTF_8));
+			}
 		} catch (final IOException e) {
 			log.error("Failed to read the response body with error: ", e);
 		}

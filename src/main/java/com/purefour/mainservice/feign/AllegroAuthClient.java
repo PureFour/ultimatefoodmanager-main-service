@@ -2,6 +2,7 @@ package com.purefour.mainservice.feign;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import feign.Feign;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
@@ -10,16 +11,23 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 @FeignClient(
         name = "allegroAuthClient",
-        url = "https://allegro.pl.allegrosandbox.pl/auth/oauth/",
-        fallback = AllegroApiAuthClient.AllegroApiClientFallback.class,
-        configuration = AllegroApiAuthClient.AllegroApiClientConfiguration.class
+        url = "https://allegro.pl/auth/oauth/",
+        fallback = AllegroAuthClient.AllegroClientFallback.class,
+        configuration = AllegroAuthClient.AllegroApiClientConfiguration.class
 )
-public interface AllegroApiAuthClient {
+public interface AllegroAuthClient {
+
+    @Cacheable(value = "allegroApiTokenResponse", key="#apiKey")
+    default String getClientToken(String apiKey) {
+        final String authorizationHeader = "Basic " + apiKey;
+        final JsonNode allegroApiTokenResponse = this.authenticate(authorizationHeader);
+        return "Bearer " + allegroApiTokenResponse.get("access_token").asText();
+    }
 
     @PostMapping("token?grant_type=client_credentials")
     JsonNode authenticate(@RequestHeader(HttpHeaders.AUTHORIZATION) String authorizationHeader);
 
-    class AllegroApiClientFallback implements AllegroApiAuthClient {
+    class AllegroClientFallback implements AllegroAuthClient {
         private static final String SERVICE_UNAVAILABLE_MSG = "AllegroAPI unavailable!";
 
         @Override
