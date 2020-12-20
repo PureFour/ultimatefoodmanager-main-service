@@ -1,9 +1,9 @@
 package com.purefour.mainservice.service.mapper;
 
-import java.util.Map;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import lombok.AllArgsConstructor;
+
+import java.util.Map;
 
 @AllArgsConstructor
 public abstract class ObjectTarget<T> extends Mapper<T> implements Target<T> {

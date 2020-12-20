@@ -1,8 +1,5 @@
 package com.purefour.mainservice.service.mapper;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.service.mapper.fields.BarcodeField;
 import com.purefour.mainservice.service.mapper.fields.BrandField;
@@ -13,6 +10,9 @@ import com.purefour.mainservice.service.mapper.fields.PhotoUrlField;
 import com.purefour.mainservice.service.mapper.fields.ProductNameField;
 import com.purefour.mainservice.service.mapper.fields.TotalQuantityField;
 import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class ProductMapperService extends Mapper<Product> {

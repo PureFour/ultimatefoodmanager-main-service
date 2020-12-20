@@ -1,12 +1,12 @@
 package com.purefour.mainservice.service.mapper;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.core.GenericTypeResolver;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @AllArgsConstructor
 public abstract class Mapper<M> {

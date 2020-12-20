@@ -1,13 +1,13 @@
 package com.purefour.mainservice.endpoints;
 
+import com.purefour.mainservice.model.exceptions.ConflictException;
+import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.exceptions.UnauthorizedException;
 import com.purefour.mainservice.model.user.AuthenticationResponse;
 import com.purefour.mainservice.model.user.LoginRequest;
 import com.purefour.mainservice.model.user.RegisterRequest;
 import com.purefour.mainservice.model.user.RegisterResponse;
 import com.purefour.mainservice.model.user.User;
-import com.purefour.mainservice.model.exceptions.ConflictException;
-import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.service.AuthorizationService;
 import com.purefour.mainservice.service.UserService;
 import io.swagger.annotations.Api;

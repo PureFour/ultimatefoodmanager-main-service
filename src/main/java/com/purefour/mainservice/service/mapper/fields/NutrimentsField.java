@@ -1,13 +1,13 @@
 package com.purefour.mainservice.service.mapper.fields;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.purefour.mainservice.model.product.Nutriments;
 import com.purefour.mainservice.service.mapper.FieldTarget;
 import com.purefour.mainservice.service.mapper.ObjectTarget;
 import com.purefour.mainservice.service.mapper.Target;
 import lombok.AllArgsConstructor;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class NutrimentsField extends ObjectTarget<Nutriments> {
 

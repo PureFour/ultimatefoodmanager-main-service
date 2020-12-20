@@ -1,7 +1,5 @@
 package com.purefour.mainservice.service;
 
-import java.util.List;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.purefour.mainservice.config.ServiceInfo;
 import com.purefour.mainservice.feign.DatabaseClient;
@@ -16,6 +14,8 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @Slf4j
