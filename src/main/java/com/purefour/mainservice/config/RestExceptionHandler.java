@@ -48,11 +48,6 @@ public class RestExceptionHandler {
 		return errorResponse(HttpStatus.valueOf(420), exception);
 	}
 
-	@ExceptionHandler({ Exception.class })
-	protected ResponseEntity<ErrorMessage> anyException(Exception exception) {
-		return errorResponse(HttpStatus.valueOf(420), exception);
-	}
-
 	private ResponseEntity<ErrorMessage> errorResponse(HttpStatus status, Exception exception) {
 		final String exceptionMessage = Objects.isNull(exception.getCause()) ? exception.getMessage() : exception.getCause().getMessage();
 		return ResponseEntity.status(status).body(new ErrorMessage(exceptionMessage));
