@@ -1,0 +1,27 @@
+image: docker
+
+services:
+    - docker:dind
+    
+stages:
+    - test
+    - deploy
+
+test:
+    stage: test
+    only:
+        - develop
+        - master
+    script:
+        - echo testing...
+        - ls -alh
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    script:
+        - ./scripts/build.sh
+        - docker-compose up -d
+    environment: production
+    when: manual
