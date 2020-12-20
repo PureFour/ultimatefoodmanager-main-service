@@ -4,8 +4,18 @@ services:
     - docker:dind
     
 stages:
+    - build
     - test
     - deploy
+
+build:
+    stage: build
+    only:
+        - develop
+        - master
+    script:
+        - echo building...
+        - ./gradlew clean build
 
 test:
     stage: test
@@ -14,7 +24,7 @@ test:
         - master
     script:
         - echo testing...
-        - ls -alh
+        - ./gradlew test
 
 deploy:
     stage: deploy
