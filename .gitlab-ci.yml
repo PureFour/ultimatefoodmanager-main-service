@@ -32,6 +32,4 @@ deploy:
         - master
     script:
         - ./scripts/build.sh
-        - docker-compose up -d
-    environment: production
-    when: manual
+        - docker-compose up -d --remove-orphans

@@ -39,7 +39,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.OAS_30)
                 .apiInfo(new ApiInfoBuilder()
                     .title("UltimateFoodManager API")
-                    .description("A Spring API provided by master developer ~Daniel")
+                    .description("A Spring API provided by master backend developer ~Daniel")
                     .version("0.0.1")
                     .build())
                 .securityContexts(List.of(securityContext()))
