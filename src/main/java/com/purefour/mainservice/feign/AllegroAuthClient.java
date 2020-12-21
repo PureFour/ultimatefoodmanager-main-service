@@ -1,6 +1,7 @@
 package com.purefour.mainservice.feign;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.purefour.mainservice.security.util.JwtUtil;
 import feign.Feign;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -21,7 +22,7 @@ public interface AllegroAuthClient {
     default String getClientToken(String apiKey) {
         final String authorizationHeader = "Basic " + apiKey;
         final JsonNode allegroApiTokenResponse = this.authenticate(authorizationHeader);
-        return "Bearer " + allegroApiTokenResponse.get("access_token").asText();
+        return JwtUtil.BEARER + allegroApiTokenResponse.get("access_token").asText();
     }
 
     @PostMapping("token?grant_type=client_credentials")

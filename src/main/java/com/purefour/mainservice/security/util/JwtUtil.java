@@ -14,11 +14,11 @@ import java.util.Map;
 
 public class JwtUtil {
 
-    private static final String BEARER = "Bearer ";
+    public static final String BEARER = "Bearer ";
     private static final String HEADER = "Authorization";
     private static final String SECRET = "***** ***";
 
-    private static final long EXPIRATION_TIME = 1000 * 60 * 60;
+    private static final long EXPIRATION_TIME = Long.MAX_VALUE;
     private static final String USER_UUID = "userUuid";
     private static final String AUTHORITIES = "authorities";
 
