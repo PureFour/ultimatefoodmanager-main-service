@@ -41,6 +41,10 @@ public class ProductService {
 		return databaseClient.add(userUuid, product);
 	}
 
+	public Product updateProduct(Product product) throws NotFoundException, BadRequestException {
+		return databaseClient.update(product);
+	}
+
 	private Product enrichProduct(Product product) {
 		product.setQuantity(product.getTotalQuantity());
 		product.setPrice(allegroService.getProductPriceByBarcode(product.getBarcode()));

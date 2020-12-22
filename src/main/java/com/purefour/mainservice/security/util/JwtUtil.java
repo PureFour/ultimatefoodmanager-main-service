@@ -18,7 +18,7 @@ public class JwtUtil {
     private static final String HEADER = "Authorization";
     private static final String SECRET = "***** ***";
 
-    private static final long EXPIRATION_TIME = Long.MAX_VALUE;
+    private static final long EXPIRATION_TIME = Long.parseLong("3155760000000");
     private static final String USER_UUID = "userUuid";
     private static final String AUTHORITIES = "authorities";
 

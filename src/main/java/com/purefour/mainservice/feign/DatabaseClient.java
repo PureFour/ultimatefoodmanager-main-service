@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 
 import java.util.List;
 
@@ -40,6 +41,9 @@ public interface DatabaseClient {
 
 	@PostMapping("products/{userUuid}")
 	Product add(@PathVariable("userUuid") String userUuid, Product product);
+
+	@PutMapping("products")
+	Product update(Product product);
 
 	@GetMapping("products/{uuid}")
 	Product getProduct(@PathVariable String uuid);
@@ -75,6 +79,11 @@ public interface DatabaseClient {
 
 		@Override
 		public Product add(String userUuid, Product product) {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public Product update(Product product) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 
