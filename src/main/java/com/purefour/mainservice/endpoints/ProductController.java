@@ -33,74 +33,75 @@ import java.util.List;
 @AllArgsConstructor
 public class ProductController {
 
-    private final ProductService productService;
+	private final ProductService productService;
 
-    @ApiOperation(value = "Search product by its barcode")
-    @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "Operation successful!"),
-        @ApiResponse(code = 404, message = "Product not found!", response = NotFoundException.class)
-    })
-    @GetMapping("search")
-    public ResponseEntity<Product> searchProduct(@RequestParam String barcode) throws NotFoundException {
-        return ResponseEntity.ok(productService.searchProduct(barcode));
-    }
+	@ApiOperation(value = "Search product by its barcode")
+	@ApiResponses(value = {
+		@ApiResponse(code = 200, message = "Operation successful!"),
+		@ApiResponse(code = 404, message = "Product not found!", response = NotFoundException.class)
+	})
+	@GetMapping("search")
+	public ResponseEntity<Product> searchProduct(@RequestParam String barcode) throws NotFoundException {
+		return ResponseEntity.ok(productService.searchProduct(barcode));
+	}
 
-    @ApiOperation(value = "Add product")
-    @ApiResponses(value = {
-        @ApiResponse(code = 201, message = "Operation successful!"),
-        @ApiResponse(code = 400, message = "Bad request!"),
-        @ApiResponse(code = 409, message = "Product already exist!", response = ConflictException.class),
-    })
-    @PostMapping
-    public ResponseEntity<Product> addProduct(
-            @RequestBody Product product,
-            @ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException, BadRequestException {
-        final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
-        return ResponseEntity.ok(productService.addProduct(userUuid, product));
-    }
+	@ApiOperation(value = "Add product")
+	@ApiResponses(value = {
+		@ApiResponse(code = 201, message = "Operation successful!"),
+		@ApiResponse(code = 400, message = "Bad request!"),
+		@ApiResponse(code = 409, message = "Product already exist!", response = ConflictException.class),
+	})
+	@PostMapping
+	public ResponseEntity<Product> addProduct(
+		@RequestBody Product product,
+		@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException, BadRequestException {
+		final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+		return ResponseEntity.ok(productService.addProduct(userUuid, product));
+	}
 
-    @ApiOperation(value = "Update product")
-    @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Operation successful!"),
-            @ApiResponse(code = 400, message = "Bad request!"),
-            @ApiResponse(code = 404, message = "Product not found!", response = NotFoundException.class)
-    })
-    @PutMapping
-    public ResponseEntity<Product> updateProduct(@RequestBody Product product) throws NotFoundException, BadRequestException {
-        return ResponseEntity.ok(productService.updateProduct(product));
-    }
+	@ApiOperation(value = "Update product")
+	@ApiResponses(value = {
+		@ApiResponse(code = 200, message = "Operation successful!"),
+		@ApiResponse(code = 400, message = "Bad request!"),
+		@ApiResponse(code = 404, message = "Product not found!", response = NotFoundException.class)
+	})
+	@PutMapping
+	public ResponseEntity<Product> updateProduct(@RequestBody Product product) throws NotFoundException, BadRequestException {
+		return ResponseEntity.ok(productService.updateProduct(product));
+	}
 
+	@ApiOperation(value = "Get product")
+	@ApiResponses(value = {
+		@ApiResponse(code = 200, message = "Operation successful!"),
+		@ApiResponse(code = 404, message = "Product not found!")
+	})
+	@GetMapping
+	public ResponseEntity<Product> getProduct(@RequestParam String uuid) throws NotFoundException {
+		return ResponseEntity.ok(productService.getProduct(uuid));
+	}
 
-    @ApiOperation(value = "Get product")
-    @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "Operation successful!"),
-        @ApiResponse(code = 404, message = "Product not found!")
-    })
-    @GetMapping
-    public ResponseEntity<Product> getProduct(@RequestParam String uuid) throws NotFoundException {
-        return ResponseEntity.ok(productService.getProduct(uuid));
-    }
+	@ApiOperation(value = "Get all products")
+	@ApiResponses(value = {
+		@ApiResponse(code = 200, message = "Operation successful!"),
+		@ApiResponse(code = 404, message = "Product not found!")
+	})
+	@GetMapping("all")
+	public ResponseEntity<List<Product>> getAllProducts(
+		@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException {
+		final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+		return ResponseEntity.ok(productService.getAllProducts(userUuid));
+	}
 
-    @ApiOperation(value = "Get all products")
-    @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "Operation successful!"),
-        @ApiResponse(code = 404, message = "Product not found!")
-    })
-    @GetMapping("all")
-    public ResponseEntity<List<Product>> getAllProducts(
-            @ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException {
-        final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
-        return ResponseEntity.ok(productService.getAllProducts(userUuid));
-    }
-
-    @ApiOperation(value = "Delete product")
-    @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "Operation successful!"),
-        @ApiResponse(code = 404, message = "Product not found!")
-    })
-    @DeleteMapping
-    public ResponseEntity<String> deleteProduct(@RequestParam String uuid) throws NotFoundException {
-       productService.deleteProduct(uuid);
-       return ResponseEntity.ok(uuid);
-    }
+	@ApiOperation(value = "Delete product")
+	@ApiResponses(value = {
+		@ApiResponse(code = 200, message = "Operation successful!"),
+		@ApiResponse(code = 404, message = "Product not found!")
+	})
+	@DeleteMapping
+	public ResponseEntity<String> deleteProduct(@RequestParam String uuid,
+		@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException {
+		final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+		productService.deleteProduct(uuid, userUuid);
+		return ResponseEntity.ok(uuid);
+	}
 }

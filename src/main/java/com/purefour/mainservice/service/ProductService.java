@@ -73,7 +73,7 @@ public class ProductService {
 		return databaseClient.getAllProducts(userUuid);
 	}
 
-	public void deleteProduct(String productUuid) {
-		databaseClient.deleteProduct(productUuid);
+	public void deleteProduct(String productUuid, String userUuid) {
+		databaseClient.deleteProduct(userUuid, productUuid);
 	}
 }

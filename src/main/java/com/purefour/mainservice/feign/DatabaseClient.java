@@ -51,8 +51,8 @@ public interface DatabaseClient {
 	@GetMapping("products/{userUuid}/all")
 	List<Product> getAllProducts(@PathVariable("userUuid") String userUuid);
 
-	@DeleteMapping("products/{uuid}")
-	void deleteProduct(@PathVariable String uuid);
+	@DeleteMapping("products/{userUuid}/{uuid}")
+	void deleteProduct(@PathVariable String userUuid, @PathVariable String uuid);
 
 	class DatabaseClientFallback implements DatabaseClient {
 		private static final String SERVICE_UNAVAILABLE_MSG = "Database unavailable.";
@@ -98,7 +98,7 @@ public interface DatabaseClient {
 		}
 
 		@Override
-		public void deleteProduct(String productUuid) {
+		public void deleteProduct(String userUuid, String productUuid) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 	}
