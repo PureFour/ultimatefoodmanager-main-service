@@ -14,7 +14,7 @@ import java.io.InputStream;
 @Service
 public class OpenFoodFactsFakeClient implements OpenFoodFactsClient {
 
-	private static final String FAKE_PRODUCT_BARCODE = "5902180070109";
+	private static final String FAKE_PRODUCT_BARCODE = "8008698005347";
 	private static final String FAKE_FOUND_PRODUCT_RESPONSE_PATH = "/fakeApi/sampleFoundProductResponse.json";
 	private static final String FAKE_NOT_FOUND_PRODUCT_RESPONSE_PATH = "/fakeApi/sampleNotFoundProductResponse.json";
 

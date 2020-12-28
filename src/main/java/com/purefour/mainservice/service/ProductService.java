@@ -30,6 +30,7 @@ public class ProductService {
 	@Cacheable(value = "scanProducts", key = "#barcode")
 	public Product searchProduct(String barcode) throws NotFoundException {
 		final JsonNode fullJsonProduct = foodFactsClient.getProduct(barcode, serviceInfo.getApiInfo());
+		log.debug("FoodFactsClient product search response: {}", fullJsonProduct);
 
 		checkApiResponseStatus(fullJsonProduct);
 
@@ -53,7 +54,7 @@ public class ProductService {
 
 	private void checkApiResponseStatus(JsonNode jsonNode) throws NotFoundException {
 		try {
-			final JsonNode apiStatusNode = productMapperService.findNodeVariable(jsonNode, FieldUtils.STATUS);
+			final JsonNode apiStatusNode = jsonNode.get(FieldUtils.STATUS);
 			final int apiStatus = apiStatusNode.asInt();
 			if (apiStatus == 1) {
 				return;

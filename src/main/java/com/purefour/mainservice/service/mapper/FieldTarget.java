@@ -9,7 +9,16 @@ import lombok.Data;
 public abstract class FieldTarget<T> implements Target<T> {
 
 	@Override
+	public String getStepKey() {
+		return "";
+	}
+
+	@Override
 	public T getMappedValue(String nodeKey, JsonNode jsonNode) {
+		final String stepKey = getStepKey();
+		if (!stepKey.isEmpty()) {
+			jsonNode = jsonNode.findValue(stepKey);
+		}
 		return (T) getVariableValue(jsonNode.findValue(nodeKey));
 	}
 

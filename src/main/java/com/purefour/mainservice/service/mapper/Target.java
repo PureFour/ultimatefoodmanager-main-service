@@ -6,5 +6,7 @@ public interface Target<T> {
 
 	String getName();
 
+	String getStepKey();
+
 	T getMappedValue(String nodeKey, JsonNode jsonNode);
 }

@@ -48,7 +48,14 @@ public class NutrimentsField extends ObjectTarget<Nutriments> {
 	@AllArgsConstructor
 	static class NutrimentField extends FieldTarget<Float> {
 
+		private static final String NUTRIMENTS_TARGET_PATH = "nutriments";
+
 		private final String name;
+
+		@Override
+		public String getStepKey() {
+			return NUTRIMENTS_TARGET_PATH;
+		}
 
 		@Override
 		public String getName() {

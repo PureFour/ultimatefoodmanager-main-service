@@ -23,7 +23,7 @@ public class ProductMapperService extends Mapper<Product> {
 	private static final String BARCODE_TARGET_PATH = "code";
 	private static final String CATEGORY_TARGET_PATH = "categories_tags";
 	private static final String MEASUREMENT_UNIT = "measurementUnit";
-	private static final String TOTAL_QUANTITY_TARGET_PATH = "quantity";
+	private static final String TOTAL_QUANTITY_TARGET_PATH = "product_quantity";
 	private static final String NUTRIMENTS_TARGET_PATH = "nutriments";
 
 	private static final Map<String, Target> MAPPING = new HashMap<>();

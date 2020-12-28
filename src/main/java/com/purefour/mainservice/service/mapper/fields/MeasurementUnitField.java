@@ -3,12 +3,13 @@ package com.purefour.mainservice.service.mapper.fields;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.purefour.mainservice.model.product.MeasurementUnit;
 import com.purefour.mainservice.service.mapper.FieldTarget;
+import com.purefour.mainservice.service.mapper.FieldUtils;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class MeasurementUnitField extends FieldTarget<MeasurementUnit> {
 
-	private static final String MEASUREMENT_UNIT_KEY = "quantity"; //TODO do ogarniecia inaczej!
+	private static final String MEASUREMENT_UNIT_KEY = "quantity";
 
 	@Override
 	public String getName() {
@@ -24,8 +25,7 @@ public class MeasurementUnitField extends FieldTarget<MeasurementUnit> {
 	private MeasurementUnit extractMeasurementUnit(Object quantityField) {
 		String measurementUnitName = "";
 		try {
-			final String[] measurementUnitField = ((String) quantityField).split(" ");
-			measurementUnitName = measurementUnitField[1];
+			measurementUnitName = FieldUtils.getFirstWord(quantityField);
 			return MeasurementUnit.valueOf(measurementUnitName.toUpperCase());
 		} catch (Exception e) {
 			log.error("Didn't find matching measurementUnit for: {}", measurementUnitName);

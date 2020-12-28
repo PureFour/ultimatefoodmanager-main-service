@@ -11,6 +11,11 @@ public abstract class ObjectTarget<T> extends Mapper<T> implements Target<T> {
 	protected abstract Map<String, Target> getMapping();
 
 	@Override
+	public String getStepKey() {
+		return "";
+	}
+
+	@Override
 	public T getMappedValue(String nodeKey, JsonNode jsonNode) {
 		return mapToTarget(jsonNode);
 	}

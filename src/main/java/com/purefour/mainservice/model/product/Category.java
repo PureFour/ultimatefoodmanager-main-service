@@ -15,6 +15,7 @@ public enum Category {
 	PLANT_BASED_FOODS("plant-based-foods-and-beverages"),
 	DAIRIES("dairies"),
 	GROCERIES("groceries"),
+	SNACKS("snacks"),
 	BEVERAGES("beverages");
 
 	@Getter
