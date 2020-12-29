@@ -8,6 +8,7 @@ import com.purefour.mainservice.model.user.LoginRequest;
 import com.purefour.mainservice.model.user.RegisterRequest;
 import com.purefour.mainservice.model.user.RegisterResponse;
 import com.purefour.mainservice.model.user.User;
+import com.purefour.mainservice.security.util.JwtUtil;
 import com.purefour.mainservice.service.AuthorizationService;
 import com.purefour.mainservice.service.UserService;
 import io.swagger.annotations.Api;
@@ -15,15 +16,17 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.annotations.ApiIgnore;
 
 @RestController
 @Api(tags = "User Controller")
@@ -61,8 +64,9 @@ public class UserController {
             @ApiResponse(code = 404, message = "User not found!", response = NotFoundException.class)
     })
     @GetMapping()
-    public ResponseEntity<User> getUserByUsername(@RequestParam String uuid) {
-        return ResponseEntity.ok(userService.getUser(uuid));
+    public ResponseEntity<User> getUser(@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) {
+	    final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+        return ResponseEntity.ok(userService.getUser(userUuid));
     }
 
     @ApiOperation(value = "Delete user")
@@ -71,8 +75,9 @@ public class UserController {
             @ApiResponse(code = 404, message = "User not found!", response = NotFoundException.class)
     })
     @DeleteMapping()
-    public ResponseEntity<String> deleteUser(@RequestParam String uuid) {
-        userService.deleteUser(uuid);
-	    return ResponseEntity.ok(uuid);
+    public ResponseEntity<String> deleteUser(@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) {
+	    final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+        userService.deleteUser(userUuid);
+	    return ResponseEntity.ok(userUuid);
 	}
 }

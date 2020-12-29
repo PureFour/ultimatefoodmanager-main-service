@@ -6,6 +6,7 @@ import com.purefour.mainservice.model.user.RegisterRequest;
 import com.purefour.mainservice.model.user.RegisterResponse;
 import com.purefour.mainservice.model.user.User;
 import lombok.AllArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import static com.purefour.mainservice.security.util.JwtUtil.generateToken;
@@ -15,13 +16,19 @@ import static com.purefour.mainservice.security.util.JwtUtil.generateToken;
 public class UserService {
 
     private final DatabaseClient databaseClient;
+    private final PasswordEncoder passwordEncoder;
 
 	public RegisterResponse addUser(RegisterRequest registerRequest) {
+		encodePassword(registerRequest);
 		final User user = databaseClient.addUser(registerRequest);
 		return RegisterResponse.builder()
 			.token(generateToken(user))
 			.user(user)
 			.build();
+	}
+
+	private void encodePassword(RegisterRequest registerRequest) {
+		registerRequest.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
 	}
 
     public User getUser(String uuid) {
