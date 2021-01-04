@@ -1,5 +1,6 @@
 package com.purefour.mainservice.feign;
 
+import com.purefour.mainservice.feign.decoder.DatabaseClientErrorDecoder;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.model.user.FindUserQuery;
 import com.purefour.mainservice.model.user.RegisterRequest;

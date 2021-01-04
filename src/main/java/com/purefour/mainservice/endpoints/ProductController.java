@@ -1,5 +1,6 @@
 package com.purefour.mainservice.endpoints;
 
+import com.purefour.mainservice.feign.MediaServiceClient;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
@@ -34,6 +35,18 @@ import java.util.List;
 public class ProductController {
 
 	private final ProductService productService;
+	private final MediaServiceClient mediaServiceClient;
+
+	@ApiOperation(value = "Knock, Knock to Media Service")
+	@ApiResponses(value = {
+			@ApiResponse(code = 200, message = "Operation successful!")
+	})
+	@GetMapping("mediaServiceTest")
+	public ResponseEntity<String> mediaServiceTest(
+			@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken
+	) {
+		return ResponseEntity.ok(mediaServiceClient.helloWorld(authorizationToken));
+	}
 
 	@ApiOperation(value = "Search product by its barcode")
 	@ApiResponses(value = {

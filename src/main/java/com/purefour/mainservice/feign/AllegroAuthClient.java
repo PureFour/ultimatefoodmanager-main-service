@@ -1,6 +1,7 @@
 package com.purefour.mainservice.feign;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.purefour.mainservice.feign.decoder.CommonErrorDecoder;
 import com.purefour.mainservice.security.util.JwtUtil;
 import feign.Feign;
 import org.springframework.cache.annotation.Cacheable;

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: UltimateFoodManager
+    name: Main Service
     version: 0.0.1
   thymeleaf:
     check-template: false
@@ -33,6 +33,11 @@ database:
   protocol: http
   dbName: default-database
   mountPath: database-service
+
+media-service:
+  host: localhost
+  port: 8081
+  protocol: http
 
 openFoodFactsApi: fake
 
@@ -85,6 +90,11 @@ database:
   protocol: http
   dbName: default-database
   mountPath: database-service
+
+media-service:
+  host: media-service
+  port: 8080
+  protocol: http
 
 ---
 spring:

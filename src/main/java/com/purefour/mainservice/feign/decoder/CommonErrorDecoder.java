@@ -1,4 +1,4 @@
-package com.purefour.mainservice.feign;
+package com.purefour.mainservice.feign.decoder;
 
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;

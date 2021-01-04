@@ -1,6 +1,7 @@
 package com.purefour.mainservice.feign;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.purefour.mainservice.feign.decoder.CommonErrorDecoder;
 import feign.Feign;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
