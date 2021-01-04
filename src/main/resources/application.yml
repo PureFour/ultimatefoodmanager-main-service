@@ -5,6 +5,10 @@ spring:
   thymeleaf:
     check-template: false
     check-template-location: false
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
 
   boot:
     admin:
@@ -93,7 +97,7 @@ database:
 
 media-service:
   host: media-service
-  port: 8080
+  port: 8081
   protocol: http
 
 ---
