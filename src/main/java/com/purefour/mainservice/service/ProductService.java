@@ -7,14 +7,16 @@ import com.purefour.mainservice.feign.OpenFoodFactsClient;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Product;
+import com.purefour.mainservice.model.product.ProductCard;
 import com.purefour.mainservice.service.mapper.FieldUtils;
-import com.purefour.mainservice.service.mapper.ProductMapperService;
+import com.purefour.mainservice.service.mapper.ProductCardMapperService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -22,19 +24,32 @@ import java.util.List;
 public class ProductService {
 
 	private final ServiceInfo serviceInfo;
-	private final ProductMapperService productMapperService;
+	private final ProductCardMapperService productMapperService;
 	private final OpenFoodFactsClient foodFactsClient;
 	private final DatabaseClient databaseClient;
 	private final AllegroService allegroService;
 
+	public ProductCard searchProduct(String barcode) throws NotFoundException {
+		Optional<ProductCard> productCardFromDatabase;
+
+		try {
+			productCardFromDatabase = Optional.ofNullable(databaseClient.getProductCard(barcode));
+		} catch (NotFoundException e) {
+			productCardFromDatabase = Optional.empty();
+		}
+
+		return productCardFromDatabase.isPresent() ?
+                productCardFromDatabase.get() : searchProductCardFromFoodApi(barcode);
+	}
+
 	@Cacheable(value = "scanProducts", key = "#barcode")
-	public Product searchProduct(String barcode) throws NotFoundException {
+	public ProductCard searchProductCardFromFoodApi(String barcode) throws NotFoundException {
 		final JsonNode fullJsonProduct = foodFactsClient.getProduct(barcode, serviceInfo.getApiInfo());
 		log.debug("FoodFactsClient product search response: {}", fullJsonProduct);
 
 		checkApiResponseStatus(fullJsonProduct);
 
-		final Product productFromFoodApi = productMapperService.mapToTarget(fullJsonProduct);
+		final ProductCard productFromFoodApi = productMapperService.mapToTarget(fullJsonProduct);
 		return enrichProduct(productFromFoodApi);
 	}
 
@@ -46,10 +61,9 @@ public class ProductService {
 		return databaseClient.update(product);
 	}
 
-	private Product enrichProduct(Product product) {
-		product.setQuantity(product.getTotalQuantity());
-		product.setPrice(allegroService.getProductPriceByBarcode(product.getBarcode()));
-		return product;
+	private ProductCard enrichProduct(ProductCard productCard) {
+		productCard.setPrice(allegroService.getProductPriceByBarcode(productCard.getBarcode()));
+		return productCard;
 	}
 
 	private void checkApiResponseStatus(JsonNode jsonNode) throws NotFoundException {

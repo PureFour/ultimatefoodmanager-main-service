@@ -1,11 +1,14 @@
 package com.purefour.mainservice.feign;
 
 import com.purefour.mainservice.feign.decoder.DatabaseClientErrorDecoder;
+import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Product;
+import com.purefour.mainservice.model.product.ProductCard;
 import com.purefour.mainservice.model.user.FindUserQuery;
 import com.purefour.mainservice.model.user.RegisterRequest;
 import com.purefour.mainservice.model.user.User;
 import feign.Feign;
+import org.aspectj.weaver.ast.Not;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -55,6 +58,11 @@ public interface DatabaseClient {
 	@DeleteMapping("products/{userUuid}/{uuid}")
 	void deleteProduct(@PathVariable String userUuid, @PathVariable String uuid);
 
+	//PRODUCT CARDS
+
+	@GetMapping("products/global/{barcode}")
+	ProductCard getProductCard(@PathVariable String barcode) throws NotFoundException;
+
 	class DatabaseClientFallback implements DatabaseClient {
 		private static final String SERVICE_UNAVAILABLE_MSG = "Database unavailable.";
 
@@ -100,6 +108,11 @@ public interface DatabaseClient {
 
 		@Override
 		public void deleteProduct(String userUuid, String productUuid) {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public ProductCard getProductCard(String barcode) throws NotFoundException {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 	}

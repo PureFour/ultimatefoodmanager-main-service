@@ -1,6 +1,6 @@
 package com.purefour.mainservice.service.mapper;
 
-import com.purefour.mainservice.model.product.Product;
+import com.purefour.mainservice.model.product.ProductCard;
 import com.purefour.mainservice.service.mapper.fields.BarcodeField;
 import com.purefour.mainservice.service.mapper.fields.BrandField;
 import com.purefour.mainservice.service.mapper.fields.CategoryField;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class ProductMapperService extends Mapper<Product> {
+public class ProductCardMapperService extends Mapper<ProductCard> {
 
 	private static final String NAME_TARGET_PATH = "product_name";
 	private static final String BRAND_TARGET_PATH = "brands";

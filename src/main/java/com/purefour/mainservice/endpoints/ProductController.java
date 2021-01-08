@@ -4,6 +4,7 @@ import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Product;
+import com.purefour.mainservice.model.product.ProductCard;
 import com.purefour.mainservice.security.util.JwtUtil;
 import com.purefour.mainservice.service.ProductService;
 import io.swagger.annotations.Api;
@@ -41,7 +42,7 @@ public class ProductController {
 		@ApiResponse(code = 404, message = "Product not found!", response = NotFoundException.class)
 	})
 	@GetMapping("search")
-	public ResponseEntity<Product> searchProduct(@RequestParam String barcode) throws NotFoundException {
+	public ResponseEntity<ProductCard> searchProduct(@RequestParam String barcode) throws NotFoundException {
 		return ResponseEntity.ok(productService.searchProduct(barcode));
 	}
 

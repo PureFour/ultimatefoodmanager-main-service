@@ -13,20 +13,11 @@ import java.util.UUID;
 @NoArgsConstructor
 public class Product {
 
-	private UUID uuid;
+    private UUID uuid;
 
-	private String name;
-	private String brand;
-	private String photoUrl;
-	private String barcode;
-	private Category category;
+    private ProductCard productCard;
 
-	private Price price;
+    private int quantity;
 
-	private int totalQuantity;
-	private int quantity;
-	private MeasurementUnit measurementUnit;
-
-	private Nutriments nutriments;
-	private Metadata metadata;
+    private Metadata metadata;
 }
