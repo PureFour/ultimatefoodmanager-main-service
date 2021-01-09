@@ -2,13 +2,14 @@ package com.purefour.mainservice.feign;
 
 import com.purefour.mainservice.feign.decoder.DatabaseClientErrorDecoder;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
+import com.purefour.mainservice.model.product.Container;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.model.product.ProductCard;
+import com.purefour.mainservice.model.product.SharedInfo;
 import com.purefour.mainservice.model.user.FindUserQuery;
 import com.purefour.mainservice.model.user.RegisterRequest;
 import com.purefour.mainservice.model.user.User;
 import feign.Feign;
-import org.aspectj.weaver.ast.Not;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -63,6 +64,17 @@ public interface DatabaseClient {
 	@GetMapping("products/global/{barcode}")
 	ProductCard getProductCard(@PathVariable String barcode) throws NotFoundException;
 
+	//CONTAINERS
+
+	@GetMapping("products/containers/{userUuid}")
+	Container getContainer(@PathVariable String userUuid) throws NotFoundException;
+
+	@GetMapping("products/containers/sharedInfo/{userUuid}")
+	SharedInfo getContainerSharedInfo(@PathVariable String userUuid) throws NotFoundException;
+
+	@PutMapping("products/containers/share/{userUuid}/{targetContainerUuid}")
+	void shareContainer(@PathVariable String userUuid, @PathVariable String targetContainerUuid) throws NotFoundException;
+
 	class DatabaseClientFallback implements DatabaseClient {
 		private static final String SERVICE_UNAVAILABLE_MSG = "Database unavailable.";
 
@@ -113,6 +125,21 @@ public interface DatabaseClient {
 
 		@Override
 		public ProductCard getProductCard(String barcode) throws NotFoundException {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public Container getContainer(String userUuid) throws NotFoundException {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public SharedInfo getContainerSharedInfo(String userUuid) throws NotFoundException {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public void shareContainer(String userUuid, String targetContainerUuid) throws NotFoundException {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 	}

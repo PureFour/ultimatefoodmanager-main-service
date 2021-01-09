@@ -6,8 +6,10 @@ import com.purefour.mainservice.feign.DatabaseClient;
 import com.purefour.mainservice.feign.OpenFoodFactsClient;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
+import com.purefour.mainservice.model.product.Container;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.model.product.ProductCard;
+import com.purefour.mainservice.model.product.SharedInfo;
 import com.purefour.mainservice.service.mapper.FieldUtils;
 import com.purefour.mainservice.service.mapper.ProductCardMapperService;
 import lombok.AllArgsConstructor;
@@ -61,6 +63,30 @@ public class ProductService {
 		return databaseClient.update(product);
 	}
 
+	public Product getProduct(String productUuid) {
+		return databaseClient.getProduct(productUuid);
+	}
+
+	public List<Product> getAllProducts(String userUuid) {
+		return databaseClient.getAllProducts(userUuid);
+	}
+
+	public void deleteProduct(String productUuid, String userUuid) {
+		databaseClient.deleteProduct(userUuid, productUuid);
+	}
+
+	public Container getContainer(String userUuid) throws NotFoundException {
+		return databaseClient.getContainer(userUuid);
+	}
+
+	public SharedInfo getContainerSharedInfo(String userUuid) throws NotFoundException {
+		return databaseClient.getContainerSharedInfo(userUuid);
+	}
+
+	public void shareContainer(String userUuid, String targetContainerUuid) throws NotFoundException {
+		databaseClient.shareContainer(userUuid, targetContainerUuid);
+	}
+
 	private ProductCard enrichProduct(ProductCard productCard) {
 		productCard.setPrice(allegroService.getProductPriceByBarcode(productCard.getBarcode()));
 		return productCard;
@@ -77,17 +103,5 @@ public class ProductService {
 		}
 
 		throw new NotFoundException("Searched product has not been found!");
-	}
-
-	public Product getProduct(String productUuid) {
-		return databaseClient.getProduct(productUuid);
-	}
-
-	public List<Product> getAllProducts(String userUuid) {
-		return databaseClient.getAllProducts(userUuid);
-	}
-
-	public void deleteProduct(String productUuid, String userUuid) {
-		databaseClient.deleteProduct(userUuid, productUuid);
 	}
 }

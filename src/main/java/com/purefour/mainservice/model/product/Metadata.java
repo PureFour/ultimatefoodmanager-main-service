@@ -15,6 +15,7 @@ public class Metadata {
 
 	private boolean isSynchronized;
 	private boolean toBeDeleted;
+	private boolean shared;
 	private LocalDate createdDate;
 	private LocalDate expiryDate;
 }
