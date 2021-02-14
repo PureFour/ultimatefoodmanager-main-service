@@ -22,7 +22,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             "/v3/api-docs",
             "/actuator/**",
             "/**/users/signUp",
-            "/**/users/signIn"
+            "/**/users/signIn",
+            "/**/notifications/**"
     };
 
     @Override

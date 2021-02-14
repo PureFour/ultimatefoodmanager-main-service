@@ -3,6 +3,7 @@ package com.purefour.mainservice.feign;
 import com.purefour.mainservice.feign.decoder.DatabaseClientErrorDecoder;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Container;
+import com.purefour.mainservice.model.product.OutdatedProductWithUsersData;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.model.product.ProductCard;
 import com.purefour.mainservice.model.product.SharedInfo;
@@ -56,6 +57,9 @@ public interface DatabaseClient {
 	@GetMapping("products/{userUuid}/all")
 	List<Product> getAllProducts(@PathVariable("userUuid") String userUuid);
 
+	@GetMapping("products/outdated")
+	List<OutdatedProductWithUsersData> getOutdatedProducts();
+
 	@DeleteMapping("products/{userUuid}/{uuid}")
 	void deleteProduct(@PathVariable String userUuid, @PathVariable String uuid);
 
@@ -75,7 +79,7 @@ public interface DatabaseClient {
 	@PutMapping("products/containers/share/{userUuid}/{targetContainerUuid}")
 	void shareContainer(@PathVariable String userUuid, @PathVariable String targetContainerUuid) throws NotFoundException;
 
-	class DatabaseClientFallback implements DatabaseClient {
+    class DatabaseClientFallback implements DatabaseClient {
 		private static final String SERVICE_UNAVAILABLE_MSG = "Database unavailable.";
 
 		@Override
@@ -110,6 +114,11 @@ public interface DatabaseClient {
 
 		@Override
 		public Product getProduct(String productUuid) {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public List<OutdatedProductWithUsersData> getOutdatedProducts() {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 

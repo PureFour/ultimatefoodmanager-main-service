@@ -7,6 +7,7 @@ import com.purefour.mainservice.feign.OpenFoodFactsClient;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Container;
+import com.purefour.mainservice.model.product.OutdatedProductWithUsersData;
 import com.purefour.mainservice.model.product.Product;
 import com.purefour.mainservice.model.product.ProductCard;
 import com.purefour.mainservice.model.product.SharedInfo;
@@ -85,6 +86,10 @@ public class ProductService {
 
 	public void shareContainer(String userUuid, String targetContainerUuid) throws NotFoundException {
 		databaseClient.shareContainer(userUuid, targetContainerUuid);
+	}
+
+	public List<OutdatedProductWithUsersData> getOutdatedProducts() {
+		return databaseClient.getOutdatedProducts();
 	}
 
 	private ProductCard enrichProduct(ProductCard productCard) {
