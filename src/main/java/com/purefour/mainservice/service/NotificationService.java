@@ -37,7 +37,7 @@ public class NotificationService {
                 .build();
 
         sendNotificationFakeCallback(notificationMessage);
-        return "OK";
+        return firebaseMessaging.send(message);
     }
 
     private void sendNotificationFakeCallback(NotificationMessage notificationMessage) {
@@ -57,7 +57,7 @@ public class NotificationService {
                 .data(Map.of())
                 .build();
         try {
-            sendNotification(outdatedProductNotificationMessage, "userToken");
+            sendNotification(outdatedProductNotificationMessage, outdatedProductUser.getNotificationToken());
         } catch (FirebaseMessagingException e) {
             e.printStackTrace();
         }
