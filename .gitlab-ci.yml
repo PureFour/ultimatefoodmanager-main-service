@@ -15,7 +15,7 @@ build:
         - master
     script:
         - pwd
-        - ls /usr/java
+        - ls ~/
         - echo building...
         - ./gradlew clean build
 
