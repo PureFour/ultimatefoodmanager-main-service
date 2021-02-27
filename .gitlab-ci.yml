@@ -14,8 +14,6 @@ build:
         - develop
         - master
     script:
-        - pwd
-        - ls ~/
         - echo building...
         - ./gradlew clean build
 
