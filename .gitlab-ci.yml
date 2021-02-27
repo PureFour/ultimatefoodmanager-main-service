@@ -14,7 +14,6 @@ build:
         - develop
         - master
     script:
-        - export JAVA_HOME='/usr/java/openjdk/jdk-15.0.2'
         - echo building...
         - ./gradlew clean build
 
