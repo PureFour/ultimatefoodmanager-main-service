@@ -11,13 +11,16 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.Map;
 
 @Service
 @Slf4j
 @AllArgsConstructor
 public class NotificationService {
-    //TODO dorobić DailySynchronizationService (sprawdzanie dat ważności produktów i wysyłanie powiadomień, mechanizm globalnej synchronizacji)
+
+    private static final String PRODUCT_EXPIRING_MESSAGE = "Termin ważności twojego produktu upływa";
+    private static final String PRODUCT_EXPIRED_MESSAGE = "Termin ważności twojego produktu upłynął";
 
     private final FirebaseMessaging firebaseMessaging;
 
@@ -49,12 +52,13 @@ public class NotificationService {
     }
 
     public void sendNotificationAboutOutdatedProduct(Product outdatedProduct, User outdatedProductUser) {
-        //TODO dodać bundle z wiadomościami w ang/pl
         NotificationMessage outdatedProductNotificationMessage = NotificationMessage.builder()
-                .subject("Termin ważności twojego produktu upływa jutro!")
+                .subject(getExpiryDateInfo(outdatedProduct))
                 .content(outdatedProduct.getProductCard().getName())
                 .imageUrl(outdatedProduct.getProductCard().getPhotoUrl())
-                .data(Map.of())
+                .data(Map.of("Username", outdatedProductUser.getLogin(),
+                        "NotificationToken", outdatedProductUser.getNotificationToken(), //debug only
+                        "ProductUuid", outdatedProduct.getUuid().toString()))
                 .build();
         try {
             sendNotification(outdatedProductNotificationMessage, outdatedProductUser.getNotificationToken());
@@ -62,4 +66,11 @@ public class NotificationService {
             e.printStackTrace();
         }
     }
+
+    private String getExpiryDateInfo(Product outdatedProduct) {
+        return outdatedProduct.getMetadata().getExpiryDate().isBefore(LocalDate.now()) ?
+                String.format(PRODUCT_EXPIRED_MESSAGE + " %s!", outdatedProduct.getMetadata().getExpiryDate())
+                : String.format(PRODUCT_EXPIRING_MESSAGE + " %s!", outdatedProduct.getMetadata().getExpiryDate());
+    }
+
 }
