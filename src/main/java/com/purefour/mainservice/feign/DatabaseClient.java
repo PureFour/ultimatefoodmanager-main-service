@@ -1,6 +1,7 @@
 package com.purefour.mainservice.feign;
 
 import com.purefour.mainservice.feign.decoder.DatabaseClientErrorDecoder;
+import com.purefour.mainservice.model.product.filter.QueryFilter;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Container;
 import com.purefour.mainservice.model.product.OutdatedProductWithUsersData;
@@ -54,8 +55,8 @@ public interface DatabaseClient {
 	@GetMapping("products/{uuid}")
 	Product getProduct(@PathVariable String uuid);
 
-	@GetMapping("products/{userUuid}/all")
-	List<Product> getAllProducts(@PathVariable("userUuid") String userUuid);
+	@PostMapping("products/{userUuid}/all")
+	List<Product> getAllProducts(@PathVariable("userUuid") String userUuid, QueryFilter filter);
 
 	@PutMapping("products/{userUuid}/synchronizeAll")
 	List<Product> synchronizeAllProducts(List<Product> products, @PathVariable("userUuid") String userUuid);
@@ -131,7 +132,7 @@ public interface DatabaseClient {
 		}
 
 		@Override
-		public List<Product> getAllProducts(String userUuid) {
+		public List<Product> getAllProducts(String userUuid, QueryFilter filter) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 

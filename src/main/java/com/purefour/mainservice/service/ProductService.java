@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.purefour.mainservice.config.ServiceInfo;
 import com.purefour.mainservice.feign.DatabaseClient;
 import com.purefour.mainservice.feign.OpenFoodFactsClient;
+import com.purefour.mainservice.model.product.filter.QueryFilter;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Container;
@@ -19,6 +20,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -72,8 +74,8 @@ public class ProductService {
 		return databaseClient.getProduct(productUuid);
 	}
 
-	public List<Product> getAllProducts(String userUuid) {
-		return databaseClient.getAllProducts(userUuid);
+	public List<Product> getAllProducts(String userUuid, QueryFilter filter) {
+		return databaseClient.getAllProducts(userUuid, Objects.isNull(filter) ? new QueryFilter() : filter);
 	}
 
 	public void deleteProduct(String productUuid, String userUuid) {

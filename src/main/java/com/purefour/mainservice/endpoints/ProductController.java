@@ -1,5 +1,6 @@
 package com.purefour.mainservice.endpoints;
 
+import com.purefour.mainservice.model.product.filter.QueryFilter;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
@@ -86,11 +87,11 @@ public class ProductController {
 		@ApiResponse(code = 200, message = "Operation successful!"),
 		@ApiResponse(code = 404, message = "Product not found!")
 	})
-	@GetMapping("all")
-	public ResponseEntity<List<Product>> getAllProducts(
+	@PostMapping("all")
+	public ResponseEntity<List<Product>> getAllProducts(@RequestBody(required = false) QueryFilter filter,
 		@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException {
 		final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
-		return ResponseEntity.ok(productService.getAllProducts(userUuid));
+		return ResponseEntity.ok(productService.getAllProducts(userUuid, filter));
 	}
 
 	@ApiOperation(value = "Synchronize all products")
