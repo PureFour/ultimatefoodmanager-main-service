@@ -57,6 +57,9 @@ public interface DatabaseClient {
 	@GetMapping("products/{userUuid}/all")
 	List<Product> getAllProducts(@PathVariable("userUuid") String userUuid);
 
+	@PutMapping("products/{userUuid}/synchronizeAll")
+	List<Product> synchronizeAllProducts(List<Product> products, @PathVariable("userUuid") String userUuid);
+
 	@GetMapping("products/outdated")
 	List<OutdatedProductWithUsersData> getOutdatedProducts();
 
@@ -79,7 +82,7 @@ public interface DatabaseClient {
 	@PutMapping("products/containers/share/{userUuid}/{targetContainerUuid}")
 	void shareContainer(@PathVariable String userUuid, @PathVariable String targetContainerUuid) throws NotFoundException;
 
-    class DatabaseClientFallback implements DatabaseClient {
+	class DatabaseClientFallback implements DatabaseClient {
 		private static final String SERVICE_UNAVAILABLE_MSG = "Database unavailable.";
 
 		@Override
@@ -109,6 +112,11 @@ public interface DatabaseClient {
 
 		@Override
 		public Product update(Product product) {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public List<Product> synchronizeAllProducts(List<Product> products, String userUuid) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 

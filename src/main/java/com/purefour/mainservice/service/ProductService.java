@@ -64,6 +64,10 @@ public class ProductService {
 		return databaseClient.update(product);
 	}
 
+	public List<Product> synchronizeAllProducts(List<Product> products, String userUuid) {
+		return databaseClient.synchronizeAllProducts(products, userUuid);
+	}
+
 	public Product getProduct(String productUuid) {
 		return databaseClient.getProduct(productUuid);
 	}

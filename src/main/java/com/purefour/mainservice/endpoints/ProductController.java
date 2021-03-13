@@ -93,6 +93,18 @@ public class ProductController {
 		return ResponseEntity.ok(productService.getAllProducts(userUuid));
 	}
 
+	@ApiOperation(value = "Synchronize all products")
+	@ApiResponses(value = {
+			@ApiResponse(code = 200, message = "Operation successful!"),
+			@ApiResponse(code = 400, message = "Bad request!")
+	})
+	@PutMapping("synchronizeAll")
+	public ResponseEntity<List<Product>> synchronizeAllProducts(@RequestBody List<Product> products,
+		@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException, BadRequestException {
+		final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+		return ResponseEntity.ok(productService.synchronizeAllProducts(products, userUuid));
+	}
+
 	@ApiOperation(value = "Delete product")
 	@ApiResponses(value = {
 		@ApiResponse(code = 200, message = "Operation successful!"),
