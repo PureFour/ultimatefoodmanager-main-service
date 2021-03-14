@@ -15,8 +15,8 @@ public class DailySynchronizationService {
 
     private final ProductService productService;
     private final NotificationService notificationService;
-//    @Scheduled(cron = "0 0 * * * *") //every midnight
-    @Scheduled(cron = "1 * * * * *") //every minute
+    //    @Scheduled(cron = "1 * * * * *") //every minute
+    @Scheduled(cron = "0 0 * * * *") //every midnight
     public void handleOutdatedProducts() {
         log.info("[DailySynchronizationService Job] handleOutdatedProducts...");
 
