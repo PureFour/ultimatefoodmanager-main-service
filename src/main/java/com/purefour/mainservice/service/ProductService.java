@@ -99,7 +99,6 @@ public class ProductService {
 	}
 
 	private ProductCard enrichProduct(ProductCard productCard) {
-		productCard.setPrice(allegroService.getProductPriceByBarcode(productCard.getBarcode()));
 		return productCard;
 	}
 
