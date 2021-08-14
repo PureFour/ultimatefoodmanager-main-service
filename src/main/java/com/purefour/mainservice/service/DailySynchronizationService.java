@@ -27,4 +27,10 @@ public class DailySynchronizationService {
                         notificationService.sendNotificationAboutOutdatedProduct(outdatedProductWithUsersData.getOutdatedProduct(), outdatedProductUser)
         ));
     }
+
+    @Scheduled(cron = "1 * * * * *") //every minute
+    public void handleGlobalCardSynchronization() {
+        log.info("[DailySynchronizationService Job] globalCardSynchronization...");
+        productService.synchronizeAllGlobalCards();
+    }
 }

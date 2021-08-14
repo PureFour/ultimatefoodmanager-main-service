@@ -1,5 +1,6 @@
 package com.purefour.mainservice.endpoints;
 
+import com.purefour.mainservice.model.product.SynchronizeResponse;
 import com.purefour.mainservice.model.product.filter.QueryFilter;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.ConflictException;
@@ -100,8 +101,8 @@ public class ProductController {
 			@ApiResponse(code = 400, message = "Bad request!")
 	})
 	@PutMapping("synchronizeAll")
-	public ResponseEntity<List<Product>> synchronizeAllProducts(@RequestBody List<Product> products,
-		@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException, BadRequestException {
+	public ResponseEntity<SynchronizeResponse> synchronizeAllProducts(@RequestBody List<Product> products,
+        @ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException, BadRequestException {
 		final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
 		return ResponseEntity.ok(productService.synchronizeAllProducts(products, userUuid));
 	}

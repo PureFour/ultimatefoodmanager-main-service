@@ -20,7 +20,7 @@ public class ProductCard {
 
     private Price price;
 
-    private int totalQuantity;
+    private float totalQuantity;
     private MeasurementUnit measurementUnit;
 
     private Nutriments nutriments;

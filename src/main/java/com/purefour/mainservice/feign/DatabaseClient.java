@@ -1,6 +1,7 @@
 package com.purefour.mainservice.feign;
 
 import com.purefour.mainservice.feign.decoder.DatabaseClientErrorDecoder;
+import com.purefour.mainservice.model.product.SynchronizeResponse;
 import com.purefour.mainservice.model.product.filter.QueryFilter;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
 import com.purefour.mainservice.model.product.Container;
@@ -59,7 +60,7 @@ public interface DatabaseClient {
 	List<Product> getAllProducts(@PathVariable("userUuid") String userUuid, QueryFilter filter);
 
 	@PutMapping("products/{userUuid}/synchronizeAll")
-	List<Product> synchronizeAllProducts(List<Product> products, @PathVariable("userUuid") String userUuid);
+	SynchronizeResponse synchronizeAllProducts(List<Product> products, @PathVariable("userUuid") String userUuid);
 
 	@GetMapping("products/outdated")
 	List<OutdatedProductWithUsersData> getOutdatedProducts();
@@ -71,6 +72,9 @@ public interface DatabaseClient {
 
 	@GetMapping("products/global/{barcode}")
 	ProductCard getProductCard(@PathVariable String barcode) throws NotFoundException;
+
+	@PutMapping("products/global/synchronizeAll")
+	void synchronizeAllGlobalCards();
 
 	//CONTAINERS
 
@@ -117,7 +121,7 @@ public interface DatabaseClient {
 		}
 
 		@Override
-		public List<Product> synchronizeAllProducts(List<Product> products, String userUuid) {
+		public SynchronizeResponse synchronizeAllProducts(List<Product> products, String userUuid) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 
@@ -143,6 +147,11 @@ public interface DatabaseClient {
 
 		@Override
 		public ProductCard getProductCard(String barcode) throws NotFoundException {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public void synchronizeAllGlobalCards() {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 

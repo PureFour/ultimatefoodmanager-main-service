@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.purefour.mainservice.config.ServiceInfo;
 import com.purefour.mainservice.feign.DatabaseClient;
 import com.purefour.mainservice.feign.OpenFoodFactsClient;
+import com.purefour.mainservice.model.product.SynchronizeResponse;
 import com.purefour.mainservice.model.product.filter.QueryFilter;
 import com.purefour.mainservice.model.exceptions.BadRequestException;
 import com.purefour.mainservice.model.exceptions.NotFoundException;
@@ -66,7 +67,7 @@ public class ProductService {
 		return databaseClient.update(product);
 	}
 
-	public List<Product> synchronizeAllProducts(List<Product> products, String userUuid) {
+	public SynchronizeResponse synchronizeAllProducts(List<Product> products, String userUuid) {
 		return databaseClient.synchronizeAllProducts(products, userUuid);
 	}
 
@@ -96,6 +97,10 @@ public class ProductService {
 
 	public List<OutdatedProductWithUsersData> getOutdatedProducts() {
 		return databaseClient.getOutdatedProducts();
+	}
+
+	public void synchronizeAllGlobalCards() {
+		databaseClient.synchronizeAllGlobalCards();
 	}
 
 	private ProductCard enrichProduct(ProductCard productCard) {

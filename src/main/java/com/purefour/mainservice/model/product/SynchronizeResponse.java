@@ -5,19 +5,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.UUID;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Product {
+public class SynchronizeResponse {
 
-    private UUID uuid;
-
-    private ProductCard productCard;
-
-    private float quantity;
-
-    private Metadata metadata;
+    private List<Product> synchronizedProducts;
+    private String status;
 }
