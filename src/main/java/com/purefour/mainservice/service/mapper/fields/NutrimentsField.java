@@ -13,6 +13,7 @@ public class NutrimentsField extends ObjectTarget<Nutriments> {
 
 	private static final String ENERGY_TARGET_PATH = "energy-kcal_value";
 	private static final String FAT_TARGET_PATH = "fat_value";
+	private static final String PROTEINS_TARGET_PATH = "proteins_value";
 	private static final String SATURATED_FAT_TARGET_PATH = "saturated-fat_value";
 	private static final String INSATIABLE_FAT_TARGET_PATH = "insatiable-fat_value";
 	private static final String CARBOHYDRATES_TARGET_PATH = "carbohydrates_value";
@@ -26,6 +27,7 @@ public class NutrimentsField extends ObjectTarget<Nutriments> {
 	static {
 		MAPPING.put(ENERGY_TARGET_PATH, new NutrimentField("energy"));
 		MAPPING.put(FAT_TARGET_PATH, new NutrimentField("fat"));
+		MAPPING.put(PROTEINS_TARGET_PATH, new NutrimentField("proteins"));
 		MAPPING.put(SATURATED_FAT_TARGET_PATH, new NutrimentField("saturatedFat"));
 		MAPPING.put(INSATIABLE_FAT_TARGET_PATH, new NutrimentField("insatiableFat"));
 		MAPPING.put(CARBOHYDRATES_TARGET_PATH, new NutrimentField("carbohydrates"));

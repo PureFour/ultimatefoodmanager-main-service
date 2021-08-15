@@ -17,9 +17,10 @@ public class Nutriments {
 	private float saturatedFat;
 	private float insatiableFat;
 
+	private float proteins;
+
 	private float carbohydrates;
 	private float sugars;
-
 	private float fiber;
 
 	private float salt;
