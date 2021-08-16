@@ -63,6 +63,10 @@ public class ProductService {
 		return databaseClient.add(userUuid, product);
 	}
 
+	public List<Product> addProducts(String userUuid, List<Product> products) throws NotFoundException, BadRequestException {
+		return databaseClient.bulkAdd(userUuid, products);
+	}
+
 	public Product updateProduct(Product product) throws NotFoundException, BadRequestException {
 		return databaseClient.update(product);
 	}

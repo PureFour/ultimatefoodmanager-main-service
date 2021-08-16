@@ -50,6 +50,9 @@ public interface DatabaseClient {
 	@PostMapping("products/{userUuid}")
 	Product add(@PathVariable("userUuid") String userUuid, Product product);
 
+	@PostMapping("products/{userUuid}/bulk")
+	List<Product> bulkAdd(@PathVariable("userUuid") String userUuid, List<Product> products);
+
 	@PutMapping("products")
 	Product update(Product product);
 
@@ -112,6 +115,11 @@ public interface DatabaseClient {
 
 		@Override
 		public Product add(String userUuid, Product product) {
+			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
+		}
+
+		@Override
+		public List<Product> bulkAdd(String userUuid, List<Product> products) {
 			throw new IllegalStateException(SERVICE_UNAVAILABLE_MSG);
 		}
 

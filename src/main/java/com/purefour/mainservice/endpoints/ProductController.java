@@ -62,6 +62,21 @@ public class ProductController {
 		return ResponseEntity.ok(productService.addProduct(userUuid, product));
 	}
 
+
+	@ApiOperation(value = "Add products")
+	@ApiResponses(value = {
+		@ApiResponse(code = 201, message = "Operation successful!"),
+		@ApiResponse(code = 400, message = "Bad request!"),
+		@ApiResponse(code = 409, message = "Products already exist!", response = ConflictException.class),
+	})
+	@PostMapping
+	public ResponseEntity<List<Product>> addProduct(
+		@RequestBody List<Product> products,
+		@ApiIgnore @RequestHeader(required = false, name = HttpHeaders.AUTHORIZATION) String authorizationToken) throws NotFoundException, BadRequestException {
+		final String userUuid = JwtUtil.extractUserUuid(authorizationToken);
+		return ResponseEntity.ok(productService.addProducts(userUuid, products));
+	}
+
 	@ApiOperation(value = "Update product")
 	@ApiResponses(value = {
 		@ApiResponse(code = 200, message = "Operation successful!"),
